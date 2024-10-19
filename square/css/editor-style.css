@@ -1,0 +1,365 @@
+body {
+    color: var(--square-body-color, #404040);
+    font-size: var(--square-body-size, 16px);
+    letter-spacing: var(--square-body-letter-spacing, 0);
+    line-height: var(--square-body-line-height, 1.8);
+    font-family: var(--square-body-family, 'Open Sans', sans-serif);
+    font-weight: var(--square-body-weight, 400);
+    font-style: var(--square-body-style, normal);
+    text-decoration: var(--square-body-text-decoration, none);
+    text-transform: var(--square-body-text-transform, none);
+}
+
+
+/**
+ * 2.0 Typography
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--square-h-family, 'Roboto Condensed', sans-serif);
+    letter-spacing: var(--square-h-letter-spacing, 0);
+    line-height: var(--square-h-line-height, 1.2);
+    font-weight: var(--square-h-weight, 400);
+    font-style: var(--square-h-style, normal);
+    text-decoration: var(--square-h-text-decoration, none);
+    text-transform: var(--square-h-text-transform, none);
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+h6 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 0 0 15px;
+}
+
+a {
+    color: var(--square-template-color, #000);
+    text-decoration: underline;
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+dfn,
+cite,
+em,
+i {
+    font-style: italic;
+}
+
+blockquote {
+    border-left: 4px solid #707070;
+    color: #707070;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.8182;
+    margin: 0 0 35px 0;
+    padding-left: 17px;
+}
+
+blockquote > blockquote {
+    margin-left: 0;
+}
+
+blockquote p {
+    margin-bottom: 35px;
+}
+
+blockquote > p:last-child {
+    margin-bottom: 0;
+}
+
+blockquote cite,
+blockquote small {
+    color: #333;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 17px;
+    line-height: 1.6471;
+}
+
+blockquote em,
+blockquote i,
+blockquote cite {
+    font-style: normal;
+}
+
+blockquote strong,
+blockquote b {
+    font-weight: 400;
+}
+
+address {
+    font-style: italic;
+    margin: 0 0 28px;
+}
+
+code,
+kbd,
+tt,
+var,
+samp,
+pre {
+    font-family: Inconsolata, monospace;
+}
+
+pre {
+    background-color: #fcfcfc;
+    border: 1px solid #eaeaea;
+    font-size: 17px;
+    line-height: 1.2353;
+    margin-bottom: 28px;
+    max-width: 100%;
+    overflow: auto;
+    padding: 14px;
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted #eaeaea;
+    cursor: help;
+}
+
+mark,
+ins {
+    background-color: #fff9c0;
+    text-decoration: none;
+}
+
+sup,
+sub {
+    font-size: 75%;
+    height: 0;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    bottom: 1ex;
+}
+
+sub {
+    top: .5ex;
+}
+
+small {
+    font-size: 75%;
+}
+
+big {
+    font-size: 125%;
+}
+
+
+/**
+ * 3.0 Elements
+ */
+
+hr {
+    background-color: #ccc;
+    border: 0;
+    height: 1px;
+    margin-bottom: 15px;
+}
+
+ul,
+ol {
+    margin: 0 0 15px 20px;
+    padding: 0;
+}
+
+ul {
+    list-style: disc;
+}
+
+ol {
+    list-style: decimal;
+}
+
+li > ul,
+li > ol {
+    margin-bottom: 0;
+    margin-left: 15px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin: 0 15px 15px;
+}
+
+img {
+    height: auto;
+    /* Make sure images are scaled correctly. */
+    max-width: 100%;
+    /* Adhere to container width. */
+    vertical-align: middle;
+}
+
+table {
+    margin: 0 0 15px;
+    width: 100%;
+}
+
+img {
+    border: 0;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+figure {
+    margin: 0;
+}
+
+del {
+    opacity: 0.8;
+}
+
+
+/**
+ * 4.0 Alignment
+ */
+
+.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    display: inline;
+    float: right;
+    margin-left: 15px;
+}
+
+.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/**
+ * 5.0 Caption
+ */
+.wp-caption {
+    margin-bottom: 15px;
+    max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin: 0 auto;
+}
+
+.wp-caption-text {
+    text-align: center;
+}
+
+.wp-caption .wp-caption-text {
+    margin: 0.8075em 0;
+}
+
+
+/**
+ * 6.0 Galleries
+ */
+
+.gallery {
+    margin-bottom: 15px;
+}
+
+.gallery-item {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+    max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+    max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+    max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+    max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+    max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+    max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+    max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+    max-width: 11.11%;
+}
+
+.gallery-caption {
+    display: block;
+}
+
+
+/**
+ * 7.0 Audio / Video
+ */
+
+.mce-content-body .wpview-wrap {
+    margin-bottom: 32px;
+}
+
+.mce-content-body .wp-audio-playlist {
+    margin: 0;
+}
