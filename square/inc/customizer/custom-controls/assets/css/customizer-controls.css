@@ -1389,6 +1389,10 @@
     margin-top: -2px;
 }
 
+.control-section-ht--upgrade-section .accordion-section-title:after{
+    display: none !important;
+}
+
 .control-section-ht--upgrade-section.ht--boxed {
     background: #FFF;
     padding: 20px;
@@ -1410,8 +1414,8 @@
 /* Toggle Section Control*/
 .control-section-ht--toggle-section .ht--toggle-section {
     text-decoration: none;
-    margin-right: 10px;
-    vertical-align: middle;
+    margin-right: 20px;
+    margin-left: auto;
 }
 
 .control-section-ht--toggle-section .ht--toggle-section .dashicons {
