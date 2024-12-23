@@ -52,8 +52,8 @@ $square_pro_features = '<ul class="upsell-features">
 
 $wp_customize->add_section(new Square_Upgrade_Section($wp_customize, 'square-pro-section', array(
     'priority' => 0,
-    'title' => esc_html__('Black Friday: Save Like Never Before!', 'square'),
-    'upgrade_text' => esc_html__('Upgrade to Pro -  40% OFF', 'square'),
+    'title' => esc_html__('Christmas & New Year Discount!', 'square'),
+    'upgrade_text' => esc_html__('Upgrade to Pro -  30% OFF', 'square'),
     'upgrade_url' => 'https://hashthemes.com/wordpress-theme/square-plus/?utm_source=wordpress&utm_medium=square-customizer-button&utm_campaign=square-upgrade',
 )));
 

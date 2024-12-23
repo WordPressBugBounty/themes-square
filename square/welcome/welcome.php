@@ -39,7 +39,7 @@ if (!class_exists('Square_Welcome')):
                     'name' => 'Elementor Page Builder',
                     'slug' => 'elementor',
                     'filename' => 'elementor',
-                    'thumb_path' => 'https://ps.w.org/elementor/assets/icon-256x256.png'
+                    'thumb_path' => 'https://ps.w.org/elementor/assets/icon-256x256.gif'
                 ),
                 'hash-form' => array(
                     'name' => 'Hash Form - Drag & Drop Form Builder',
