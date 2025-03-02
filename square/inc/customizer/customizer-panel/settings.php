@@ -343,7 +343,7 @@ $wp_customize->add_setting('square_body_color', array(
 
 $wp_customize->add_control(new Square_Typography_Control($wp_customize, 'square_body_typography', array(
     'label' => esc_html__('Body Typography', 'square'),
-    'description' => __('Select how you want your body to appear.', 'square'),
+    'description' => esc_html__('Select how you want your body to appear.', 'square'),
     'section' => 'square_body_typography_section',
     'settings' => array(
         'family' => 'square_body_family',
@@ -402,7 +402,7 @@ $wp_customize->add_setting('square_h_letter_spacing', array(
 
 $wp_customize->add_control(new Square_Typography_Control($wp_customize, 'square_h_typography', array(
     'label' => esc_html__('Header Typography', 'square'),
-    'description' => __('Select how you want your Header to appear.', 'square'),
+    'description' => esc_html__('Select how you want your Header to appear.', 'square'),
     'section' => 'square_header_typography_section',
     'settings' => array(
         'family' => 'square_h_family',
@@ -489,7 +489,7 @@ $wp_customize->add_setting('square_menu_letter_spacing', array(
 
 $wp_customize->add_control(new Square_Typography_Control($wp_customize, 'square_menu_typography', array(
     'label' => esc_html__('Menu Typography', 'square'),
-    'description' => __('Select how you want your menu to appear.', 'square'),
+    'description' => esc_html__('Select how you want your menu to appear.', 'square'),
     'section' => 'square_menu_typography_section',
     'settings' => array(
         'family' => 'square_menu_family',
