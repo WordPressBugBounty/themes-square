@@ -54,7 +54,7 @@ if (is_array($square_page_array)) {
             $square_enable_featured_link = get_theme_mod('square_enable_featured_link', true);
             for ($i = 1; $i < 4; $i++) {
                 $square_featured_page_id = get_theme_mod('square_featured_page' . $i, $square_page);
-                $square_featured_page_icon = get_theme_mod('square_featured_page_icon' . $i, 'far fa-bell');
+                $square_featured_page_icon = get_theme_mod('square_featured_page_icon' . $i, 'fa-regular fa-bell');
 
                 if ($square_featured_page_id) {
                     $args = array('page_id' => $square_featured_page_id);
@@ -78,7 +78,7 @@ if (is_array($square_page_array)) {
                                 <?php
                                 if ($square_enable_featured_link) {
                                     ?>
-                                    <a href="<?php the_permalink(); ?>" class="sq-featured-readmore"><i class="far fa-plus-square"></i></a>
+                                    <a href="<?php the_permalink(); ?>" class="sq-featured-readmore"><i class="fa-regular fa-plus-square"></i></a>
                                     <?php
                                 }
                                 ?>
@@ -157,7 +157,7 @@ if (!$square_disable_tab_sec) {
                 <?php
                 for ($i = 1; $i < 6; $i++) {
                     $square_tab_title = get_theme_mod('square_tab_title' . $i);
-                    $square_tab_icon = get_theme_mod('square_tab_icon' . $i, 'far fa-bell');
+                    $square_tab_icon = get_theme_mod('square_tab_icon' . $i, 'fa-regular fa-bell');
 
                     if ($square_tab_title) {
                         ?>

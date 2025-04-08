@@ -35,7 +35,7 @@
             if ($square_blog_format == 'excerpt') {
                 echo square_word_excerpt(get_the_content(), 160);  // WPCS: XSS OK.
             
-                echo '<div class="entry-readmore"><a href="' . esc_url(get_permalink()) . '">' . esc_html__('Read More', 'square') . '<i class="fas fa-chevron-right"></i></a></div>';
+                echo '<div class="entry-readmore"><a href="' . esc_url(get_permalink()) . '">' . esc_html__('Read More', 'square') . '<i class="fa-solid fa-chevron-right"></i></a></div>';
             } else {
                 the_content(__('Continue reading &rarr;', 'square'));
 

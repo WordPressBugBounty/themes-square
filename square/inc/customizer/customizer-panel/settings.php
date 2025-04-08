@@ -644,7 +644,7 @@ for ($i = 1; $i < 4; $i++) {
     ));
 
     $wp_customize->add_setting('square_featured_page_icon' . $i, array(
-        'default' => 'far fa-bell',
+        'default' => 'fa-regular fa-bell',
         'sanitize_callback' => 'square_sanitize_text'
     ));
 
@@ -807,7 +807,7 @@ for ($i = 1; $i < 6; $i++) {
     ));
 
     $wp_customize->add_setting('square_tab_icon' . $i, array(
-        'default' => 'far fa-bell',
+        'default' => 'fa-regular fa-bell',
         'sanitize_callback' => 'square_sanitize_text'
     ));
 

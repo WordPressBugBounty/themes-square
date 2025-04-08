@@ -90,23 +90,23 @@ class Square_Contact_Info extends WP_Widget {
 
             <ul>
                 <?php if (!empty($phone)): ?>
-                    <li><i class="fas fa-phone"></i><?php echo wp_kses_post($phone); ?></li>
+                    <li><i class="fa-solid fa-phone"></i><?php echo wp_kses_post($phone); ?></li>
                 <?php endif; ?>
 
                 <?php if (!empty($email)): ?>
-                    <li><i class="far fa-envelope"></i><?php echo wp_kses_post($email); ?></li>
+                    <li><i class="fa-regular fa-envelope"></i><?php echo wp_kses_post($email); ?></li>
                 <?php endif; ?>
 
                 <?php if (!empty($website)): ?>
-                    <li><i class="fas fa-globe-asia"></i><?php echo wp_kses_post($website); ?></li>
+                    <li><i class="fa-solid fa-globe-asia"></i><?php echo wp_kses_post($website); ?></li>
                 <?php endif; ?>
 
                 <?php if (!empty($address)): ?>
-                    <li><i class="fas fa-map-marker-alt"></i></i><?php echo wp_kses_post(wpautop($address)); ?></li>
+                    <li><i class="fa-solid fa-map-marker-alt"></i></i><?php echo wp_kses_post(wpautop($address)); ?></li>
                 <?php endif; ?>
 
                 <?php if (!empty($time)): ?>
-                    <li><i class="far fa-clock"></i><?php echo wp_kses_post(wpautop($time)); ?></li>
+                    <li><i class="fa-regular fa-clock"></i><?php echo wp_kses_post(wpautop($time)); ?></li>
                 <?php endif; ?>
             </ul>
         </div>

@@ -43,7 +43,7 @@ if (!function_exists('square_posted_on')) {
             $comment_link = esc_html__(' Comment Closed', 'square');
         }
 
-        echo '<span class="posted-on"><i class="far fa-clock"></i>' . $posted_on . '</span><span class="byline"> ' . $byline . '</span><span class="comment-count"><i class="far fa-comments"></i>' . $comment_link . "</span>"; // WPCS: XSS OK.
+        echo '<span class="posted-on"><i class="fa-regular fa-clock"></i>' . $posted_on . '</span><span class="byline"> ' . $byline . '</span><span class="comment-count"><i class="fa-regular fa-comments"></i>' . $comment_link . "</span>"; // WPCS: XSS OK.
     }
 
 }
@@ -59,13 +59,13 @@ if (!function_exists('square_entry_footer')) {
             /* translators: used between list items, there is a space after the comma */
             $categories_list = get_the_category_list(', ');
             if ($categories_list && square_categorized_blog()) {
-                echo '<span class="cat-links"><i class="fas fa-folder"></i>' . $categories_list . '</span>'; // WPCS: XSS OK.
+                echo '<span class="cat-links"><i class="fa-solid fa-folder"></i>' . $categories_list . '</span>'; // WPCS: XSS OK.
             }
 
             /* translators: used between list items, there is a space after the comma */
             $tags_list = get_the_tag_list('', ', ');
             if ($tags_list) {
-                echo '<span class="tags-links"><i class="fas fa-tag"></i>' . $tags_list . '</span>'; // WPCS: XSS OK.
+                echo '<span class="tags-links"><i class="fa-solid fa-tag"></i>' . $tags_list . '</span>'; // WPCS: XSS OK.
             }
         }
     }
@@ -144,10 +144,10 @@ if (!function_exists('square_social_share')) {
         $mailURL = 'mailto:?Subject=' . $post_title . '&amp;Body=' . $post_url;
 
         $content = '<div class="square-share-buttons">';
-        $content .= '<a target="_blank" href="' . $facebookURL . '" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>';
-        $content .= '<a target="_blank" href="' . $twitterURL . '" target="_blank"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>';
-        $content .= '<a target="_blank" href="' . $pinterestURL . '" target="_blank"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a>';
-        $content .= '<a target="_blank" href="' . $mailURL . '"><i class="far fa-envelope" aria-hidden="true"></i></a>';
+        $content .= '<a target="_blank" href="' . $facebookURL . '" target="_blank"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>';
+        $content .= '<a target="_blank" href="' . $twitterURL . '" target="_blank"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>';
+        $content .= '<a target="_blank" href="' . $pinterestURL . '" target="_blank"><i class="fa-brands fa-pinterest-p" aria-hidden="true"></i></a>';
+        $content .= '<a target="_blank" href="' . $mailURL . '"><i class="fa-regular fa-envelope" aria-hidden="true"></i></a>';
         $content .= '</div>';
 
         echo $content;  // WPCS: XSS OK.
