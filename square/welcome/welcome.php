@@ -37,6 +37,12 @@ if (!class_exists('Square_Welcome')):
                     'filename' => 'hash-form',
                     'thumb_path' => 'https://ps.w.org/hash-form/assets/icon-256x256.gif'
                 ),
+                'easy-elementor-addons' => array(
+                    'name' => 'Easy Elementor Addons',
+                    'slug' => 'easy-elementor-addons',
+                    'filename' => 'easy-elementor-addons',
+                    'thumb_path' => 'https://ps.w.org/easy-elementor-addons/assets/icon-256x256.png'
+                ),
                 'hash-elements' => array(
                     'name' => 'Hash Elements',
                     'slug' => 'hash-elements',
