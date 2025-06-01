@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Square 1.0.0\n"
 "Report-Msgid-Bugs-To: http://hashthemes.com/\n"
-"POT-Creation-Date: 2024-09-09 10:43+0000\n"
+"POT-Creation-Date: 2025-06-01 09:41+0000\n"
 "POT-Revision-Date: Thu Jul 14 2016 22:42:45 GMT+0545 (Nepal Standard Time)\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Hash Themes <hashthemes@gmail.com>\n"
@@ -44,7 +44,7 @@ msgstr ""
 msgid "%1$s by %2$s"
 msgstr ""
 
-#: welcome/welcome.php:110
+#: welcome/welcome.php:106
 #, php-format
 msgid ""
 "%1$s is now installed and ready to use. You can start either by importing "
@@ -56,7 +56,7 @@ msgstr ""
 msgid "%s Demo"
 msgstr ""
 
-#: welcome/welcome.php:142
+#: welcome/welcome.php:138
 #, php-format
 msgid "%s Settings"
 msgstr ""
@@ -419,11 +419,11 @@ msgstr ""
 msgid "Activate"
 msgstr ""
 
-#: welcome/welcome.php:276
+#: welcome/welcome.php:278
 msgid "Activate Demo Importer Plugin"
 msgstr ""
 
-#: welcome/welcome.php:174
+#: welcome/welcome.php:176
 msgid "Activating Demo Importer Plugin"
 msgstr ""
 
@@ -619,7 +619,7 @@ msgstr ""
 msgid "Choose title & tagline colors"
 msgstr ""
 
-#: welcome/welcome.php:122
+#: welcome/welcome.php:118
 msgid "Click below to install and active HashThemes Demo Importer Plugin."
 msgstr ""
 
@@ -689,7 +689,7 @@ msgstr ""
 msgid "Configure the gallery width"
 msgstr ""
 
-#: welcome/welcome.php:109
+#: welcome/welcome.php:105
 msgid "Congratulations!"
 msgstr ""
 
@@ -813,7 +813,7 @@ msgstr ""
 msgid "Disable Tab Section "
 msgstr ""
 
-#: welcome/welcome.php:386
+#: welcome/welcome.php:387
 msgid "Dismiss this notice."
 msgstr ""
 
@@ -888,7 +888,7 @@ msgstr ""
 msgid "Enable Read More link "
 msgstr ""
 
-#: welcome/welcome.php:177
+#: welcome/welcome.php:179
 msgid "Error! Reload the page and try again."
 msgstr ""
 
@@ -1054,7 +1054,7 @@ msgstr ""
 msgid "FREE UPDATES FOR LIFETIME"
 msgstr ""
 
-#: welcome/welcome.php:27
+#: welcome/welcome.php:148
 msgid "Free Vs Pro"
 msgstr ""
 
@@ -1091,11 +1091,11 @@ msgstr ""
 msgid "General Settings"
 msgstr ""
 
-#: welcome/welcome.php:130
+#: welcome/welcome.php:126
 msgid "Get Started"
 msgstr ""
 
-#: welcome/welcome.php:24
+#: welcome/welcome.php:145
 msgid "Getting Started"
 msgstr ""
 
@@ -1103,11 +1103,11 @@ msgstr ""
 msgid "Go to Appearance > Customize"
 msgstr ""
 
-#: welcome/welcome.php:175 welcome/welcome.php:279
+#: welcome/welcome.php:177 welcome/welcome.php:281
 msgid "Go to Demo Importer Page"
 msgstr ""
 
-#: welcome/welcome.php:132
+#: welcome/welcome.php:128
 msgid "Go to Setting Page"
 msgstr ""
 
@@ -1125,7 +1125,7 @@ msgid "Gradient Preview"
 msgstr ""
 
 #. %1$s is link start tag, %2$s is link end tag.
-#: welcome/welcome.php:343
+#: welcome/welcome.php:344
 #, php-format
 msgid ""
 "Great to see that you have been using Square Theme for some time. We hope "
@@ -1169,7 +1169,7 @@ msgstr ""
 msgid "here"
 msgstr ""
 
-#: welcome/welcome.php:131
+#: welcome/welcome.php:127
 #, php-format
 msgid ""
 "Here you will find all the necessary links and information on how to use %s."
@@ -1218,7 +1218,7 @@ msgstr ""
 msgid "https://hashthemes.com/wordpress-theme/square/"
 msgstr ""
 
-#: welcome/welcome.php:348
+#: welcome/welcome.php:349
 msgid "I have already rated"
 msgstr ""
 
@@ -1249,7 +1249,7 @@ msgstr ""
 msgid "Import"
 msgstr ""
 
-#: welcome/welcome.php:121
+#: welcome/welcome.php:117
 msgid "Import Demo"
 msgstr ""
 
@@ -1284,7 +1284,7 @@ msgstr ""
 msgid "Instagram"
 msgstr ""
 
-#: welcome/welcome.php:283
+#: welcome/welcome.php:285
 msgid "Install Demo Importer Plugin"
 msgstr ""
 
@@ -1296,7 +1296,7 @@ msgstr ""
 msgid "Installed"
 msgstr ""
 
-#: welcome/welcome.php:173
+#: welcome/welcome.php:175
 msgid "Installing Demo Importer Plugin"
 msgstr ""
 
@@ -1583,7 +1583,7 @@ msgid ""
 "more features to the theme."
 msgstr ""
 
-#: welcome/welcome.php:263
+#: welcome/welcome.php:265
 #, php-format
 msgid ""
 "Please leave us a %s rating if you like our theme . A huge thank you from "
@@ -1685,7 +1685,7 @@ msgstr ""
 msgid "Recommended Plugin page"
 msgstr ""
 
-#: welcome/welcome.php:25 welcome/sections/recommended_plugins.php:6
+#: welcome/welcome.php:146 welcome/sections/recommended_plugins.php:6
 msgid "Recommended Plugins"
 msgstr ""
 
@@ -1875,20 +1875,27 @@ msgstr ""
 msgid "Square"
 msgstr ""
 
-#: welcome/welcome.php:114
+#: welcome/welcome.php:110
 msgid "Square Demo"
 msgstr ""
 
 #. Description of the theme
 msgid ""
-"Square is a flexible responsive multipurpose theme compatible with all "
-"browsers and devices, fully mobile friendly, loaded with lots of features. "
-"It is a minimal theme based on WordPress Customizer that allows you to "
-"customize with live preview. The theme can be used for business, corporate, "
-"digital agency, personal, portfolio, photography, parallax, blogs and "
-"magazines. Square is eCommerce (WooCommerce) Compatible, Polylang Compatible,"
-" WPML, RTL, Retina Ready, SEO Friendly and Support bbPress and BuddyPress. "
-"More over it is a complete theme. For demo https://demo.hashthemes.com/square"
+"Square is a modern, fully responsive, and SEO-friendly WordPress theme, "
+"ideal for creating business websites, corporate sites, online portfolios, "
+"personal blogs, digital agencies, and WooCommerce-powered online stores. "
+"Designed with a clean and minimalist layout, Square ensures fast loading "
+"times and an excellent user experience across all devices. It is highly "
+"customizable through the WordPress Customizer, allowing real-time design "
+"changes without touching a single line of code. The theme is compatible with "
+"popular plugins like Elementor, WPML, Polylang, bbPress, and BuddyPress, "
+"making it suitable for multilingual websites, forums, and online communities."
+" Square also supports retina displays and right-to-left (RTL) languages, "
+"ensuring global accessibility. Whether you're building a small business "
+"website or a feature-rich eCommerce platform, Square provides all the "
+"essential tools, flexibility, and modern design elements needed to launch a "
+"professional and engaging WordPress website. For demo https://demo."
+"hashthemes.com/square"
 msgstr ""
 
 #: welcome/sections/free_vs_pro.php:202
@@ -1922,7 +1929,7 @@ msgid ""
 "solve your problem."
 msgstr ""
 
-#: welcome/welcome.php:26
+#: welcome/welcome.php:147
 msgid "Support"
 msgstr ""
 
@@ -2310,7 +2317,7 @@ msgstr ""
 msgid "Website layout (fullwidth or boxed)"
 msgstr ""
 
-#: welcome/welcome.php:142
+#: welcome/welcome.php:138
 msgid "Welcome"
 msgstr ""
 
@@ -2373,7 +2380,7 @@ msgstr ""
 msgid "Y"
 msgstr ""
 
-#: welcome/welcome.php:347
+#: welcome/welcome.php:348
 msgid "Yes, of course"
 msgstr ""
 

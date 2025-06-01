@@ -342,15 +342,21 @@ if (!function_exists('wp_body_open')) {
 add_filter('template_include', 'square_frontpage_template', 9999);
 
 function square_frontpage_template($template) {
-    if (is_front_page()) {
-        $enable_frontpage = get_theme_mod('square_enable_frontpage', false);
-        if ($enable_frontpage) {
-            $new_template = locate_template(array('templates/home-template.php'));
-            if ('' != $new_template) {
-                return $new_template;
-            }
+    $enable_frontpage = get_theme_mod('square_enable_frontpage', false);
+    $new_template = locate_template(array('templates/home-template.php'));
+
+    if ($enable_frontpage && is_front_page()) {
+        if ('' != $new_template) {
+            return $new_template;
         }
     }
+
+    if ($enable_frontpage && 'page' == get_option('show_on_front') && !get_option('page_on_front')) {
+        if ('' != $new_template) {
+            return $new_template;
+        }
+    }
+
     return $template;
 }
 
