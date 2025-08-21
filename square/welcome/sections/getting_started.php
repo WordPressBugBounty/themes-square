@@ -5,20 +5,20 @@
         <div class="welcome-theme-thumb">
             <img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/set-front-page.gif'); ?>" alt="<?php echo esc_attr__('Viral Demo', 'square'); ?>">
         </div> -->
-        <p><?php echo esc_html__('You can setup the home page sections either from Customizer Panel or from Elementor Pagebuilder', 'square'); ?></p>
+        <p><?php echo esc_html__('You can set up the homepage sections either through the Customizer Panel or using the Elementor Page Builder.', 'square'); ?></p>
         <p><strong><?php echo esc_html__('FROM CUSTOMIZER', 'square'); ?></strong></p>
         <ol>
-            <li><?php echo esc_html__('Go to Appearance > Customize', 'square'); ?></li>
-            <li><?php echo sprintf(esc_html__('Click on "%s" and turn on the option for "Enable FrontPage" Setting', 'square'), '<a href="' . admin_url('customize.php?autofocus[section]=static_front_page') . '" target="_blank">' . esc_html__('Homepage Settings', 'square') . '</a>'); ?> </li>
-            <li><?php echo esc_html__('Now go back and click on "Front Page Sections" and set up the FrontPage Section', 'square'); ?> </li>
+            <li><?php echo sprintf(esc_html__('Go to Appearance > Customize > %s.', 'square'), '<a href="' . admin_url('customize.php?autofocus[section]=static_front_page') . '" target="_blank">' . esc_html__('Homepage Settings', 'square') . '</a>'); ?></li>
+            <li><?php echo esc_html__('Activate "Enable Home Sections".', 'square'); ?> </li>
+            <li><?php echo esc_html__('Go back, select "Home Page Sections", and configure the sections as needed.', 'square'); ?> </li>
         </ol>
         <p><strong><?php echo esc_html__('FROM ELEMENTOR', 'square'); ?></strong></p>
         <ol>
-            <li><?php printf(esc_html__('Firstly install and activate "Elementor" and "Hash Elements" plugin from %s.', 'square'), '<a href="' . admin_url('admin.php?page=square-welcome&section=recommended_plugins') . '" target="_blank">' . esc_html__('Recommended Plugin page', 'square') . '</a>'); ?></li>
-            <li><?php echo esc_html__('Create a new page and edit with Elementor. Drag and drop the news elements in the Elementor to create your own design.', 'square'); ?></li>
-            <li><?php echo esc_html__('Now go to Appearance > Customize > Homepage Settings and choose "A static page" for "Your latest posts" and select the created page for "Home Page" option.', 'square'); ?> </li>
+            <li><?php printf(esc_html__('Install and activate the "Elementor" and "Hash Elements" plugins from the %s.', 'square'), '<a href="' . admin_url('admin.php?page=square-welcome&section=recommended_plugins') . '" target="_blank">' . esc_html__('Recommended Plugin Page', 'square') . '</a>'); ?></li>
+            <li><?php echo esc_html__('Create a new page and edit it with Elementor. Drag and drop the Elementor widgets to design your homepage.', 'square'); ?></li>
+            <li><?php echo sprintf(esc_html__('Go to Appearance > Customize > %s, choose "A static page" for the "Your homepage displays" option, deactivate "Enable Home Section" and select the newly created page in "Homepage" select box.', 'square'), '<a href="' . admin_url('customize.php?autofocus[section]=static_front_page') . '" target="_blank">' . esc_html__('Homepage Settings', 'square') . '</a>'); ?> </li>
         </ol>
-        <p style="margin-bottom: 0"><?php printf(esc_html__('For detailed documentation, please visit %s.', 'square'), '<a href="https://hashthemes.com/documentation/square-documentation/#HomePageSetup" target="_blank">' . esc_html__('Documentation Page', 'square') . '</a>'); ?></p>
+        <p style="margin-bottom: 0"><?php printf(esc_html__('For step-by-step guidance, please refer to the %s.', 'square'), '<a href="https://hashthemes.com/documentation/square-documentation/#HomePageSetup" target="_blank">' . esc_html__('Documentation Page', 'square') . '</a>'); ?></p>
     </div>
 
     <div class="welcome-demo-import">

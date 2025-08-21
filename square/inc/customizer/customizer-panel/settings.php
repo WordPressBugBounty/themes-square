@@ -21,7 +21,7 @@ $header_bg_choices = array(
 $square_pro_features = '<ul class="upsell-features">
 	<li>' . esc_html__("4 more demos that can be imported with one click", "square") . '</li>
     <li>' . esc_html__("Elementor compatible - Built your Home Page with Customizer or Elementor whichever you like", "square") . '</li>
-	<li>' . esc_html__("19 Front Page sections with multiple styles (Highlight, Service, Portfolio, Tab, Team, Testimonial, Pricing, Blog, Counter, Call To Action, Logo Carousel, Contact section with google map)", "square") . '</li>
+	<li>' . esc_html__("19 Home Page sections with multiple styles (Highlight, Service, Portfolio, Tab, Team, Testimonial, Pricing, Blog, Counter, Call To Action, Logo Carousel, Contact section with google map)", "square") . '</li>
 	<li>' . esc_html__("Section reorder", "square") . '</li>
 	<li>' . esc_html__("Video background, Image Motion background, Parallax background, Gradient background option for each section", "square") . '</li>
 	<li>' . esc_html__("4 icon pack for icon picker (5000+ icons)", "square") . '</li>
@@ -103,8 +103,8 @@ $wp_customize->add_setting('square_enable_frontpage', array(
 
 $wp_customize->add_control(new Square_Toggle_Control($wp_customize, 'square_enable_frontpage', array(
     'section' => 'static_front_page',
-    'label' => esc_html__('Enable FrontPage', 'square'),
-    'description' => sprintf(esc_html__('Overwrites the homepage displays setting and shows the frontpage for Customizer %s', 'square'), '<a href="javascript:wp.customize.panel(\'square_home_settings_panel\').focus()">' . esc_html__('Front Page Sections', 'square') . '</a>') . '<br/><br/>' . esc_html__('Do not enable this option if you want to use Elementor in home page.', 'square')
+    'label' => esc_html__('Enable Home Sections', 'square'),
+    'description' => sprintf(esc_html__('Overwrites the homepage displays setting and shows the frontpage for Customizer %s', 'square'), '<a href="javascript:wp.customize.panel(\'square_home_settings_panel\').focus()">' . esc_html__('Home Page Sections', 'square') . '</a>') . '<br/><br/>' . esc_html__('Do not enable this option if you want to use Elementor in home page.', 'square')
 )));
 
 /* ============GENERAL SETTINGS PANEL============ */

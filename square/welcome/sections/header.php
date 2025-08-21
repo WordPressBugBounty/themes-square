@@ -10,7 +10,7 @@
             <?php
             printf(// WPCS: XSS OK.
                 /* translators: 1-theme name */
-                esc_html__('Welcome and thank you for installing %1$s. Getting started with %1$s is very easy. Here you will find all the necessary information required to get started with the theme. And of course, the premium version if you require more features.', 'square'), $this->theme_name);
+                esc_html__('Welcome to %1$s - Thank You for Installing! Getting started with %1$s is quick and simple. Here, you\'ll find all the essential information you need to set up and begin using the theme with ease. And if you\'d like to unlock even more features and flexibility, you can always upgrade to the Premium version.', 'square'), $this->theme_name);
             ?>
         </div>
 
