@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Square 1.0.0\n"
 "Report-Msgid-Bugs-To: http://hashthemes.com/\n"
-"POT-Creation-Date: 2025-08-20 12:05+0000\n"
+"POT-Creation-Date: 2025-11-20 12:01+0000\n"
 "POT-Revision-Date: Thu Jul 14 2016 22:42:45 GMT+0545 (Nepal Standard Time)\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Hash Themes <hashthemes@gmail.com>\n"
@@ -491,6 +491,10 @@ msgstr ""
 
 #: inc/customizer/customizer-panel/settings.php:18
 msgid "Black"
+msgstr ""
+
+#: inc/customizer/customizer-panel/settings.php:55
+msgid "Black Friday & Cyber Monday Discount!"
 msgstr ""
 
 #. Name of the template
@@ -1371,6 +1375,14 @@ msgstr ""
 msgid "Left Top"
 msgstr ""
 
+#: inc/starter-content.php:51
+msgid "Let's get started by Customizing the website."
+msgstr ""
+
+#: inc/starter-content.php:59
+msgid "Let's go!"
+msgstr ""
+
 #: inc/customizer/custom-controls/typography/typography-control-class.php:51
 msgid "Letter Spacing"
 msgstr ""
@@ -1631,7 +1643,7 @@ msgstr ""
 msgid "Pricing - 4 styles"
 msgstr ""
 
-#: functions.php:41
+#: functions.php:41 inc/starter-content.php:213
 msgid "Primary Menu"
 msgstr ""
 
@@ -1974,6 +1986,10 @@ msgstr ""
 msgid "Text Transform"
 msgstr ""
 
+#: inc/starter-content.php:48
+msgid "Thank you for installing the Square Theme"
+msgstr ""
+
 #: welcome/sections/footer.php:66
 #, php-format
 msgid ""
@@ -2132,6 +2148,51 @@ msgstr ""
 msgid "The website runs smoothly in all major browsers."
 msgstr ""
 
+#: inc/starter-content.php:109
+msgctxt "Theme starter content"
+msgid "About Us"
+msgstr ""
+
+#: inc/starter-content.php:202
+msgctxt "Theme starter content"
+msgid "FAQ's"
+msgstr ""
+
+#: inc/starter-content.php:209
+msgctxt "Theme starter content"
+msgid "Our Clients"
+msgstr ""
+
+#: inc/starter-content.php:199
+msgctxt "Theme starter content"
+msgid "Our Mission"
+msgstr ""
+
+#: inc/starter-content.php:200
+msgctxt "Theme starter content"
+msgid "Our Services"
+msgstr ""
+
+#: inc/starter-content.php:203
+msgctxt "Theme starter content"
+msgid "Request Quote"
+msgstr ""
+
+#: inc/starter-content.php:166
+msgctxt "Theme starter content"
+msgid "Slider"
+msgstr ""
+
+#: inc/starter-content.php:170
+msgctxt "Theme starter content"
+msgid "Square Logo"
+msgstr ""
+
+#: inc/starter-content.php:201
+msgctxt "Theme starter content"
+msgid "Team"
+msgstr ""
+
 #: welcome/sections/footer.php:5
 msgid "These demos are available in both Customizer and Elementor version."
 msgstr ""
@@ -2258,8 +2319,11 @@ msgid "Upgrade to PRO"
 msgstr ""
 
 #: welcome/sections/free_vs_pro.php:21 welcome/sections/free_vs_pro.php:408
-#: inc/customizer/customizer-panel/settings.php:56
 msgid "Upgrade to Pro"
+msgstr ""
+
+#: inc/customizer/customizer-panel/settings.php:56
+msgid "Upgrade to Pro (40% OFF)"
 msgstr ""
 
 #: welcome/sections/free_vs_pro.php:22 welcome/sections/free_vs_pro.php:409

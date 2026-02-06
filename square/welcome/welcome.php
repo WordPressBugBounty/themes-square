@@ -55,6 +55,12 @@ if (!class_exists('Square_Welcome')):
                     'filename' => 'simple-floating-menu',
                     'thumb_path' => 'https://ps.w.org/simple-floating-menu/assets/icon-256x256.png'
                 ),
+                'onyx-dark-mode-switcher' => array(
+                    'name' => 'Onyx Dark Mode Switcher',
+                    'slug' => 'onyx-dark-mode-switcher',
+                    'filename' => 'onyx-dark-mode-switcher',
+                    'thumb_path' => 'https://ps.w.org/onyx-dark-mode-switcher/assets/icon-256x256.png'
+                )
             );
 
             /* Create a Welcome Page */

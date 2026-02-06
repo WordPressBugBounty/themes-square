@@ -64,7 +64,7 @@
     </tr>
     <tr>
         <td>
-            <span><?php esc_html_e('5) Elementor Widgets', 'square'); ?> - <a href="https://hashthemes.com/documentation/square-plus-documentation/#I)ElementorModule" target="_blank"><?php esc_html_e('View Demo', 'square'); ?></a></span>
+            <span><?php esc_html_e('5) Elementor Widgets', 'square'); ?> - <a href="https://hashthemes.com/documentation/square-plus-documentation/#I.ElementorModule" target="_blank"><?php esc_html_e('View Demo', 'square'); ?></a></span>
             <p><?php esc_html_e('Elementor provides you with unlimited possibilities to create the website of your imagination.', 'square'); ?></p>
         </td>
         <td>5 Widgets</td>
@@ -72,7 +72,7 @@
     </tr>
     <tr>
         <td>
-            <span><?php esc_html_e('6) Elementor Section Extenders', 'square'); ?> - <a href="https://hashthemes.com/documentation/square-plus-documentation/#II)ElementorExtender" target="_blank"><?php esc_html_e('View Demo', 'square'); ?></a></span>
+            <span><?php esc_html_e('6) Elementor Section Extenders', 'square'); ?> - <a href="https://hashthemes.com/documentation/square-plus-documentation/#III.ElementorExtender" target="_blank"><?php esc_html_e('View Demo', 'square'); ?></a></span>
             <p><?php esc_html_e('You can extend the Elementor section with amazing interactive extenders like Parallax Background, Parallax Animation, Colors Animation, Water Ripples, Particles Background, Background Effects & lot more.', 'square'); ?></p>
         </td>
         <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/no.png'); ?>" alt="No"></td>
@@ -88,7 +88,7 @@
     </tr>
     <tr>
         <td>
-            <span><?php esc_html_e('8) Multiple Header Layouts and Settings', 'square'); ?> - <a href="https://hashthemes.com/documentation/square-plus-documentation/#III)MainHeader" target="_blank"><?php esc_html_e('Detail', 'square'); ?></a></span>
+            <span><?php esc_html_e('8) Multiple Header Layouts and Settings', 'square'); ?> - <a href="https://hashthemes.com/documentation/square-plus-documentation/#III.MainHeader" target="_blank"><?php esc_html_e('Detail', 'square'); ?></a></span>
             <p><?php esc_html_e('The premium version gives the option to choose from 6 header layouts. Additionally, it allows changing the header background color, text color, header height, and more.', 'square'); ?></p>
         </td>
         <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/no.png'); ?>" alt="No"></td>
@@ -198,7 +198,7 @@
     </tr>
     <tr>
         <td>
-            <span><?php esc_html_e('20) Top Header Bar', 'square'); ?> - <a href="https://hashthemes.com/documentation/square-plus-documentation/#II)TopHeader" target="_blank"><?php esc_html_e('Detail', 'square'); ?></a></span>
+            <span><?php esc_html_e('20) Top Header Bar', 'square'); ?> - <a href="https://hashthemes.com/documentation/square-plus-documentation/#II.TopHeader" target="_blank"><?php esc_html_e('Detail', 'square'); ?></a></span>
             <p><?php esc_html_e('Square Plus comes with an option for the top bar where you can add a contact address, social icon, language picker, or any informative text.', 'square'); ?></p>
         </td>
         <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/no.png'); ?>" alt="No"></td>
@@ -222,7 +222,7 @@
     </tr>
     <tr>
         <td>
-            <span><?php esc_html_e('23) PreLoader Option', 'square'); ?> - <a href="https://hashthemes.com/documentation/square-plus-documentation/#II)PreloaderOptions" target="_blank"><?php esc_html_e('Detail', 'square'); ?></a></span>
+            <span><?php esc_html_e('23) PreLoader Option', 'square'); ?> - <a href="https://hashthemes.com/documentation/square-plus-documentation/#II.PreloaderOptions" target="_blank"><?php esc_html_e('Detail', 'square'); ?></a></span>
             <p><?php esc_html_e('The loading screen appears until the website is fully loaded. The premium version has the option to choose from 16 preloaders or add your preloader image as well.', 'square'); ?></p>
         </td>
         <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/no.png'); ?>" alt="No"></td>

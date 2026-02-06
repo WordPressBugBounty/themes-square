@@ -394,6 +394,11 @@ require get_template_directory() . '/welcome/welcome.php';
  * Dynamic Styles additions.
  */
 require get_template_directory() . '/inc/style.php';
+
+/**
+ * Starter Content additions.
+ */
+require get_template_directory() . '/inc/starter-content.php';
 /**
  * Widgets additions.
  */

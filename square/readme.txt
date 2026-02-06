@@ -4,11 +4,11 @@ Square is distributed under the terms of the GNU GPL (http://www.gnu.org/license
 
 Contributors: hashthemes
 Requires at least: 6.3
-Tested up to: 6.7
-Requires PHP: 7.4
+Tested up to: 6.9
+Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable tag: 2.0.61
+Stable tag: 2.0.68
 
 == Description ==
 Square is a beautifully crafted WordPress theme with lots of exciting feature to cherish. Make your website in no time with the use of powerful customizer panel available in the Square Theme. Never the less, it is a good theme you will ever find.
@@ -20,6 +20,24 @@ Square is a beautifully crafted WordPress theme with lots of exciting feature to
 3. Click Activate to use your new theme right away.
 
 == Changelog ==
+= 2.0.68 - Jan 18, 2026 =
+* Christmas & New Year discount banner - Removed
+
+= 2.0.67 - Dec 22, 2025 =
+* Christmas & New Year discount banner - Added
+
+= 2.0.66 - Dec 07, 2025 =
+* Black Friday discount banner - Removed
+
+= 2.0.65 - Nov 20, 2025 =
+* Black Friday discount banner - Added
+
+= 2.0.63 - Nov 10, 2025 =
+* Starter Content Notice bug - Fixed
+
+= 2.0.62 - Oct 15, 2025 =
+* Starter content - Added
+
 = 2.0.61 - Aug 20, 2025 =
 * Typo fixes in welcome page and customizer
 
