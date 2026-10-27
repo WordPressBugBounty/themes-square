@@ -8,7 +8,7 @@ Tested up to: 6.9
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable tag: 2.0.68
+Stable tag: 2.0.70
 
 == Description ==
 Square is a beautifully crafted WordPress theme with lots of exciting feature to cherish. Make your website in no time with the use of powerful customizer panel available in the Square Theme. Never the less, it is a good theme you will ever find.
@@ -20,6 +20,15 @@ Square is a beautifully crafted WordPress theme with lots of exciting feature to
 3. Click Activate to use your new theme right away.
 
 == Changelog ==
+= 2.0.70 - Oct 26, 2026 =
+* Starter content rewritten with real sample text, a three-slide banner, team photos for the About section, filled-in tabs, client logos and three blog posts with images, so new sites and the WordPress.org theme preview show every home section filled in - Changed
+* Home sections were empty in the WordPress.org theme preview, as their pages were looked up with a database query the preview's starter content can't answer - Fixed
+* Logo did not show in the WordPress.org theme preview - Fixed
+* Fonts uploaded with Hash Custom Font Uploader are no longer also loaded from Google Fonts when they share a name - Fixed
+
+= 2.0.69 - Apr 1, 2026 =
+* Translation Fixes
+
 = 2.0.68 - Jan 18, 2026 =
 * Christmas & New Year discount banner - Removed
 

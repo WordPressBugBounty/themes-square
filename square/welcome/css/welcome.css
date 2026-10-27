@@ -74,8 +74,22 @@
 .free-pro-demos a.button .dashicons {
     height: auto;
     width: auto;
-    line-height: 42px;
+    line-height: 42px !important;
     margin-right: 8px;
+    color: #FFF !important;
+    vertical-align: inherit !important;
+}
+
+/* Seasonal sale banner on the welcome screen. Rendered only while a campaign
+   window is open - see square_get_active_campaign(). */
+.welcome-sale-banner {
+    display: block;
+    margin-bottom: 40px;
+}
+
+.welcome-sale-banner img {
+    width: 100%;
+    display: block;
 }
 
 .welcome-promo-banner {
@@ -98,6 +112,32 @@
     padding: 10px;
     font-weight: bold;
     white-space: normal;
+}
+
+/* The reassurance points sit with the button, not buried in the Free vs Pro
+   tab, because "is this a subscription?" is what stalls the click. */
+.welcome-promo-points {
+    margin: 0 0 15px;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.welcome-promo-points li {
+    margin: 0 0 6px;
+    font-size: 13px;
+    line-height: 1.5;
+    display: flex;
+    align-items: flex-start;
+}
+
+.welcome-promo-points .dashicons {
+    color: #46b450;
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+    flex: 0 0 auto;
 }
 
 .welcome-promo-offer {
@@ -237,7 +277,7 @@
     position: relative;
     font-size: 14px;
     font-weight: 600;
-    line-height: 26px;
+    line-height: 36px;
     padding: 10px 15px;
     border-top: 1px solid #EEE;
     overflow: hidden;
@@ -251,8 +291,8 @@
     top: 0;
     bottom: 0;
     right: 0;
-    height: 46px;
-    padding: 10px 20px;
+    height: 56px;
+    padding: 8px;
     background: rgba(244, 244, 244, .7);
     border-left: 1px solid rgba(0, 0, 0, .05);
 }
@@ -331,6 +371,17 @@ table.comparison-table th {
 table.comparison-table th p:last-child,
 table.comparison-table td p:last-child {
     margin-bottom: 0;
+}
+
+/* Feature rows are numbered here rather than in the PHP, so a row can be
+   inserted without renumbering - and retranslating - every row below it. */
+table.comparison-table {
+    counter-reset: comparison-feature;
+}
+
+table.comparison-table tr.feature-row > td:first-child > span::before {
+    counter-increment: comparison-feature;
+    content: counter(comparison-feature) ") ";
 }
 
 table.comparison-table td span {
@@ -450,9 +501,6 @@ a.buy-pro-btn:hover {
 
 .square-welcome-info .button {
     margin: 0;
-    padding: 12px 36px;
-    height: auto;
-    line-height: 1.5;
     white-space: normal;
 }
 

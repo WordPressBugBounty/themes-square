@@ -67,5 +67,5 @@
         <p><?php echo esc_html__('Experience the full potential of the Premium version with complete peace of mind. If it doesn\'t meet your needs, you\'re covered by our 7 day money back guarantee.', 'square'); ?></p>
     </div>
 
-    <a class="upgrade-button" href="https://hashthemes.com/wordpress-theme/square-plus/?utm_source=wordpress&utm_medium=square-footer&utm_campaign=square-upgrade" target="_blank"><?php esc_html_e('Upgrade Now', 'square'); ?></a>
+    <a class="upgrade-button" href="<?php echo esc_url(square_upgrade_url('welcome-footer', 'square-footer')); ?>" target="_blank"><?php esc_html_e('Upgrade Now', 'square'); ?></a>
 </div>

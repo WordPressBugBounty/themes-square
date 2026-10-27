@@ -50,11 +50,16 @@ $square_pro_features = '<ul class="upsell-features">
 	<a class="ht-implink" href="' . admin_url('admin.php?page=square-welcome&section=free_vs_pro') . '" target="_blank">' . esc_html__("Comparision - Free Vs Pro", "square") . '</a>';
 
 
+// Seasonal campaigns swap the banner copy automatically - see square_get_active_campaign().
+$square_campaign = square_get_active_campaign();
+$square_banner_title = $square_campaign ? $square_campaign['title'] : esc_html__('One-time payment. Unlimited sites. Lifetime updates.', 'square');
+$square_banner_button = $square_campaign ? $square_campaign['button'] : esc_html__('Get Square Plus - $65', 'square');
+
 $wp_customize->add_section(new Square_Upgrade_Section($wp_customize, 'square-pro-section', array(
     'priority' => 0,
-    //'title' => esc_html__('Christmas & New Year Discount!', 'square'),
-    'upgrade_text' => esc_html__('Upgrade to Pro', 'square'),
-    'upgrade_url' => 'https://hashthemes.com/wordpress-theme/square-plus/?utm_source=wordpress&utm_medium=square-customizer-button&utm_campaign=square-upgrade',
+    'title' => $square_banner_title,
+    'upgrade_text' => $square_banner_button,
+    'upgrade_url' => square_upgrade_url($square_campaign ? 'banner-' . $square_campaign['id'] : 'banner', 'square-customizer-button'),
 )));
 
 $wp_customize->add_section(new Square_Upgrade_Section($wp_customize, 'square-doc-section', array(
@@ -92,7 +97,7 @@ $wp_customize->add_control(new Square_Upgrade_Info_Control($wp_customize, 'squar
     'priority' => 100,
     'active_callback' => 'square_is_upgrade_notice_active',
     'upgrade_text' => esc_html__('Upgrade to PRO', 'square'),
-    'upgrade_url' => 'https://hashthemes.com/wordpress-theme/square-plus/?utm_source=wordpress&utm_medium=square-link&utm_campaign=square-upgrade'
+    'upgrade_url' => square_upgrade_url('sec-demo-import')
 )));
 
 /* ============HOMEPAGE SETTINGS PANEL============ */
@@ -135,7 +140,7 @@ $wp_customize->add_control(new Square_Upgrade_Info_Control($wp_customize, 'squar
     ),
     'priority' => 100,
     'upgrade_text' => esc_html__('Upgrade to PRO', 'square'),
-    'upgrade_url' => 'https://hashthemes.com/wordpress-theme/square-plus/?utm_source=wordpress&utm_medium=square-link&utm_campaign=square-upgrade',
+    'upgrade_url' => square_upgrade_url('sec-title-tagline'),
     'active_callback' => 'square_is_upgrade_notice_active'
 )));
 
@@ -207,7 +212,7 @@ $wp_customize->add_control(new Square_Upgrade_Info_Control($wp_customize, 'squar
     ),
     'priority' => 100,
     'upgrade_text' => esc_html__('Upgrade to PRO', 'square'),
-    'upgrade_url' => 'https://hashthemes.com/wordpress-theme/square-plus/?utm_source=wordpress&utm_medium=square-link&utm_campaign=square-upgrade',
+    'upgrade_url' => square_upgrade_url('sec-header'),
     'active_callback' => 'square_is_upgrade_notice_active'
 )));
 
@@ -261,7 +266,7 @@ $wp_customize->add_control(new Square_Upgrade_Info_Control($wp_customize, 'squar
     ),
     'priority' => 100,
     'upgrade_text' => esc_html__('Upgrade to PRO', 'square'),
-    'upgrade_url' => 'https://hashthemes.com/wordpress-theme/square-plus/?utm_source=wordpress&utm_medium=square-link&utm_campaign=square-upgrade',
+    'upgrade_url' => square_upgrade_url('sec-blog'),
     'active_callback' => 'square_is_upgrade_notice_active'
 )));
 
@@ -446,7 +451,7 @@ $wp_customize->add_control(new Square_Upgrade_Info_Control($wp_customize, 'squar
     ),
     'priority' => 100,
     'upgrade_text' => esc_html__('Upgrade to PRO', 'square'),
-    'upgrade_url' => 'https://hashthemes.com/wordpress-theme/square-plus/?utm_source=wordpress&utm_medium=square-link&utm_campaign=square-upgrade',
+    'upgrade_url' => square_upgrade_url('sec-custom-fonts'),
     'active_callback' => 'square_is_upgrade_notice_active'
 )));
 
@@ -594,7 +599,7 @@ $wp_customize->add_control(new Square_Upgrade_Info_Control($wp_customize, 'squar
     ),
     'priority' => 100,
     'upgrade_text' => esc_html__('Upgrade to PRO', 'square'),
-    'upgrade_url' => 'https://hashthemes.com/wordpress-theme/square-plus/?utm_source=wordpress&utm_medium=square-link&utm_campaign=square-upgrade',
+    'upgrade_url' => square_upgrade_url('sec-home-slider'),
     'active_callback' => 'square_is_upgrade_notice_active'
 )));
 
@@ -672,7 +677,7 @@ $wp_customize->add_control(new Square_Upgrade_Info_Control($wp_customize, 'squar
     ),
     'priority' => 100,
     'upgrade_text' => esc_html__('Upgrade to PRO', 'square'),
-    'upgrade_url' => 'https://hashthemes.com/wordpress-theme/square-plus/?utm_source=wordpress&utm_medium=square-link&utm_campaign=square-upgrade',
+    'upgrade_url' => square_upgrade_url('sec-home-featured'),
     'active_callback' => 'square_is_upgrade_notice_active'
 )));
 
@@ -755,7 +760,7 @@ $wp_customize->add_control(new Square_Upgrade_Info_Control($wp_customize, 'squar
     ),
     'priority' => 100,
     'upgrade_text' => esc_html__('Upgrade to PRO', 'square'),
-    'upgrade_url' => 'https://hashthemes.com/wordpress-theme/square-plus/?utm_source=wordpress&utm_medium=square-link&utm_campaign=square-upgrade',
+    'upgrade_url' => square_upgrade_url('sec-home-about'),
     'active_callback' => 'square_is_upgrade_notice_active'
 )));
 
@@ -847,7 +852,7 @@ $wp_customize->add_control(new Square_Upgrade_Info_Control($wp_customize, 'squar
     ),
     'priority' => 100,
     'upgrade_text' => esc_html__('Upgrade to PRO', 'square'),
-    'upgrade_url' => 'https://hashthemes.com/wordpress-theme/square-plus/?utm_source=wordpress&utm_medium=square-link&utm_campaign=square-upgrade',
+    'upgrade_url' => square_upgrade_url('sec-home-tab'),
     'active_callback' => 'square_is_upgrade_notice_active'
 )));
 
@@ -919,7 +924,7 @@ $wp_customize->add_control(new Square_Upgrade_Info_Control($wp_customize, 'squar
     ),
     'priority' => 100,
     'upgrade_text' => esc_html__('Upgrade to PRO', 'square'),
-    'upgrade_url' => 'https://hashthemes.com/wordpress-theme/square-plus/?utm_source=wordpress&utm_medium=square-link&utm_campaign=square-upgrade',
+    'upgrade_url' => square_upgrade_url('sec-home-logo'),
     'active_callback' => 'square_is_upgrade_notice_active'
 )));
 
@@ -927,26 +932,61 @@ $wp_customize->add_section(new Square_Upgrade_Section($wp_customize, 'square-upg
     'title' => esc_html__('More Sections on Premium', 'square'),
     'panel' => 'square_home_settings_panel',
     'priority' => 1000,
+    // The Pro-only sections now have a row each, so this box carries only what
+    // those rows cannot say - what Pro adds to every section, free or not.
     'options' => array(
-        esc_html__('--Drag and Drop Reorder Sections--', 'square'),
-        esc_html__('- Highlight Section', 'square'),
-        esc_html__('- Service Section', 'square'),
-        esc_html__('- Portfolio Section', 'square'),
-        esc_html__('- Portfolio Slider Section', 'square'),
-        esc_html__('- Content Slider Section', 'square'),
-        esc_html__('- Team Section', 'square'),
-        esc_html__('- Testimonial Section', 'square'),
-        esc_html__('- Pricing Section', 'square'),
-        esc_html__('- Blog Section', 'square'),
-        esc_html__('- Counter Section', 'square'),
-        esc_html__('- Call To Action Section', 'square'),
-        esc_html__('------------------------', 'square'),
+        esc_html__('- Drag and drop to reorder every section', 'square'),
+        esc_html__('- Every section above gains more layouts and customization options', 'square'),
+        esc_html__('- Unlimited blocks per section, with a choice of columns per row', 'square'),
+        esc_html__('- Video, image motion, parallax and gradient backgrounds per section', 'square'),
+        esc_html__('- Shape dividers and full screen height for any section', 'square'),
+        esc_html('------------------------'),
         esc_html__('- Elementor Pagebuilder Compatible. All the above sections can be created with Elementor Page Builder or Customizer whichever you like.', 'square'),
     ),
     'upgrade_text' => esc_html__('Upgrade to PRO', 'square'),
-    'upgrade_url' => 'https://hashthemes.com/wordpress-theme/square-plus/?utm_source=wordpress&utm_medium=square-link&utm_campaign=square-upgrade',
+    'upgrade_url' => square_upgrade_url('sec-home-more'),
     'active_callback' => 'square_is_upgrade_notice_active'
 )));
+
+/*
+ *  Home page sections that exist only in Square Plus.
+ *
+ *  Listed individually, in the order Square Plus registers them, rather than
+ *  only as names inside the summary box above - a row per section makes it
+ *  clear what each one is and lets each be tracked separately. Priorities start
+ *  just above the default so these sit after the free sections without
+ *  reordering them. Titles match what Square Plus calls each section, so what
+ *  someone is promised here is what they find after upgrading.
+ */
+
+$square_pro_home_sections = array(
+    'highlight' => array(esc_html__('Highlight Section', 'square'), 161),
+    'portfolio' => array(esc_html__('Portfolio Masonary Section', 'square'), 162),
+    'portfolioslider' => array(esc_html__('Portfolio Slider Section', 'square'), 163),
+    'service' => array(esc_html__('Service Section', 'square'), 164),
+    'team' => array(esc_html__('Team Section', 'square'), 165),
+    'counter' => array(esc_html__('Counter Section', 'square'), 166),
+    'testimonial' => array(esc_html__('Testimonial Section', 'square'), 167),
+    'pricing' => array(esc_html__('Pricing Section', 'square'), 168),
+    'news' => array(esc_html__('Content Slider Section', 'square'), 169),
+    'blog' => array(esc_html__('Blog Section', 'square'), 170),
+    'cta' => array(esc_html__('Call To Action Section', 'square'), 171),
+    'contact' => array(esc_html__('Contact Section', 'square'), 172),
+    'customa' => array(esc_html__('Custom Section A', 'square'), 173),
+    'customb' => array(esc_html__('Custom Section B', 'square'), 174),
+);
+
+foreach ($square_pro_home_sections as $square_pro_key => $square_pro_section) {
+    $wp_customize->add_section(new Square_Upgrade_Section($wp_customize, 'square-' . $square_pro_key . '-upgrade-section', array(
+        'title' => $square_pro_section[0],
+        'panel' => 'square_home_settings_panel',
+        'priority' => $square_pro_section[1],
+        'class' => 'ht--single-row ht--pro-row',
+        'upgrade_text' => esc_html__('Get Pro', 'square'),
+        'upgrade_url' => square_upgrade_url('sec-home-' . $square_pro_key),
+        'active_callback' => 'square_is_upgrade_notice_active'
+    )));
+}
 
 /* ============SOCIAL ICONS SECTION============ */
 $wp_customize->add_section('square_social_sec', array(
@@ -1035,7 +1075,7 @@ $wp_customize->add_control(new Square_Upgrade_Info_Control($wp_customize, 'squar
     'priority' => 100,
     'active_callback' => 'square_is_upgrade_notice_active',
     'upgrade_text' => esc_html__('Upgrade to PRO', 'square'),
-    'upgrade_url' => 'https://hashthemes.com/wordpress-theme/square-plus/?utm_source=wordpress&utm_medium=square-link&utm_campaign=square-upgrade'
+    'upgrade_url' => square_upgrade_url('sec-social')
 )));
 
 

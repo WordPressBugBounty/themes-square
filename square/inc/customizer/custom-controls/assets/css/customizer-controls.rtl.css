@@ -1384,9 +1384,36 @@
 }
 
 /*Upgrade Section*/
-.control-section-ht--upgrade-section.ht--single-row .button {
-    float: left;
-    margin-top: -2px;
+.control-section-ht--upgrade-section.ht--single-row h3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.control-section-ht--upgrade-section.ht--single-row h3 .button{
+    min-height: 30px;
+    line-height: 28px;
+}
+
+/* Pro-only rows carry a lock so they read as locked at a glance, not as a
+   setting that is merely collapsed. */
+.control-section-ht--upgrade-section.ht--pro-row .accordion-section-title:before {
+    font-family: dashicons;
+    content: "\f160";
+    font-size: 18px;
+    line-height: 1;
+    margin-left: 8px;
+    color: #2271b1;
+    display: inline-block;
+    flex: 0 0 auto;
+}
+
+.control-section-ht--upgrade-section.ht--pro-row.ht--single-row h3 {
+    justify-content: flex-start;
+}
+
+.control-section-ht--upgrade-section.ht--pro-row.ht--single-row h3 .button {
+    margin-right: auto;
 }
 
 .control-section-ht--upgrade-section .accordion-section-title:after{

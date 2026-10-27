@@ -1,5 +1,22 @@
 <div class="welcome-header clearfix">
-    <!--<a href="<?php echo esc_url('https://hashthemes.com/wordpress-theme/square-plus/?utm_source=wordpress&utm_medium=square-blackfriday&utm_campaign=square-upgrade'); ?>" target="_blank"><img style="width:100%;margin-bottom:40px;display:block;" src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/christmas-sale.jpg'); ?>"></a>-->
+<?php
+/*
+ *  Seasonal sale banner.
+ *
+ *  This used to be a commented-out block that had to be uncommented each
+ *  November and remembered again in January. It now opens and closes on the
+ *  same campaign window as the customizer banner.
+ */
+$square_header_campaign = square_get_active_campaign();
+
+if ($square_header_campaign && !empty($square_header_campaign['image'])) {
+    ?>
+    <a class="welcome-sale-banner" target="_blank" href="<?php echo esc_url(square_upgrade_url('welcome-banner-' . $square_header_campaign['id'], 'square-welcome-banner')); ?>">
+        <img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/' . $square_header_campaign['image']); ?>" alt="<?php echo esc_attr($square_header_campaign['title']); ?>">
+    </a>
+    <?php
+}
+?>
     <div class="welcome-intro">
         <h2><?php
         printf(// WPCS: XSS OK.
@@ -21,8 +38,14 @@
     </div>
 
     <div class="welcome-promo-banner">
-        <a class="welcome-promo-offer" href="<?php echo esc_url('https://hashthemes.com/wordpress-theme/square-plus/?utm_source=wordpress&utm_medium=square-welcome&utm_campaign=square-upgrade'); ?>" target="_blank"><?php echo esc_html__('Unlock all the possibilities with Square Plus.', 'square'); ?></a>
-        <a href="<?php echo esc_url('https://hashthemes.com/wordpress-theme/square-plus/?utm_source=wordpress&utm_medium=square-welcome&utm_campaign=square-upgrade'); ?>" target="_blank" class="button button-primary upgrade-btn"><?php echo esc_html__('UPGRADE TO PRO', 'square'); ?></a>
+        <a class="welcome-promo-offer" href="<?php echo esc_url(square_upgrade_url('welcome-promo-offer', 'square-welcome')); ?>" target="_blank"><?php echo esc_html__('Unlock all the possibilities with Square Plus.', 'square'); ?></a>
+        <ul class="welcome-promo-points">
+            <li><span class="dashicons dashicons-yes"></span><?php echo esc_html__('One time payment, no renewals', 'square'); ?></li>
+            <li><span class="dashicons dashicons-yes"></span><?php echo esc_html__('Use on unlimited websites', 'square'); ?></li>
+            <li><span class="dashicons dashicons-yes"></span><?php echo esc_html__('Lifetime updates included', 'square'); ?></li>
+        </ul>
+
+        <a href="<?php echo esc_url(square_upgrade_url('welcome-promo-button', 'square-welcome')); ?>" target="_blank" class="button button-primary upgrade-btn"><?php echo esc_html__('UPGRADE TO PRO', 'square'); ?></a>
     </div>
 </div>
 

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Square 1.0.0\n"
 "Report-Msgid-Bugs-To: http://hashthemes.com/\n"
-"POT-Creation-Date: 2025-11-20 12:01+0000\n"
+"POT-Creation-Date: 2026-03-29 11:50+0000\n"
 "POT-Revision-Date: Thu Jul 14 2016 22:42:45 GMT+0545 (Nepal Standard Time)\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Hash Themes <hashthemes@gmail.com>\n"
@@ -44,7 +44,7 @@ msgstr ""
 msgid "%1$s by %2$s"
 msgstr ""
 
-#: welcome/welcome.php:106
+#: welcome/welcome.php:112
 #, php-format
 msgid ""
 "%1$s is now installed and ready to use. You can start either by importing "
@@ -56,7 +56,7 @@ msgstr ""
 msgid "%s Demo"
 msgstr ""
 
-#: welcome/welcome.php:138
+#: welcome/welcome.php:144
 #, php-format
 msgid "%s Settings"
 msgstr ""
@@ -127,61 +127,16 @@ msgstr ""
 msgid "1 Comment"
 msgstr ""
 
-#: welcome/sections/free_vs_pro.php:38
-msgid "1 Demo"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:35
-msgid "1) One Click Demo Import"
-msgstr ""
-
 #: inc/customizer/customizer-panel/settings.php:203
 msgid "10 menu hover styles"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:107
-msgid "10) Advanced Typography Options for Specific Sections"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:115
-msgid "11) Color Options"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:123
-msgid "12) Home Page Section Reorder"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:131
-msgid "13) Home Page Unlimited Blocks for Each Section"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:139
-msgid ""
-"14) Home Page Video Background, Image Motion Background, Gradient Background"
 msgstr ""
 
 #: inc/customizer/customizer-panel/settings.php:42
 msgid "15 custom widgets"
 msgstr ""
 
-#: welcome/sections/free_vs_pro.php:147
-msgid "15) Home Page Sections"
-msgstr ""
-
 #: inc/customizer/customizer-panel/settings.php:30
 msgid "15+ Shape divider to choose from for each section"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:155
-msgid "16) Home Page Blocks - Style Variations"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:177
-msgid "17) Home Page Shape Dividers"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:185
-msgid "18) Home Page Sections with Full Screen Height"
 msgstr ""
 
 #: inc/customizer/customizer-panel/settings.php:24
@@ -191,102 +146,8 @@ msgid ""
 "Carousel, Contact section with google map)"
 msgstr ""
 
-#: welcome/sections/free_vs_pro.php:193
-msgid "19) Home Page Slider"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:43
-msgid "2) GDPR Compliance & Cookies Consent"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:201
-msgid "20) Top Header Bar"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:209
-msgid "21) Add New Widget Area"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:217
-msgid "22) Custom Widgets"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:225
-msgid "23) PreLoader Option"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:233
-msgid "24) Sidebar Layout Options"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:241
-msgid "25) Advanced Blog Settings"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:249
-msgid "26) Blog Layouts"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:263
-msgid "27) Reorder and Show/Hide Elements of Single Post"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:271
-msgid ""
-"28) Author Box, Social Share, and Related Post at the Bottom of the Single "
-"Post"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:279
-msgid "29) Unique Header Background for Each Post and Page"
-msgstr ""
-
 #: inc/customizer/customizer-panel/settings.php:668
 msgid "3 featured block layouts"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:51
-msgid "3) Maintenance Mode"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:287
-msgid "30) Different Background and Text Color for Each Post and Page"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:295
-msgid "31) Hide Header and Footer for Each Post and Page"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:304
-msgid "32) Advanced Footer Setting"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:312
-msgid "33) Remove Footer Credit Text"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:320
-msgid "34) Google Map Option"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:328
-msgid "35) Icon Picker"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:343
-msgid "36) WooCommerce Compatible"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:351
-msgid "37) RTL Ready"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:359
-msgid "38) Multilingual Ready"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:367
-msgid "39) Translation Ready"
 msgstr ""
 
 #: inc/customizer/customizer-panel/settings.php:32
@@ -302,44 +163,16 @@ msgstr ""
 msgid "4 icon pack for icon picker (5000+ icons)"
 msgstr ""
 
-#: welcome/sections/free_vs_pro.php:39
-msgid "4 More Demos"
-msgstr ""
-
 #: inc/customizer/customizer-panel/settings.php:22
 msgid "4 more demos that can be imported with one click"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:59
-msgid "4) Elementor Compatible"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:376
-msgid "40) Search Engine Optimization"
 msgstr ""
 
 #: 404.php:12
 msgid "404 Error"
 msgstr ""
 
-#: welcome/sections/free_vs_pro.php:384
-msgid "41) Major Browser Compatible"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:392
-msgid "42) Responsive - Mobile Friendly"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:400
-msgid "43) Fast and Friendly Support"
-msgstr ""
-
 #: inc/customizer/customizer-panel/settings.php:844
 msgid "5 tab layouts"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:67
-msgid "5) Elementor Widgets"
 msgstr ""
 
 #: inc/customizer/customizer-panel/settings.php:669
@@ -355,28 +188,6 @@ msgstr ""
 
 #: inc/customizer/customizer-panel/settings.php:200
 msgid "6 header styles"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:75
-msgid "6) Elementor Section Extenders"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:83
-msgid "7) Elementor Template/Section Importer"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:91
-msgid "8) Multiple Header Layouts and Settings"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:99
-msgid "9) Mega Menu"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:186
-msgid ""
-"A home page section that covers the full screen despite having less content. "
-"It is useful for a one-page website."
 msgstr ""
 
 #: inc/widgets/widget-contact-info.php:16
@@ -423,16 +234,12 @@ msgstr ""
 msgid "Activate \"Enable Home Sections\"."
 msgstr ""
 
-#: welcome/welcome.php:278
+#: welcome/welcome.php:284
 msgid "Activate Demo Importer Plugin"
 msgstr ""
 
-#: welcome/welcome.php:176
+#: welcome/welcome.php:182
 msgid "Activating Demo Importer Plugin"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:393
-msgid "Adapts to any screen size and displays beautifully."
 msgstr ""
 
 #: inc/customizer/custom-controls/gallery-control.php:36
@@ -441,13 +248,6 @@ msgstr ""
 
 #: inc/customizer/customizer-panel/settings.php:29
 msgid "Add unlimited blocks(like slider, team, testimonial) for each Section"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:63 welcome/sections/free_vs_pro.php:119
-#: welcome/sections/free_vs_pro.php:197 welcome/sections/free_vs_pro.php:237
-#: welcome/sections/free_vs_pro.php:245 welcome/sections/free_vs_pro.php:339
-#: welcome/sections/free_vs_pro.php:347
-msgid "Advanced"
 msgstr ""
 
 #: inc/customizer/customizer-panel/settings.php:40
@@ -482,19 +282,8 @@ msgstr ""
 msgid "Banner Shadow"
 msgstr ""
 
-#: welcome/sections/free_vs_pro.php:62 welcome/sections/free_vs_pro.php:118
-#: welcome/sections/free_vs_pro.php:196 welcome/sections/free_vs_pro.php:236
-#: welcome/sections/free_vs_pro.php:244 welcome/sections/free_vs_pro.php:338
-#: welcome/sections/free_vs_pro.php:346
-msgid "Basic"
-msgstr ""
-
 #: inc/customizer/customizer-panel/settings.php:18
 msgid "Black"
-msgstr ""
-
-#: inc/customizer/customizer-panel/settings.php:55
-msgid "Black Friday & Cyber Monday Discount!"
 msgstr ""
 
 #. Name of the template
@@ -502,28 +291,8 @@ msgstr ""
 msgid "Blank Template(For Page Builders)"
 msgstr ""
 
-#: welcome/sections/free_vs_pro.php:167
-msgid "Blog block - 4 styles"
-msgstr ""
-
 #: inc/customizer/customizer-panel/settings.php:226
 msgid "Blog Content Format"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:252
-msgid "Blog Layout 1 Demo"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:253
-msgid "Blog Layout 2 Demo"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:254
-msgid "Blog Layout 3 Demo"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:255
-msgid "Blog Layout 4 Demo"
 msgstr ""
 
 #: inc/customizer/customizer-panel/settings.php:216
@@ -564,10 +333,6 @@ msgstr ""
 msgid "Border Type"
 msgstr ""
 
-#: welcome/sections/free_vs_pro.php:368
-msgid "Both the free and pro versions are fully translation ready."
-msgstr ""
-
 #: inc/customizer/custom-controls/dimensions-control.php:180
 #: inc/customizer/custom-controls/dimensions-control.php:184
 #: inc/customizer/custom-controls/dimensions-control.php:188
@@ -577,10 +342,6 @@ msgstr ""
 
 #: inc/customizer/custom-controls/box-shadow-control.php:58
 msgid "Box Shadow"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:25 welcome/sections/free_vs_pro.php:412
-msgid "Buy Now ($65 only)"
 msgstr ""
 
 #: inc/customizer/custom-controls/typography/typography-control-class.php:458
@@ -607,14 +368,6 @@ msgstr ""
 msgid "Center Top"
 msgstr ""
 
-#: welcome/sections/free_vs_pro.php:264
-msgid ""
-"Change the position(reorder) the single post elements like post meta, "
-"featured image, content, category, tags, and social share icons and place "
-"them in the order you want. You can disable it individually if you do not "
-"want to show it."
-msgstr ""
-
 #: welcome/sections/footer.php:4
 #, php-format
 msgid ""
@@ -627,7 +380,7 @@ msgstr ""
 msgid "Choose title & tagline colors"
 msgstr ""
 
-#: welcome/welcome.php:118
+#: welcome/welcome.php:124
 msgid "Click below to install and active HashThemes Demo Importer Plugin."
 msgstr ""
 
@@ -637,10 +390,6 @@ msgid ""
 "Click on the button below to install and activate the HashThemes Demo "
 "Importer plugin. For more detailed documentation on how the demo importer "
 "works, click %s."
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:163
-msgid "Client Logo - 4 styles"
 msgstr ""
 
 #: inc/customizer/customizer-panel/settings.php:856
@@ -692,7 +441,7 @@ msgstr ""
 msgid "Configure the gallery width"
 msgstr ""
 
-#: welcome/welcome.php:105
+#: welcome/welcome.php:111
 msgid "Congratulations!"
 msgstr ""
 
@@ -708,16 +457,8 @@ msgstr ""
 msgid "Contain"
 msgstr ""
 
-#: welcome/sections/free_vs_pro.php:164
-msgid "Content Slider - 2 styles"
-msgstr ""
-
 #: template-parts/content.php:34 template-parts/content-summary.php:40
 msgid "Continue reading &rarr;"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:166
-msgid "Counter - 4 styles"
 msgstr ""
 
 #: inc/customizer/custom-controls/background-image-control.php:263
@@ -732,12 +473,6 @@ msgstr ""
 
 #: welcome/sections/support.php:13 welcome/sections/support.php:15
 msgid "Create Support Tickets"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:210
-msgid ""
-"Create unlimited widget areas using our premium version. You can create new "
-"widget areas for placing widgets."
 msgstr ""
 
 #: template-parts/frontpage-sections.php:15
@@ -782,20 +517,6 @@ msgstr ""
 msgid "Demo Importer"
 msgstr ""
 
-#: welcome/sections/free_vs_pro.php:43 welcome/sections/free_vs_pro.php:51
-#: welcome/sections/free_vs_pro.php:83 welcome/sections/free_vs_pro.php:91
-#: welcome/sections/free_vs_pro.php:99 welcome/sections/free_vs_pro.php:107
-#: welcome/sections/free_vs_pro.php:139 welcome/sections/free_vs_pro.php:147
-#: welcome/sections/free_vs_pro.php:177 welcome/sections/free_vs_pro.php:185
-#: welcome/sections/free_vs_pro.php:193 welcome/sections/free_vs_pro.php:201
-#: welcome/sections/free_vs_pro.php:209 welcome/sections/free_vs_pro.php:225
-#: welcome/sections/free_vs_pro.php:233 welcome/sections/free_vs_pro.php:241
-#: welcome/sections/free_vs_pro.php:263 welcome/sections/free_vs_pro.php:279
-#: welcome/sections/free_vs_pro.php:287 welcome/sections/free_vs_pro.php:295
-#: welcome/sections/free_vs_pro.php:304
-msgid "Detail"
-msgstr ""
-
 #: inc/customizer/customizer-panel/settings.php:694
 msgid "Disable About Section "
 msgstr ""
@@ -816,7 +537,7 @@ msgstr ""
 msgid "Disable Tab Section "
 msgstr ""
 
-#: welcome/welcome.php:387
+#: welcome/welcome.php:393
 msgid "Dismiss this notice."
 msgstr ""
 
@@ -873,12 +594,6 @@ msgid ""
 "whichever you like"
 msgstr ""
 
-#: welcome/sections/free_vs_pro.php:68
-msgid ""
-"Elementor provides you with unlimited possibilities to create the website of "
-"your imagination."
-msgstr ""
-
 #: comments.php:64 inc/widgets/widget-contact-info.php:39
 msgid "Email"
 msgstr ""
@@ -891,7 +606,7 @@ msgstr ""
 msgid "Enable Read More link "
 msgstr ""
 
-#: welcome/welcome.php:179
+#: welcome/welcome.php:185
 msgid "Error! Reload the page and try again."
 msgstr ""
 
@@ -906,17 +621,6 @@ msgstr ""
 msgid "Facebook"
 msgstr ""
 
-#: welcome/sections/free_vs_pro.php:60
-msgid ""
-"Fan of Pagebuilder? No problem, with premium version you can create your "
-"website with Elementor. Elementor provides you with unlimited possibilities "
-"to create the website of your imagination."
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:158
-msgid "Featured Block - 3 styles"
-msgstr ""
-
 #: inc/customizer/customizer-panel/settings.php:631
 msgid "Featured Page "
 msgstr ""
@@ -925,18 +629,8 @@ msgstr ""
 msgid "Featured Section"
 msgstr ""
 
-#: welcome/sections/free_vs_pro.php:29
-msgid "Features"
-msgstr ""
-
 #: inc/customizer/custom-controls/background-image-control.php:278
 msgid "Fixed"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:377
-msgid ""
-"Follows best SEO practices so that your website always ranks higher in "
-"Search Engines."
 msgstr ""
 
 #: inc/customizer/customizer-icon-manager.php:26
@@ -1041,24 +735,755 @@ msgstr ""
 msgid "For step-by-step guidance, please refer to the %s."
 msgstr ""
 
-#: welcome/sections/free_vs_pro.php:401
-msgid "For the Premium theme, the user will get a reply in 10 hours or less."
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:30
-msgid "Free"
-msgstr ""
-
 #: welcome/sections/header.php:18
 msgid "Free Demos"
 msgstr ""
 
+#: welcome/welcome.php:154
+msgid "Free Vs Pro"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:38
+msgctxt "Free vs Pro Content"
+msgid "1 Demo"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:35
+msgctxt "Free vs Pro Content"
+msgid "1) One Click Demo Import"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:107
+msgctxt "Free vs Pro Content"
+msgid "10) Advanced Typography Options for Specific Sections"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:115
+msgctxt "Free vs Pro Content"
+msgid "11) Color Options"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:123
+msgctxt "Free vs Pro Content"
+msgid "12) Home Page Section Reorder"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:131
+msgctxt "Free vs Pro Content"
+msgid "13) Home Page Unlimited Blocks for Each Section"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:139
+msgctxt "Free vs Pro Content"
+msgid ""
+"14) Home Page Video Background, Image Motion Background, Gradient Background"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:147
+msgctxt "Free vs Pro Content"
+msgid "15) Home Page Sections"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:155
+msgctxt "Free vs Pro Content"
+msgid "16) Home Page Blocks - Style Variations"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:177
+msgctxt "Free vs Pro Content"
+msgid "17) Home Page Shape Dividers"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:185
+msgctxt "Free vs Pro Content"
+msgid "18) Home Page Sections with Full Screen Height"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:193
+msgctxt "Free vs Pro Content"
+msgid "19) Home Page Slider"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:43
+msgctxt "Free vs Pro Content"
+msgid "2) GDPR Compliance & Cookies Consent"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:201
+msgctxt "Free vs Pro Content"
+msgid "20) Top Header Bar"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:209
+msgctxt "Free vs Pro Content"
+msgid "21) Add New Widget Area"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:217
+msgctxt "Free vs Pro Content"
+msgid "22) Custom Widgets"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:225
+msgctxt "Free vs Pro Content"
+msgid "23) PreLoader Option"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:233
+msgctxt "Free vs Pro Content"
+msgid "24) Sidebar Layout Options"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:241
+msgctxt "Free vs Pro Content"
+msgid "25) Advanced Blog Settings"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:249
+msgctxt "Free vs Pro Content"
+msgid "26) Blog Layouts"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:263
+msgctxt "Free vs Pro Content"
+msgid "27) Reorder and Show/Hide Elements of Single Post"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:271
+msgctxt "Free vs Pro Content"
+msgid ""
+"28) Author Box, Social Share, and Related Post at the Bottom of the Single "
+"Post"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:279
+msgctxt "Free vs Pro Content"
+msgid "29) Unique Header Background for Each Post and Page"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:51
+msgctxt "Free vs Pro Content"
+msgid "3) Maintenance Mode"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:287
+msgctxt "Free vs Pro Content"
+msgid "30) Different Background and Text Color for Each Post and Page"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:295
+msgctxt "Free vs Pro Content"
+msgid "31) Hide Header and Footer for Each Post and Page"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:304
+msgctxt "Free vs Pro Content"
+msgid "32) Advanced Footer Setting"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:312
+msgctxt "Free vs Pro Content"
+msgid "33) Remove Footer Credit Text"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:320
+msgctxt "Free vs Pro Content"
+msgid "34) Google Map Option"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:328
+msgctxt "Free vs Pro Content"
+msgid "35) Icon Picker"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:343
+msgctxt "Free vs Pro Content"
+msgid "36) WooCommerce Compatible"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:351
+msgctxt "Free vs Pro Content"
+msgid "37) RTL Ready"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:359
+msgctxt "Free vs Pro Content"
+msgid "38) Multilingual Ready"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:367
+msgctxt "Free vs Pro Content"
+msgid "39) Translation Ready"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:39
+msgctxt "Free vs Pro Content"
+msgid "4 More Demos"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:59
+msgctxt "Free vs Pro Content"
+msgid "4) Elementor Compatible"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:376
+msgctxt "Free vs Pro Content"
+msgid "40) Search Engine Optimization"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:384
+msgctxt "Free vs Pro Content"
+msgid "41) Major Browser Compatible"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:392
+msgctxt "Free vs Pro Content"
+msgid "42) Responsive - Mobile Friendly"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:400
+msgctxt "Free vs Pro Content"
+msgid "43) Fast and Friendly Support"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:67
+msgctxt "Free vs Pro Content"
+msgid "5) Elementor Widgets"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:75
+msgctxt "Free vs Pro Content"
+msgid "6) Elementor Section Extenders"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:83
+msgctxt "Free vs Pro Content"
+msgid "7) Elementor Template/Section Importer"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:91
+msgctxt "Free vs Pro Content"
+msgid "8) Multiple Header Layouts and Settings"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:99
+msgctxt "Free vs Pro Content"
+msgid "9) Mega Menu"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:186
+msgctxt "Free vs Pro Content"
+msgid ""
+"A home page section that covers the full screen despite having less content. "
+"It is useful for a one-page website."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:393
+msgctxt "Free vs Pro Content"
+msgid "Adapts to any screen size and displays beautifully."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:63 welcome/sections/free_vs_pro.php:119
+#: welcome/sections/free_vs_pro.php:197 welcome/sections/free_vs_pro.php:237
+#: welcome/sections/free_vs_pro.php:245 welcome/sections/free_vs_pro.php:339
+#: welcome/sections/free_vs_pro.php:347
+msgctxt "Free vs Pro Content"
+msgid "Advanced"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:62 welcome/sections/free_vs_pro.php:118
+#: welcome/sections/free_vs_pro.php:196 welcome/sections/free_vs_pro.php:236
+#: welcome/sections/free_vs_pro.php:244 welcome/sections/free_vs_pro.php:338
+#: welcome/sections/free_vs_pro.php:346
+msgctxt "Free vs Pro Content"
+msgid "Basic"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:167
+msgctxt "Free vs Pro Content"
+msgid "Blog block - 4 styles"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:252
+msgctxt "Free vs Pro Content"
+msgid "Blog Layout 1 Demo"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:253
+msgctxt "Free vs Pro Content"
+msgid "Blog Layout 2 Demo"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:254
+msgctxt "Free vs Pro Content"
+msgid "Blog Layout 3 Demo"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:255
+msgctxt "Free vs Pro Content"
+msgid "Blog Layout 4 Demo"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:368
+msgctxt "Free vs Pro Content"
+msgid "Both the free and pro versions are fully translation ready."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:25 welcome/sections/free_vs_pro.php:412
+msgctxt "Free vs Pro Content"
+msgid "Buy Now ($65 only)"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:264
+msgctxt "Free vs Pro Content"
+msgid ""
+"Change the position(reorder) the single post elements like post meta, "
+"featured image, content, category, tags, and social share icons and place "
+"them in the order you want. You can disable it individually if you do not "
+"want to show it."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:163
+msgctxt "Free vs Pro Content"
+msgid "Client Logo - 4 styles"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:164
+msgctxt "Free vs Pro Content"
+msgid "Content Slider - 2 styles"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:166
+msgctxt "Free vs Pro Content"
+msgid "Counter - 4 styles"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:210
+msgctxt "Free vs Pro Content"
+msgid ""
+"Create unlimited widget areas using our premium version. You can create new "
+"widget areas for placing widgets."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:43 welcome/sections/free_vs_pro.php:51
+#: welcome/sections/free_vs_pro.php:83 welcome/sections/free_vs_pro.php:91
+#: welcome/sections/free_vs_pro.php:99 welcome/sections/free_vs_pro.php:107
+#: welcome/sections/free_vs_pro.php:139 welcome/sections/free_vs_pro.php:147
+#: welcome/sections/free_vs_pro.php:177 welcome/sections/free_vs_pro.php:185
+#: welcome/sections/free_vs_pro.php:193 welcome/sections/free_vs_pro.php:201
+#: welcome/sections/free_vs_pro.php:209 welcome/sections/free_vs_pro.php:225
+#: welcome/sections/free_vs_pro.php:233 welcome/sections/free_vs_pro.php:241
+#: welcome/sections/free_vs_pro.php:263 welcome/sections/free_vs_pro.php:279
+#: welcome/sections/free_vs_pro.php:287 welcome/sections/free_vs_pro.php:295
+#: welcome/sections/free_vs_pro.php:304
+msgctxt "Free vs Pro Content"
+msgid "Detail"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:68
+msgctxt "Free vs Pro Content"
+msgid ""
+"Elementor provides you with unlimited possibilities to create the website of "
+"your imagination."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:60
+msgctxt "Free vs Pro Content"
+msgid ""
+"Fan of Pagebuilder? No problem, with premium version you can create your "
+"website with Elementor. Elementor provides you with unlimited possibilities "
+"to create the website of your imagination."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:158
+msgctxt "Free vs Pro Content"
+msgid "Featured Block - 3 styles"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:29
+msgctxt "Free vs Pro Content"
+msgid "Features"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:377
+msgctxt "Free vs Pro Content"
+msgid ""
+"Follows best SEO practices so that your website always ranks higher in "
+"Search Engines."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:401
+msgctxt "Free vs Pro Content"
+msgid "For the Premium theme, the user will get a reply in 10 hours or less."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:30
+msgctxt "Free vs Pro Content"
+msgid "Free"
+msgstr ""
+
 #: welcome/sections/free_vs_pro.php:13
+msgctxt "Free vs Pro Content"
 msgid "FREE UPDATES FOR LIFETIME"
 msgstr ""
 
-#: welcome/welcome.php:148
-msgid "Free Vs Pro"
+#: welcome/sections/free_vs_pro.php:363
+msgctxt "Free vs Pro Content"
+msgid "Fully"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:159
+msgctxt "Free vs Pro Content"
+msgid "Highlight Block - 2 styles"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:331
+msgctxt "Free vs Pro Content"
+msgid "i) Ico Font"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:332
+msgctxt "Free vs Pro Content"
+msgid "ii) FontAwesome"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:333
+msgctxt "Free vs Pro Content"
+msgid "iii) Essential Icon"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:84
+msgctxt "Free vs Pro Content"
+msgid ""
+"Import Elementor Templates and Sections with just one click without having "
+"to import the whole website."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:334
+msgctxt "Free vs Pro Content"
+msgid "iv) Material Icon"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:14
+msgctxt "Free vs Pro Content"
+msgid "Keep up to date"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:4
+msgctxt "Free vs Pro Content"
+msgid "No renewal needed"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:3
+msgctxt "Free vs Pro Content"
+msgid "ONE TIME PAYMENT"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:124
+msgctxt "Free vs Pro Content"
+msgid "Option to organize how the home page section appears."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:156
+msgctxt "Free vs Pro Content"
+msgid "Option to switch the style of the home page blocks."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:362
+msgctxt "Free vs Pro Content"
+msgid "Partially"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:161
+msgctxt "Free vs Pro Content"
+msgid "Portfolio Masonry - 6 styles"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:162
+msgctxt "Free vs Pro Content"
+msgid "Portfolio Slider - 4 styles"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:169
+msgctxt "Free vs Pro Content"
+msgid "Pricing - 4 styles"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:31
+msgctxt "Free vs Pro Content"
+msgid "Pro"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:321
+msgctxt "Free vs Pro Content"
+msgid "Shows the physical location with an interactive contact form."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:272
+msgctxt "Free vs Pro Content"
+msgid ""
+"Shows the short intro of the post author along with social icons, major "
+"Social Share Icons without using a plugin, and related posts by category."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:202
+msgctxt "Free vs Pro Content"
+msgid ""
+"Square Plus comes with an option for the top bar where you can add a contact "
+"address, social icon, language picker, or any informative text."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:148
+msgctxt "Free vs Pro Content"
+msgid "Square Plus has an additional 13 sections."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:160
+msgctxt "Free vs Pro Content"
+msgid "Tabs - 5 styles"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:165
+msgctxt "Free vs Pro Content"
+msgid "Team Grid/Carousel - 4 styles"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:168
+msgctxt "Free vs Pro Content"
+msgid "Testimonial - 2 styles"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:116
+msgctxt "Free vs Pro Content"
+msgid ""
+"The free version has a basic color option but the premium version has "
+"advanced color options that allow customizing the color everywhere like "
+"header, post/page, footer, and home page sections."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:226
+msgctxt "Free vs Pro Content"
+msgid ""
+"The loading screen appears until the website is fully loaded. The premium "
+"version has the option to choose from 16 preloaders or add your preloader "
+"image as well."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:329
+msgctxt "Free vs Pro Content"
+msgid ""
+"The premium theme has 5 icon packs with more than 5000+ icons. They can be "
+"used on the various sections of the Home Page, WordPress Widget Blocks, and "
+"Elementor Modules."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:132
+msgctxt "Free vs Pro Content"
+msgid ""
+"The premium version allows adding an unlimited block for all the sections on "
+"the home page. This includes a slider, featured block, highlight block, "
+"service, team, testimonial, counter, pricing, tabs, content slider, and logo."
+" Moreover, it has the option to choose the number of columns to show in each "
+"row."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:288
+msgctxt "Free vs Pro Content"
+msgid ""
+"The premium version comes with the option to configure the background and "
+"text color of each page and post on the website. It will allow you to choose "
+"the custom background color, background image, and text color for any page "
+"or post you like."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:313
+msgctxt "Free vs Pro Content"
+msgid ""
+"The premium version easily allows you to remove or change the footer credit "
+"text."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:250
+msgctxt "Free vs Pro Content"
+msgid ""
+"The premium version gives the option to choose from 4 differently designed "
+"blog layouts."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:92
+msgctxt "Free vs Pro Content"
+msgid ""
+"The premium version gives the option to choose from 6 header layouts. "
+"Additionally, it allows changing the header background color, text color, "
+"header height, and more."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:108
+msgctxt "Free vs Pro Content"
+msgid ""
+"The premium version has 800+ Google Fonts to choose from. Don't want to use "
+"Google Fonts? No problem, it has web safe standard non-Google fonts to "
+"choose from as well."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:140
+msgctxt "Free vs Pro Content"
+msgid ""
+"The premium version has advanced background options that include an option "
+"to choose from a video background, moving background, or gradient background."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:242
+msgctxt "Free vs Pro Content"
+msgid ""
+"The Premium version has an advanced blog page setting option. The option "
+"allows you to show or hide each element of the blog."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:100
+msgctxt "Free vs Pro Content"
+msgid ""
+"The Premium version has an inbuilt mega menu that will allow you to create "
+"beautiful big menus in no time."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:52
+msgctxt "Free vs Pro Content"
+msgid ""
+"The premium version has an inbuilt option to add the Maintenance(under "
+"construction) Screen with countdown time. You don't need to install "
+"additional plugins."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:194
+msgctxt "Free vs Pro Content"
+msgid ""
+"The premium version has an option for the Simple Slider, Revolution Slider, "
+"and Single Banner Image with advanced customization options."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:344
+msgctxt "Free vs Pro Content"
+msgid ""
+"The premium version has enhanced WooCommerce options like adding a cart icon "
+"in the menu, product page settings, sidebar layout settings, and more."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:280
+msgctxt "Free vs Pro Content"
+msgid ""
+"The premium version has the option to add a unique Title Bar(Header) "
+"background for each post and page."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:234
+#, php-format
+msgctxt "Free vs Pro Content"
+msgid ""
+"The premium version has the option to change the sidebar layout universally "
+"or %1schange the sidebar for individual posts/pages%2s. Moreover, it allows "
+"choosing the sidebar widgets for individual posts/pages."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:305
+msgctxt "Free vs Pro Content"
+msgid ""
+"The premium version has the option to choose from 5 different footer styles. "
+"Apart from that, you can set the number of footer columns and resize them as "
+"you want with dragging column resizer."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:352
+msgctxt "Free vs Pro Content"
+msgid ""
+"The Premium Version is fully compatible with RTL (Right to left) languages "
+"like Arabic"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:360
+msgctxt "Free vs Pro Content"
+msgid ""
+"The Premium Version is fully compatible with WPML and Poylang. Create the "
+"website in multiple languages."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:44
+msgctxt "Free vs Pro Content"
+msgid ""
+"The Premium version is fully GDPR compliance. Means no data is collected if "
+"you use the theme alone. Also the premium version has option to add GDPR "
+"Compliance & Cookies Consent text with buttons."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:178
+msgctxt "Free vs Pro Content"
+msgid ""
+"The theme has 16 shape dividers that you can choose from to create a nice "
+"transition effect between sections"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:385
+msgctxt "Free vs Pro Content"
+msgid "The website runs smoothly in all major browsers."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:8
+msgctxt "Free vs Pro Content"
+msgid "UNLIMITED DOMAIN LICENCE"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:21 welcome/sections/free_vs_pro.php:408
+msgctxt "Free vs Pro Content"
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:22 welcome/sections/free_vs_pro.php:409
+msgctxt "Free vs Pro Content"
+msgid "Upgrade to pro version for additional features and better supports."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:9
+msgctxt "Free vs Pro Content"
+msgid "Use in as many websites as you need"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:335
+msgctxt "Free vs Pro Content"
+msgid "v) Elegant Icon"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:67 welcome/sections/free_vs_pro.php:75
+msgctxt "Free vs Pro Content"
+msgid "View Demo"
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:218
+msgctxt "Free vs Pro Content"
+msgid ""
+"With a custom widget and Site origin page builder, you can play to create "
+"various website layouts."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:36
+msgctxt "Free vs Pro Content"
+msgid ""
+"With one click demo-import, you can install the demo content with just one "
+"click."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:76
+msgctxt "Free vs Pro Content"
+msgid ""
+"You can extend the Elementor section with amazing interactive extenders like "
+"Parallax Background, Parallax Animation, Colors Animation, Water Ripples, "
+"Particles Background, Background Effects & lot more."
+msgstr ""
+
+#: welcome/sections/free_vs_pro.php:296
+msgctxt "Free vs Pro Content"
+msgid ""
+"You can show/hide the header and footer for each of the pages/posts. It is "
+"helpful if you are running an infographic website."
 msgstr ""
 
 #: template-parts/frontpage-sections.php:14
@@ -1074,10 +1499,6 @@ msgstr ""
 msgid "FROM ELEMENTOR"
 msgstr ""
 
-#: welcome/sections/free_vs_pro.php:363
-msgid "Fully"
-msgstr ""
-
 #: inc/customizer/customizer-panel/settings.php:46
 msgid "Fully multilingual and translation ready"
 msgstr ""
@@ -1090,11 +1511,11 @@ msgstr ""
 msgid "General Settings"
 msgstr ""
 
-#: welcome/welcome.php:126
+#: welcome/welcome.php:132
 msgid "Get Started"
 msgstr ""
 
-#: welcome/welcome.php:145
+#: welcome/welcome.php:151
 msgid "Getting Started"
 msgstr ""
 
@@ -1116,11 +1537,11 @@ msgstr ""
 msgid "Go to Appearance > Customize > %s."
 msgstr ""
 
-#: welcome/welcome.php:177 welcome/welcome.php:281
+#: welcome/welcome.php:183 welcome/welcome.php:287
 msgid "Go to Demo Importer Page"
 msgstr ""
 
-#: welcome/welcome.php:128
+#: welcome/welcome.php:134
 msgid "Go to Setting Page"
 msgstr ""
 
@@ -1138,7 +1559,7 @@ msgid "Gradient Preview"
 msgstr ""
 
 #. %1$s is link start tag, %2$s is link end tag.
-#: welcome/welcome.php:344
+#: welcome/welcome.php:350
 #, php-format
 msgid ""
 "Great to see that you have been using Square Theme for some time. We hope "
@@ -1182,7 +1603,7 @@ msgstr ""
 msgid "here"
 msgstr ""
 
-#: welcome/welcome.php:127
+#: welcome/welcome.php:133
 #, php-format
 msgid ""
 "Here you will find all the necessary links and information on how to use %s."
@@ -1196,10 +1617,6 @@ msgstr ""
 
 #: inc/customizer/customizer-panel/settings.php:1055
 msgid "Hide all Upgrade Notices from Customizer"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:159
-msgid "Highlight Block - 2 styles"
 msgstr ""
 
 #. Name of the template
@@ -1233,12 +1650,8 @@ msgstr ""
 msgid "https://hashthemes.com/wordpress-theme/square/"
 msgstr ""
 
-#: welcome/welcome.php:349
+#: welcome/welcome.php:355
 msgid "I have already rated"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:331
-msgid "i) Ico Font"
 msgstr ""
 
 #: inc/customizer/customizer-panel/settings.php:1056
@@ -1246,14 +1659,6 @@ msgid ""
 "If you don't want to upgrade to premium version then you can turn off all "
 "the upgrade notices. However you can turn it on anytime if you make mind to "
 "upgrade to premium version."
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:332
-msgid "ii) FontAwesome"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:333
-msgid "iii) Essential Icon"
 msgstr ""
 
 #: inc/widgets/widget-personal-info.php:34
@@ -1264,18 +1669,12 @@ msgstr ""
 msgid "Import"
 msgstr ""
 
-#: welcome/welcome.php:117
+#: welcome/welcome.php:123
 msgid "Import Demo"
 msgstr ""
 
 #: inc/customizer/customizer-panel/settings.php:68
 msgid "Import Demo Content"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:84
-msgid ""
-"Import Elementor Templates and Sections with just one click without having "
-"to import the whole website."
 msgstr ""
 
 #: inc/customizer/customizer-panel/settings.php:516
@@ -1306,7 +1705,7 @@ msgid ""
 "the %s."
 msgstr ""
 
-#: welcome/welcome.php:285
+#: welcome/welcome.php:291
 msgid "Install Demo Importer Plugin"
 msgstr ""
 
@@ -1318,7 +1717,7 @@ msgstr ""
 msgid "Installed"
 msgstr ""
 
-#: welcome/welcome.php:175
+#: welcome/welcome.php:181
 msgid "Installing Demo Importer Plugin"
 msgstr ""
 
@@ -1334,14 +1733,6 @@ msgstr ""
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:334
-msgid "iv) Material Icon"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:14
-msgid "Keep up to date"
 msgstr ""
 
 #: inc/customizer/custom-controls/repeater-control.php:124
@@ -1471,10 +1862,6 @@ msgstr ""
 msgid "No of Posts to Display"
 msgstr ""
 
-#: welcome/sections/free_vs_pro.php:4
-msgid "No renewal needed"
-msgstr ""
-
 #: inc/customizer/custom-controls/background-image-control.php:256
 msgid "No Repeat"
 msgstr ""
@@ -1498,10 +1885,6 @@ msgstr ""
 
 #: template-parts/content-none.php:11
 msgid "Nothing Found"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:3
-msgid "ONE TIME PAYMENT"
 msgstr ""
 
 #: 404.php:18
@@ -1542,14 +1925,6 @@ msgstr ""
 msgid "Option to link the logos to external url"
 msgstr ""
 
-#: welcome/sections/free_vs_pro.php:124
-msgid "Option to organize how the home page section appears."
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:156
-msgid "Option to switch the style of the home page blocks."
-msgstr ""
-
 #: welcome/sections/getting_started.php:31
 msgid "Or you can get started by importing the demo with just one click."
 msgstr ""
@@ -1582,10 +1957,6 @@ msgstr ""
 msgid "Pages:"
 msgstr ""
 
-#: welcome/sections/free_vs_pro.php:362
-msgid "Partially"
-msgstr ""
-
 #: inc/widgets/widget-contact-info.php:34
 msgid "Phone"
 msgstr ""
@@ -1600,19 +1971,11 @@ msgid ""
 "more features to the theme."
 msgstr ""
 
-#: welcome/welcome.php:265
+#: welcome/welcome.php:271
 #, php-format
 msgid ""
 "Please leave us a %s rating if you like our theme . A huge thank you from "
 "HashThemes in advance!"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:161
-msgid "Portfolio Masonry - 6 styles"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:162
-msgid "Portfolio Slider - 4 styles"
 msgstr ""
 
 #: inc/customizer/custom-controls/background-image-control.php:237
@@ -1639,16 +2002,8 @@ msgstr ""
 msgid "Preview"
 msgstr ""
 
-#: welcome/sections/free_vs_pro.php:169
-msgid "Pricing - 4 styles"
-msgstr ""
-
 #: functions.php:41 inc/starter-content.php:213
 msgid "Primary Menu"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:31
-msgid "Pro"
 msgstr ""
 
 #: inc/customizer/customizer-panel/settings.php:1044
@@ -1702,7 +2057,7 @@ msgstr ""
 msgid "Recommended Plugin Page"
 msgstr ""
 
-#: welcome/welcome.php:146 welcome/sections/recommended_plugins.php:6
+#: welcome/welcome.php:152 welcome/sections/recommended_plugins.php:6
 msgid "Recommended Plugins"
 msgstr ""
 
@@ -1828,16 +2183,6 @@ msgstr ""
 msgid "Show/Hide title & tagline individually with or without logo"
 msgstr ""
 
-#: welcome/sections/free_vs_pro.php:321
-msgid "Shows the physical location with an interactive contact form."
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:272
-msgid ""
-"Shows the short intro of the post author along with social icons, major "
-"Social Share Icons without using a plugin, and related posts by category."
-msgstr ""
-
 #: inc/square-metabox.php:16
 msgid "Sidebar Layout"
 msgstr ""
@@ -1892,7 +2237,7 @@ msgstr ""
 msgid "Square"
 msgstr ""
 
-#: welcome/welcome.php:110
+#: welcome/welcome.php:116
 msgid "Square Demo"
 msgstr ""
 
@@ -1915,12 +2260,6 @@ msgid ""
 "hashthemes.com/square"
 msgstr ""
 
-#: welcome/sections/free_vs_pro.php:202
-msgid ""
-"Square Plus comes with an option for the top bar where you can add a contact "
-"address, social icon, language picker, or any informative text."
-msgstr ""
-
 #: welcome/sections/footer.php:11 welcome/sections/footer.php:24
 #: welcome/sections/footer.php:37 welcome/sections/footer.php:50
 msgid "Square Plus Demo"
@@ -1929,10 +2268,6 @@ msgstr ""
 #: welcome/sections/footer.php:3
 #, php-format
 msgid "Square Plus Demos - Premium Version of %s"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:148
-msgid "Square Plus has an additional 13 sections."
 msgstr ""
 
 #: inc/customizer/custom-controls/typography/typography.php:157
@@ -1946,7 +2281,7 @@ msgid ""
 "solve your problem."
 msgstr ""
 
-#: welcome/welcome.php:147
+#: welcome/welcome.php:153
 msgid "Support"
 msgstr ""
 
@@ -1962,20 +2297,8 @@ msgstr ""
 msgid "Tab Title"
 msgstr ""
 
-#: welcome/sections/free_vs_pro.php:160
-msgid "Tabs - 5 styles"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:165
-msgid "Team Grid/Carousel - 4 styles"
-msgstr ""
-
 #: inc/customizer/customizer-panel/settings.php:82
 msgid "Template Color"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:168
-msgid "Testimonial - 2 styles"
 msgstr ""
 
 #: inc/customizer/custom-controls/typography/typography-control-class.php:48
@@ -1995,157 +2318,6 @@ msgstr ""
 msgid ""
 "The %s Theme already allows you to build a beautiful website, but the "
 "Premium version unlocks even more powerful features and flexibility."
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:116
-msgid ""
-"The free version has a basic color option but the premium version has "
-"advanced color options that allow customizing the color everywhere like "
-"header, post/page, footer, and home page sections."
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:226
-msgid ""
-"The loading screen appears until the website is fully loaded. The premium "
-"version has the option to choose from 16 preloaders or add your preloader "
-"image as well."
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:329
-msgid ""
-"The premium theme has 5 icon packs with more than 5000+ icons. They can be "
-"used on the various sections of the Home Page, WordPress Widget Blocks, and "
-"Elementor Modules."
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:132
-msgid ""
-"The premium version allows adding an unlimited block for all the sections on "
-"the home page. This includes a slider, featured block, highlight block, "
-"service, team, testimonial, counter, pricing, tabs, content slider, and logo."
-" Moreover, it has the option to choose the number of columns to show in each "
-"row."
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:288
-msgid ""
-"The premium version comes with the option to configure the background and "
-"text color of each page and post on the website. It will allow you to choose "
-"the custom background color, background image, and text color for any page "
-"or post you like."
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:313
-msgid ""
-"The premium version easily allows you to remove or change the footer credit "
-"text."
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:250
-msgid ""
-"The premium version gives the option to choose from 4 differently designed "
-"blog layouts."
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:92
-msgid ""
-"The premium version gives the option to choose from 6 header layouts. "
-"Additionally, it allows changing the header background color, text color, "
-"header height, and more."
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:108
-msgid ""
-"The premium version has 800+ Google Fonts to choose from. Don't want to use "
-"Google Fonts? No problem, it has web safe standard non-Google fonts to "
-"choose from as well."
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:140
-msgid ""
-"The premium version has advanced background options that include an option "
-"to choose from a video background, moving background, or gradient background."
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:242
-msgid ""
-"The Premium version has an advanced blog page setting option. The option "
-"allows you to show or hide each element of the blog."
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:100
-msgid ""
-"The Premium version has an inbuilt mega menu that will allow you to create "
-"beautiful big menus in no time."
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:52
-msgid ""
-"The premium version has an inbuilt option to add the Maintenance(under "
-"construction) Screen with countdown time. You don't need to install "
-"additional plugins."
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:194
-msgid ""
-"The premium version has an option for the Simple Slider, Revolution Slider, "
-"and Single Banner Image with advanced customization options."
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:344
-msgid ""
-"The premium version has enhanced WooCommerce options like adding a cart icon "
-"in the menu, product page settings, sidebar layout settings, and more."
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:280
-msgid ""
-"The premium version has the option to add a unique Title Bar(Header) "
-"background for each post and page."
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:234
-#, php-format
-msgid ""
-"The premium version has the option to change the sidebar layout universally "
-"or %1schange the sidebar for individual posts/pages%2s. Moreover, it allows "
-"choosing the sidebar widgets for individual posts/pages."
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:305
-msgid ""
-"The premium version has the option to choose from 5 different footer styles. "
-"Apart from that, you can set the number of footer columns and resize them as "
-"you want with dragging column resizer."
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:352
-msgid ""
-"The Premium Version is fully compatible with RTL (Right to left) languages "
-"like Arabic"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:360
-msgid ""
-"The Premium Version is fully compatible with WPML and Poylang. Create the "
-"website in multiple languages."
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:44
-msgid ""
-"The Premium version is fully GDPR compliance. Means no data is collected if "
-"you use the theme alone. Also the premium version has option to add GDPR "
-"Compliance & Cookies Consent text with buttons."
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:178
-msgid ""
-"The theme has 16 shape dividers that you can choose from to create a nice "
-"transition effect between sections"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:385
-msgid "The website runs smoothly in all major browsers."
 msgstr ""
 
 #: inc/starter-content.php:109
@@ -2267,10 +2439,6 @@ msgstr ""
 msgid "Underline"
 msgstr ""
 
-#: welcome/sections/free_vs_pro.php:8
-msgid "UNLIMITED DOMAIN LICENCE"
-msgstr ""
-
 #: inc/customizer/customizer-panel/settings.php:666
 msgid "Unlimited featured block"
 msgstr ""
@@ -2318,16 +2486,8 @@ msgstr ""
 msgid "Upgrade to PRO"
 msgstr ""
 
-#: welcome/sections/free_vs_pro.php:21 welcome/sections/free_vs_pro.php:408
-msgid "Upgrade to Pro"
-msgstr ""
-
 #: inc/customizer/customizer-panel/settings.php:56
-msgid "Upgrade to Pro (40% OFF)"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:22 welcome/sections/free_vs_pro.php:409
-msgid "Upgrade to pro version for additional features and better supports."
+msgid "Upgrade to Pro"
 msgstr ""
 
 #: inc/customizer/customizer-panel/settings.php:904
@@ -2344,14 +2504,6 @@ msgstr ""
 msgid "Uppercase"
 msgstr ""
 
-#: welcome/sections/free_vs_pro.php:9
-msgid "Use in as many websites as you need"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:335
-msgid "v) Elegant Icon"
-msgstr ""
-
 #: inc/customizer/custom-controls/graident-control.php:59
 msgid "Vertical Spread (Top to Bottom)"
 msgstr ""
@@ -2366,8 +2518,7 @@ msgstr ""
 msgid "View"
 msgstr ""
 
-#: welcome/sections/getting_started.php:25 welcome/sections/free_vs_pro.php:67
-#: welcome/sections/free_vs_pro.php:75
+#: welcome/sections/getting_started.php:25
 msgid "View Demo"
 msgstr ""
 
@@ -2387,7 +2538,7 @@ msgstr ""
 msgid "Website layout (fullwidth or boxed)"
 msgstr ""
 
-#: welcome/welcome.php:138
+#: welcome/welcome.php:144
 msgid "Welcome"
 msgstr ""
 
@@ -2416,18 +2567,6 @@ msgstr ""
 msgid "Width"
 msgstr ""
 
-#: welcome/sections/free_vs_pro.php:218
-msgid ""
-"With a custom widget and Site origin page builder, you can play to create "
-"various website layouts."
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:36
-msgid ""
-"With one click demo-import, you can install the demo content with just one "
-"click."
-msgstr ""
-
 #: inc/customizer/customizer-panel/settings.php:45
 msgid "WooCommerce compatible"
 msgstr ""
@@ -2444,27 +2583,14 @@ msgstr ""
 msgid "Y"
 msgstr ""
 
-#: welcome/welcome.php:348
+#: welcome/welcome.php:354
 msgid "Yes, of course"
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:76
-msgid ""
-"You can extend the Elementor section with amazing interactive extenders like "
-"Parallax Background, Parallax Animation, Colors Animation, Water Ripples, "
-"Particles Background, Background Effects & lot more."
 msgstr ""
 
 #: welcome/sections/getting_started.php:8
 msgid ""
 "You can set up the homepage sections either through the Customizer Panel or "
 "using the Elementor Page Builder."
-msgstr ""
-
-#: welcome/sections/free_vs_pro.php:296
-msgid ""
-"You can show/hide the header and footer for each of the pages/posts. It is "
-"helpful if you are running an infographic website."
 msgstr ""
 
 #: inc/square-functions.php:92

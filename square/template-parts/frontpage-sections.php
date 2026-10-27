@@ -57,34 +57,29 @@ if (is_array($square_page_array)) {
                 $square_featured_page_icon = get_theme_mod('square_featured_page_icon' . $i, 'fa-regular fa-bell');
 
                 if ($square_featured_page_id) {
-                    $args = array('page_id' => $square_featured_page_id);
-                    $query = new WP_Query($args);
-                    if ($query->have_posts()):
-                        while ($query->have_posts()):
-                            $query->the_post();
-                            ?>
-                            <div class="sq-featured-post <?php echo 'sq-featured-post' . $i; ?>">
-                                <div class="sq-featured-icon"><i class="<?php echo esc_attr($square_featured_page_icon); ?>"></i></div>
-                                <h4><?php the_title(); ?></h4>
-                                <div class="sq-featured-excerpt">
-                                    <?php
-                                    if (has_excerpt() && '' != trim(get_the_excerpt())) {
-                                        echo get_the_excerpt(); // WPCS: XSS OK.
-                                    } else {
-                                        echo square_excerpt(get_the_content(), 120); // WPCS: XSS OK.
-                                    }
-                                    ?>
-                                </div>
+                    if (square_setup_section_post($square_featured_page_id)):
+                        ?>
+                        <div class="sq-featured-post <?php echo 'sq-featured-post' . $i; ?>">
+                            <div class="sq-featured-icon"><i class="<?php echo esc_attr($square_featured_page_icon); ?>"></i></div>
+                            <h4><?php the_title(); ?></h4>
+                            <div class="sq-featured-excerpt">
                                 <?php
-                                if ($square_enable_featured_link) {
-                                    ?>
-                                    <a href="<?php the_permalink(); ?>" class="sq-featured-readmore"><i class="fa-regular fa-plus-square"></i></a>
-                                    <?php
+                                if (has_excerpt() && '' != trim(get_the_excerpt())) {
+                                    echo get_the_excerpt(); // WPCS: XSS OK.
+                                } else {
+                                    echo square_excerpt(get_the_content(), 120); // WPCS: XSS OK.
                                 }
                                 ?>
                             </div>
                             <?php
-                        endwhile;
+                            if ($square_enable_featured_link) {
+                                ?>
+                                <a href="<?php the_permalink(); ?>" class="sq-featured-readmore"><i class="fa-regular fa-plus-square"></i></a>
+                                <?php
+                            }
+                            ?>
+                        </div>
+                        <?php
                     endif;
                     wp_reset_postdata();
                 }
@@ -104,18 +99,11 @@ if (!$square_disable_about_sec) {
         <div class="sq-container sq-clearfix">
             <div class="sq-about-sec <?php echo esc_attr($square_about_sec_class); ?>">
                 <?php
-                $args = array(
-                    'page_id' => get_theme_mod('square_about_page')
-                );
-                $query = new WP_Query($args);
-                if ($query->have_posts() && get_theme_mod('square_about_page')):
-                    while ($query->have_posts()):
-                        $query->the_post();
-                        ?>
-                        <h2 class="sq-section-title"><?php the_title(); ?></h2>
-                        <div class="sq-content"><?php the_content(); ?></div>
-                        <?php
-                    endwhile;
+                if (square_setup_section_post(get_theme_mod('square_about_page'))):
+                    ?>
+                    <h2 class="sq-section-title"><?php the_title(); ?></h2>
+                    <div class="sq-content"><?php the_content(); ?></div>
+                    <?php
                 endif;
                 wp_reset_postdata();
                 ?>
@@ -127,7 +115,7 @@ if (!$square_disable_about_sec) {
                 <div class="sq-image-stack">
                     <ul id="sq-elasticstack" class="sq-elasticstack">
                         <?php
-                        $square_about_image_stack = explode(',', $square_about_image_stack);
+                        $square_about_image_stack = square_attachment_ids($square_about_image_stack);
 
                         foreach ($square_about_image_stack as $square_about_image_stack_single) {
                             $image = wp_get_attachment_image_src($square_about_image_stack_single, 'square-about-thumb');
@@ -180,18 +168,11 @@ if (!$square_disable_tab_sec) {
                         ?>
                         <div class="sq-tab-pane animated zoomIn" id="<?php echo 'sq-tab' . $i; ?>">
                             <?php
-                            $args = array(
-                                'page_id' => $square_tab_page
-                            );
-                            $query = new WP_Query($args);
-                            if ($query->have_posts()):
-                                while ($query->have_posts()):
-                                    $query->the_post();
-                                    ?>
-                                    <h2 class="sq-section-title"><?php the_title(); ?></h2>
-                                    <div class="sq-content"><?php the_content(); ?></div>
-                                    <?php
-                                endwhile;
+                            if (square_setup_section_post($square_tab_page)):
+                                ?>
+                                <h2 class="sq-section-title"><?php the_title(); ?></h2>
+                                <div class="sq-content"><?php the_content(); ?></div>
+                                <?php
                             endif;
                             wp_reset_postdata();
                             ?>
@@ -221,7 +202,7 @@ if (!$square_disable_logo_sec) {
 
             <?php
             $square_client_logo_image = get_theme_mod('square_client_logo_image');
-            $square_client_logo_image = explode(',', $square_client_logo_image);
+            $square_client_logo_image = square_attachment_ids($square_client_logo_image);
             ?>
 
             <div class="sq_client_logo_slider owl-carousel">

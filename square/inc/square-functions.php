@@ -37,6 +37,86 @@ function square_body_classes($classes) {
 
 add_filter('body_class', 'square_body_classes');
 
+if (!function_exists('square_get_active_campaign')) {
+
+    /*
+     *  The seasonal sale currently running, or false.
+     *
+     *  Windows are month-day so they repeat every year without anyone having to
+     *  edit a date. Filterable so a campaign can be added or the dates moved
+     *  without touching the theme.
+     */
+
+    function square_get_active_campaign() {
+        $campaigns = apply_filters('square_upgrade_campaigns', array(
+            array(
+                'id' => 'blackfriday',
+                'image' => 'blackfriday.jpg',
+                'start' => '11-20',
+                'end' => '12-02',
+                'title' => esc_html__('Black Friday - our biggest discount of the year', 'square'),
+                'button' => esc_html__('Get Square Plus - $65', 'square')
+            ),
+            array(
+                'id' => 'newyear',
+                'image' => 'christmas-sale.jpg',
+                'start' => '12-15',
+                'end' => '01-05',
+                'title' => esc_html__('Christmas & New Year Sale', 'square'),
+                'button' => esc_html__('Get Square Plus - $65', 'square')
+            )
+        ));
+
+        $today = current_time('m-d');
+
+        foreach ($campaigns as $campaign) {
+            if (empty($campaign['start']) || empty($campaign['end'])) {
+                continue;
+            }
+
+            // A window whose end sorts before its start crosses into the new year.
+            if ($campaign['end'] < $campaign['start']) {
+                $running = ($today >= $campaign['start'] || $today <= $campaign['end']);
+            } else {
+                $running = ($today >= $campaign['start'] && $today <= $campaign['end']);
+            }
+
+            if ($running) {
+                return $campaign;
+            }
+        }
+
+        return false;
+    }
+
+}
+
+if (!function_exists('square_upgrade_url')) {
+
+    /*
+     *  Upgrade link with campaign tracking.
+     *
+     *  $placement is passed through as utm_content so each prompt can be told
+     *  apart in analytics - without it every link reports as one undifferentiated
+     *  source and there is no way to tell which prompt actually earns the upgrade.
+     */
+
+    function square_upgrade_url($placement = '', $medium = 'square-link') {
+        $args = array(
+            'utm_source' => 'WordPress',
+            'utm_medium' => $medium,
+            'utm_campaign' => 'square-upgrade'
+        );
+
+        if ('' !== $placement) {
+            $args['utm_content'] = $placement;
+        }
+
+        return add_query_arg($args, 'https://hashthemes.com/wordpress-theme/square-plus/');
+    }
+
+}
+
 if (!function_exists('square_excerpt')) {
 
     function square_excerpt($content, $letter_count) {
@@ -48,6 +128,49 @@ if (!function_exists('square_excerpt')) {
             $content .= "...";
         }
         return $content;
+    }
+
+}
+
+if (!function_exists('square_setup_section_post')) {
+
+    // Makes a post the current post for a home section; pair with wp_reset_postdata().
+    // get_post() rather than WP_Query, so posts held only in the object cache (starter content in the WordPress.org theme preview) are found too.
+    // Visibility follows WP_Query's single post rules, so users who can edit still see drafts, and the Customizer shows unpublished (auto-draft) starter content.
+    function square_setup_section_post($post_id) {
+        $section_post = $post_id ? get_post(absint($post_id)) : null;
+        $status = $section_post ? get_post_status_object(get_post_status($section_post)) : null;
+
+        if (!$status) {
+            return false;
+        } elseif ($status->public) {
+            $visible = true;
+        } elseif (!is_user_logged_in()) {
+            $visible = false;
+        } elseif ($status->protected) {
+            $visible = current_user_can('edit_post', $section_post->ID);
+        } elseif ($status->private) {
+            $visible = current_user_can('read_post', $section_post->ID);
+        } else {
+            $visible = false;
+        }
+
+        if (!$visible) {
+            return false;
+        }
+
+        $GLOBALS['post'] = $section_post;
+        setup_postdata($section_post);
+        return true;
+    }
+
+}
+
+if (!function_exists('square_attachment_ids')) {
+
+    // Gallery settings save a comma separated string; the WordPress.org theme preview passes its starter content as an array.
+    function square_attachment_ids($value) {
+        return is_array($value) ? $value : explode(',', $value);
     }
 
 }
