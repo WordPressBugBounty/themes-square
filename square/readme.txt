@@ -4,11 +4,11 @@ Square is distributed under the terms of the GNU GPL (http://www.gnu.org/license
 
 Contributors: hashthemes
 Requires at least: 6.3
-Tested up to: 6.9
+Tested up to: 7.1
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable tag: 2.0.70
+Stable tag: 2.1.0
 
 == Description ==
 Square is a beautifully crafted WordPress theme with lots of exciting feature to cherish. Make your website in no time with the use of powerful customizer panel available in the Square Theme. Never the less, it is a good theme you will ever find.
@@ -20,6 +20,21 @@ Square is a beautifully crafted WordPress theme with lots of exciting feature to
 3. Click Activate to use your new theme right away.
 
 == Changelog ==
+= 2.1.0 - Nov 16, 2026 =
+* Settings page redesigned, with a compact header, a Square Plus card, clearer tabs, a setup checklist, Customizer shortcuts and rewritten help text - Changed
+* Free vs Pro table rewritten and its counts corrected - Changed
+* Welcome notice also showed on the Settings page itself - Fixed
+* Black Friday and Christmas & New Year sale banners redesigned - Changed
+* Customizer upgrade box redesigned, with the main Square Plus features, the price and the 7-day money-back guarantee - Changed
+* Customizer checkboxes replaced with on/off switches, and the Documentation and Import Demo rows tidied - Changed
+* Customizer control styles updated - Changed
+* Font Awesome updated to 7.3.1, with the Font Awesome 4 compatibility rules in the same stylesheet - Changed
+* Icon picker updated with the Font Awesome 7 icons - Changed
+* Google Fonts list updated to 1,980 fonts - Changed
+* Font Awesome now loads under the same stylesheet handle as in the other HashThemes themes and plugins, so it loads only once - Changed
+* Customizer labels: Upgrade to Pro, YouTube, LinkedIn, Subtitle and Separate spelled correctly - Fixed
+* Unused files - Removed
+
 = 2.0.70 - Oct 26, 2026 =
 * Starter content rewritten with real sample text, a three-slide banner, team photos for the About section, filled-in tabs, client logos and three blog posts with images, so new sites and the WordPress.org theme preview show every home section filled in - Changed
 * Home sections were empty in the WordPress.org theme preview, as their pages were looked up with a database query the preview's starter content can't answer - Fixed

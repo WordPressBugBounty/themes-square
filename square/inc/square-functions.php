@@ -51,19 +51,21 @@ if (!function_exists('square_get_active_campaign')) {
         $campaigns = apply_filters('square_upgrade_campaigns', array(
             array(
                 'id' => 'blackfriday',
-                'image' => 'blackfriday.jpg',
+                'image' => 'sale-blackfriday.jpg',
                 'start' => '11-20',
                 'end' => '12-02',
                 'title' => esc_html__('Black Friday - our biggest discount of the year', 'square'),
-                'button' => esc_html__('Get Square Plus - $65', 'square')
+                'badge' => esc_html__('Black Friday Sale', 'square'),
+                'button' => esc_html__('Get the Black Friday Deal', 'square')
             ),
             array(
                 'id' => 'newyear',
-                'image' => 'christmas-sale.jpg',
+                'image' => 'sale-holiday.jpg',
                 'start' => '12-15',
                 'end' => '01-05',
                 'title' => esc_html__('Christmas & New Year Sale', 'square'),
-                'button' => esc_html__('Get Square Plus - $65', 'square')
+                'badge' => esc_html__('Holiday Sale', 'square'),
+                'button' => esc_html__('Get the Holiday Deal', 'square')
             )
         ));
 

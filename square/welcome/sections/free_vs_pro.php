@@ -1,17 +1,20 @@
 <div class="free-vs-pro-info-wrap">
     <div class="free-vs-pro-info">
+        <span class="dashicons dashicons-money-alt" aria-hidden="true"></span>
         <h4><?php echo esc_html_x('ONE TIME PAYMENT', 'Free vs Pro Content', 'square'); ?></h4>
         <p><?php echo esc_html_x('No renewal needed', 'Free vs Pro Content', 'square'); ?></p>
     </div>
 
     <div class="free-vs-pro-info">
-        <h4><?php echo esc_html_x('UNLIMITED DOMAIN LICENCE', 'Free vs Pro Content', 'square'); ?></h4>
-        <p><?php echo esc_html_x('Use in as many websites as you need', 'Free vs Pro Content', 'square'); ?></p>
+        <span class="dashicons dashicons-admin-site-alt3" aria-hidden="true"></span>
+        <h4><?php echo esc_html_x('UNLIMITED DOMAIN LICENSE', 'Free vs Pro Content', 'square'); ?></h4>
+        <p><?php echo esc_html_x('Use it on as many websites as you need', 'Free vs Pro Content', 'square'); ?></p>
     </div>
 
     <div class="free-vs-pro-info">
-        <h4><?php echo esc_html_x('FREE UPDATES FOR LIFETIME', 'Free vs Pro Content', 'square'); ?></h4>
-        <p><?php echo esc_html_x('Keep up to date', 'Free vs Pro Content', 'square'); ?></p>
+        <span class="dashicons dashicons-update" aria-hidden="true"></span>
+        <h4><?php echo esc_html_x('FREE LIFETIME UPDATES', 'Free vs Pro Content', 'square'); ?></h4>
+        <p><?php echo esc_html_x('Every new feature at no extra cost', 'Free vs Pro Content', 'square'); ?></p>
     </div>
 </div>
 
@@ -30,7 +33,7 @@
             <p><?php echo esc_html_x('Everything below, on as many sites as you like, for a single payment. No renewals, and updates stay free for life.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
         <td colspan="2">
-            <a target="_blank" class="buy-pro-btn" href="<?php echo esc_url(square_upgrade_url('freevspro-top', 'square-freevspro')); ?>"><?php echo esc_html_x('Buy Now ($65 only)', 'Free vs Pro Content', 'square'); ?></a>
+            <a target="_blank" class="buy-pro-btn" href="<?php echo esc_url(square_upgrade_url('freevspro-top', 'square-freevspro')); ?>"><?php echo esc_html_x('Buy Now for $65', 'Free vs Pro Content', 'square'); ?></a>
         </td>
     </tr>
     <tr>
@@ -40,32 +43,32 @@
     </tr>
     <tr class="feature-row">
         <td>
-            <span><?php echo esc_html_x('One Click Demo Import', 'Free vs Pro Content', 'square'); ?></span>
-            <p><?php echo esc_html_x('With one click demo-import, you can install the demo content with just one click.', 'Free vs Pro Content', 'square'); ?></p>
+            <span><?php echo esc_html_x('One-Click Demo Import', 'Free vs Pro Content', 'square'); ?></span>
+            <p><?php echo esc_html_x('Import a complete demo website, with its content and settings, in a single click.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
         <td><?php echo esc_html_x('1 Demo', 'Free vs Pro Content', 'square'); ?></td>
         <td><?php echo esc_html_x('4 More Demos', 'Free vs Pro Content', 'square'); ?></td>
     </tr>
     <tr class="feature-row">
         <td>
-            <span><?php echo esc_html_x('GDPR Compliance & Cookies Consent', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/articles/configuring-gdpr-settings/" target="_blank"><?php echo esc_html_x('Detail', 'Free vs Pro Content', 'square'); ?></a></span>
-            <p><?php echo esc_html_x('The Premium version is fully GDPR compliant. Means no data is collected if you use the theme alone. Also the premium version has option to add GDPR Compliance & Cookies Consent text with buttons.', 'Free vs Pro Content', 'square'); ?></p>
+            <span><?php echo esc_html_x('GDPR Compliance and Cookie Consent', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/articles/configuring-gdpr-settings/" target="_blank"><?php echo esc_html_x('Details', 'Free vs Pro Content', 'square'); ?></a></span>
+            <p><?php echo esc_html_x('Neither version collects any visitor data on its own. Square Plus adds a cookie consent bar with your own text, buttons and a link to your privacy policy.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/no.png'); ?>" alt="No"></td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
+        <td><span class="welcome-mark is-no" role="img" aria-label="<?php esc_attr_e('No', 'square'); ?>"></span></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
     </tr>
     <tr class="feature-row">
         <td>
-            <span><?php echo esc_html_x('Maintenance Mode', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/articles/setting-up-maintenance-mode-page/" target="_blank"><?php echo esc_html_x('Detail', 'Free vs Pro Content', 'square'); ?></a></span>
-            <p><?php echo esc_html_x('The premium version has an inbuilt option to add the Maintenance(under construction) Screen with countdown time. You don\'t need to install additional plugins.', 'Free vs Pro Content', 'square'); ?></p>
+            <span><?php echo esc_html_x('Maintenance Mode', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/articles/setting-up-maintenance-mode-page/" target="_blank"><?php echo esc_html_x('Details', 'Free vs Pro Content', 'square'); ?></a></span>
+            <p><?php echo esc_html_x('Show a maintenance or coming soon screen with a countdown timer while you work on the site, with no extra plugin needed.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/no.png'); ?>" alt="No"></td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
+        <td><span class="welcome-mark is-no" role="img" aria-label="<?php esc_attr_e('No', 'square'); ?>"></span></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
     </tr>
     <tr class="feature-row">
         <td>
             <span><?php echo esc_html_x('Elementor Compatible', 'Free vs Pro Content', 'square'); ?></span>
-            <p><?php echo esc_html_x('Fan of Pagebuilder? No problem, with premium version you can create your website with Elementor. Elementor provides you with unlimited possibilities to create the website of your imagination.', 'Free vs Pro Content', 'square'); ?></p>
+            <p><?php echo esc_html_x('Both versions work with Elementor. Square Plus goes further, with its own widgets, section extenders and templates.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
         <td><?php echo esc_html_x('Basic', 'Free vs Pro Content', 'square'); ?></td>
         <td><?php echo esc_html_x('Advanced', 'Free vs Pro Content', 'square'); ?></td>
@@ -73,47 +76,47 @@
     <tr class="feature-row">
         <td>
             <span><?php echo esc_html_x('Elementor Widgets', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/documentation/square-plus-documentation/#I.ElementorModule" target="_blank"><?php echo esc_html_x('View Demo', 'Free vs Pro Content', 'square'); ?></a></span>
-            <p><?php echo esc_html_x('Elementor provides you with unlimited possibilities to create the website of your imagination.', 'Free vs Pro Content', 'square'); ?></p>
+            <p><?php echo esc_html_x('Square Plus adds its own Elementor widgets, so you can build any page layout with the same look as the rest of the theme.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/no.png'); ?>" alt="No"></td>
-        <td>21 Widgets</td>
+        <td><span class="welcome-mark is-no" role="img" aria-label="<?php esc_attr_e('No', 'square'); ?>"></span></td>
+        <td><?php echo esc_html_x('21 Widgets', 'Free vs Pro Content', 'square'); ?></td>
     </tr>
     <tr class="feature-row">
         <td>
             <span><?php echo esc_html_x('Elementor Section Extenders', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/documentation/square-plus-documentation/#III.ElementorExtender" target="_blank"><?php echo esc_html_x('View Demo', 'Free vs Pro Content', 'square'); ?></a></span>
-            <p><?php echo esc_html_x('You can extend the Elementor section with amazing interactive extenders like Parallax Background, Parallax Animation, Colors Animation, Water Ripples, Particles Background, Background Effects & lot more.', 'Free vs Pro Content', 'square'); ?></p>
+            <p><?php echo esc_html_x('Add interactive effects to Elementor sections, such as Parallax Background, Parallax Animation, Colors Animation, Water Ripples, Particles Background and Background Effects.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/no.png'); ?>" alt="No"></td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
+        <td><span class="welcome-mark is-no" role="img" aria-label="<?php esc_attr_e('No', 'square'); ?>"></span></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
     </tr>
     <tr class="feature-row">
         <td>
-            <span><?php echo esc_html_x('Elementor Template/Section Importer', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/articles/import-elementor-template/" target="_blank"><?php echo esc_html_x('Detail', 'Free vs Pro Content', 'square'); ?></a></span>
-            <p><?php echo esc_html_x('Import Elementor Templates and Sections with just one click without having to import the whole website.', 'Free vs Pro Content', 'square'); ?></p>
+            <span><?php echo esc_html_x('Elementor Template and Section Importer', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/articles/import-elementor-template/" target="_blank"><?php echo esc_html_x('Details', 'Free vs Pro Content', 'square'); ?></a></span>
+            <p><?php echo esc_html_x('Import individual Elementor templates and sections with one click, without importing a whole demo.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/no.png'); ?>" alt="No"></td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
+        <td><span class="welcome-mark is-no" role="img" aria-label="<?php esc_attr_e('No', 'square'); ?>"></span></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
     </tr>
     <tr class="feature-row">
         <td>
-            <span><?php echo esc_html_x('Multiple Header Layouts and Settings', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/documentation/square-plus-documentation/#III.MainHeader" target="_blank"><?php echo esc_html_x('Detail', 'Free vs Pro Content', 'square'); ?></a></span>
-            <p><?php echo esc_html_x('The premium version gives the option to choose from 6 header layouts. Additionally, it allows changing the header background color, text color, header height, and more.', 'Free vs Pro Content', 'square'); ?></p>
+            <span><?php echo esc_html_x('Header Layouts and Settings', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/documentation/square-plus-documentation/#III.MainHeader" target="_blank"><?php echo esc_html_x('Details', 'Free vs Pro Content', 'square'); ?></a></span>
+            <p><?php echo esc_html_x('Choose from 6 header layouts, and set the header background, text color, height and more.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/no.png'); ?>" alt="No"></td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
+        <td><span class="welcome-mark is-no" role="img" aria-label="<?php esc_attr_e('No', 'square'); ?>"></span></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
     </tr>
     <tr class="feature-row">
         <td>
-            <span><?php echo esc_html_x('Mega Menu', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/articles/create-mega-menu/" target="_blank"><?php echo esc_html_x('Detail', 'Free vs Pro Content', 'square'); ?></a></span>
-            <p><?php echo esc_html_x('The Premium version has an inbuilt mega menu that will allow you to create beautiful big menus in no time.', 'Free vs Pro Content', 'square'); ?></p>
+            <span><?php echo esc_html_x('Mega Menu', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/articles/create-mega-menu/" target="_blank"><?php echo esc_html_x('Details', 'Free vs Pro Content', 'square'); ?></a></span>
+            <p><?php echo esc_html_x('Build large, multi-column menus with the built-in mega menu, with no extra plugin needed.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/no.png'); ?>" alt="No"></td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
+        <td><span class="welcome-mark is-no" role="img" aria-label="<?php esc_attr_e('No', 'square'); ?>"></span></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
     </tr>
     <tr class="feature-row">
         <td>
-            <span><?php echo esc_html_x('Advanced Typography Options for Specific Sections', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/documentation/square-plus-documentation/#TypographySettings" target="_blank"><?php echo esc_html_x('Detail', 'Free vs Pro Content', 'square'); ?></a></span>
-            <p><?php echo esc_html_x('The premium version has 800+ Google Fonts to choose from. Don\'t want to use Google Fonts? No problem, it has web safe standard non-Google fonts to choose from as well.', 'Free vs Pro Content', 'square'); ?></p>
+            <span><?php echo esc_html_x('Typography', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/documentation/square-plus-documentation/#TypographySettings" target="_blank"><?php echo esc_html_x('Details', 'Free vs Pro Content', 'square'); ?></a></span>
+            <p><?php echo esc_html_x('Square Plus adds separate typography settings for specific parts of the site, with 1,900+ Google Fonts and web-safe system fonts to choose from.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
         <td><?php echo esc_html_x('Basic', 'Free vs Pro Content', 'square'); ?></td>
         <td><?php echo esc_html_x('Advanced', 'Free vs Pro Content', 'square'); ?></td>
@@ -121,7 +124,7 @@
     <tr class="feature-row">
         <td>
             <span><?php echo esc_html_x('Color Options', 'Free vs Pro Content', 'square'); ?></span>
-            <p><?php echo esc_html_x('The free version has a basic color option but the premium version has advanced color options that allow customizing the color everywhere like header, post/page, footer, and home page sections.', 'Free vs Pro Content', 'square'); ?></p>
+            <p><?php echo esc_html_x('The free version covers the main site colors. Square Plus lets you set colors throughout the site, including the header, posts and pages, footer and each home page section.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
         <td><?php echo esc_html_x('Basic', 'Free vs Pro Content', 'square'); ?></td>
         <td><?php echo esc_html_x('Advanced', 'Free vs Pro Content', 'square'); ?></td>
@@ -129,39 +132,39 @@
     <tr class="feature-row">
         <td>
             <span><?php echo esc_html_x('Home Page Section Reorder', 'Free vs Pro Content', 'square'); ?></span>
-            <p><?php echo esc_html_x('Option to organize how the home page section appears.', 'Free vs Pro Content', 'square'); ?></p>
+            <p><?php echo esc_html_x('Arrange the home page sections in the order you want.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/no.png'); ?>" alt="No"></td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
+        <td><span class="welcome-mark is-no" role="img" aria-label="<?php esc_attr_e('No', 'square'); ?>"></span></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
     </tr>
     <tr class="feature-row">
         <td>
             <span><?php echo esc_html_x('Home Page Unlimited Blocks for Each Section', 'Free vs Pro Content', 'square'); ?></span>
-            <p><?php echo esc_html_x('The premium version allows adding an unlimited block for all the sections on the home page. This includes a slider, featured block, highlight block, service, team, testimonial, counter, pricing, tabs, content slider, and logo. Moreover, it has the option to choose the number of columns to show in each row.', 'Free vs Pro Content', 'square'); ?></p>
+            <p><?php echo esc_html_x('Add as many items as you need to every home page section, including slides, featured and highlight blocks, services, team members, testimonials, counters, pricing plans, tabs, content slides and logos, and choose how many columns each row shows.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/no.png'); ?>" alt="No"></td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
+        <td><span class="welcome-mark is-no" role="img" aria-label="<?php esc_attr_e('No', 'square'); ?>"></span></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
     </tr>
     <tr class="feature-row">
         <td>
-            <span><?php echo esc_html_x('Home Page Video Background, Image Motion Background, Gradient Background', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/articles/configure-advanced-settings/#totalplus-background-types" target="_blank"><?php echo esc_html_x('Detail', 'Free vs Pro Content', 'square'); ?></a></span>
-            <p><?php echo esc_html_x('The premium version has advanced background options that include an option to choose from a video background, moving background, or gradient background.', 'Free vs Pro Content', 'square'); ?></p>
+            <span><?php echo esc_html_x('Home Page Video, Motion and Gradient Backgrounds', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/articles/configure-advanced-settings/#totalplus-background-types" target="_blank"><?php echo esc_html_x('Details', 'Free vs Pro Content', 'square'); ?></a></span>
+            <p><?php echo esc_html_x('Give any home page section a video, moving image or gradient background.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/no.png'); ?>" alt="No"></td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
+        <td><span class="welcome-mark is-no" role="img" aria-label="<?php esc_attr_e('No', 'square'); ?>"></span></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
     </tr>
     <tr class="feature-row">
         <td>
-            <span><?php echo esc_html_x('Home Page Sections', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/documentation/square-plus-documentation/#HomePageSections/Settings" target="_blank"><?php echo esc_html_x('Detail', 'Free vs Pro Content', 'square'); ?></a></span>
-            <p><?php echo esc_html_x('Square Plus has an additional 13 sections.', 'Free vs Pro Content', 'square'); ?></p>
+            <span><?php echo esc_html_x('Home Page Sections', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/documentation/square-plus-documentation/#HomePageSections/Settings" target="_blank"><?php echo esc_html_x('Details', 'Free vs Pro Content', 'square'); ?></a></span>
+            <p><?php echo esc_html_x('Square Plus adds 13 more home page sections.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
         <td>5</td>
         <td>18</td>
     </tr>
     <tr class="feature-row">
         <td>
-            <span><?php echo esc_html_x('Home Page Blocks - Style Variations', 'Free vs Pro Content', 'square'); ?></span>
-            <p><?php echo esc_html_x('Option to switch the style of the home page blocks.', 'Free vs Pro Content', 'square'); ?></p>
+            <span><?php echo esc_html_x('Home Page Block Styles', 'Free vs Pro Content', 'square'); ?></span>
+            <p><?php echo esc_html_x('Switch between several designs for each home page block:', 'Free vs Pro Content', 'square'); ?></p>
             <ul>
                 <li><a href="https://demo.hashthemes.com/square-plus/featured-block/" target="_blank"><?php echo esc_html_x('Featured Block - 3 styles', 'Free vs Pro Content', 'square'); ?></a></li>
                 <li><a href="https://demo.hashthemes.com/square-plus/highlight-block/" target="_blank"><?php echo esc_html_x('Highlight Block - 2 styles', 'Free vs Pro Content', 'square'); ?></a></li>
@@ -172,82 +175,82 @@
                 <li><a href="https://demo.hashthemes.com/square-plus/content-slider/" target="_blank"><?php echo esc_html_x('Content Slider - 2 styles', 'Free vs Pro Content', 'square'); ?></a></li>
                 <li><a href="https://demo.hashthemes.com/square-plus/team-block/" target="_blank"><?php echo esc_html_x('Team Grid/Carousel - 4 styles', 'Free vs Pro Content', 'square'); ?></a></li>
                 <li><a href="https://demo.hashthemes.com/square-plus/counter-block/" target="_blank"><?php echo esc_html_x('Counter - 4 styles', 'Free vs Pro Content', 'square'); ?></a></li>
-                <li><a href="https://demo.hashthemes.com/square-plus/blog-section/" target="_blank"><?php echo esc_html_x('Blog block - 4 styles', 'Free vs Pro Content', 'square'); ?></a></li>
+                <li><a href="https://demo.hashthemes.com/square-plus/blog-section/" target="_blank"><?php echo esc_html_x('Blog Block - 4 styles', 'Free vs Pro Content', 'square'); ?></a></li>
                 <li><a href="https://demo.hashthemes.com/square-plus/testimonial-blocks/" target="_blank"><?php echo esc_html_x('Testimonial - 2 styles', 'Free vs Pro Content', 'square'); ?></a></li>
                 <li><a href="https://demo.hashthemes.com/square-plus/pricing-block/" target="_blank"><?php echo esc_html_x('Pricing - 4 styles', 'Free vs Pro Content', 'square'); ?></a></li>
             </ul>
         </td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/no.png'); ?>" alt="No"></td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
+        <td><span class="welcome-mark is-no" role="img" aria-label="<?php esc_attr_e('No', 'square'); ?>"></span></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
     </tr>
     <tr class="feature-row">
         <td>
-            <span><?php echo esc_html_x('Home Page Shape Dividers', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/articles/configure-advanced-settings/#totalplus-shape-divider" target="_blank"><?php echo esc_html_x('Detail', 'Free vs Pro Content', 'square'); ?></a></span>
-            <p><?php echo esc_html_x('The theme has 16 shape dividers that you can choose from to create a nice transition effect between sections', 'Free vs Pro Content', 'square'); ?></p>
+            <span><?php echo esc_html_x('Home Page Shape Dividers', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/articles/configure-advanced-settings/#totalplus-shape-divider" target="_blank"><?php echo esc_html_x('Details', 'Free vs Pro Content', 'square'); ?></a></span>
+            <p><?php echo esc_html_x('Choose from 16 shape dividers for smooth transitions between sections.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/no.png'); ?>" alt="No"></td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
+        <td><span class="welcome-mark is-no" role="img" aria-label="<?php esc_attr_e('No', 'square'); ?>"></span></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
     </tr>
     <tr class="feature-row">
         <td>
-            <span><?php echo esc_html_x('Home Page Sections with Full Screen Height', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/articles/configure-advanced-settings/#totalplus-full-window-height" target="_blank"><?php echo esc_html_x('Detail', 'Free vs Pro Content', 'square'); ?></a></span>
-            <p><?php echo esc_html_x('A home page section that covers the full screen despite having less content. It is useful for a one-page website.', 'Free vs Pro Content', 'square'); ?></p>
+            <span><?php echo esc_html_x('Full Screen Home Page Sections', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/articles/configure-advanced-settings/#totalplus-full-window-height" target="_blank"><?php echo esc_html_x('Details', 'Free vs Pro Content', 'square'); ?></a></span>
+            <p><?php echo esc_html_x('Make any home page section fill the height of the screen, however little content it has. Ideal for one-page websites.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/no.png'); ?>" alt="No"></td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
+        <td><span class="welcome-mark is-no" role="img" aria-label="<?php esc_attr_e('No', 'square'); ?>"></span></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
     </tr>
     <tr class="feature-row">
         <td>
-            <span><?php echo esc_html_x('Home Page Slider', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/documentation/square-plus-documentation/#HomeSlider" target="_blank"><?php echo esc_html_x('Detail', 'Free vs Pro Content', 'square'); ?></a></span>
-            <p><?php echo esc_html_x('The premium version has an option for the Simple Slider, Revolution Slider, and Single Banner Image with advanced customization options.', 'Free vs Pro Content', 'square'); ?></p>
+            <span><?php echo esc_html_x('Home Page Slider', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/documentation/square-plus-documentation/#HomeSlider" target="_blank"><?php echo esc_html_x('Details', 'Free vs Pro Content', 'square'); ?></a></span>
+            <p><?php echo esc_html_x('Choose a simple slider, Revolution Slider or a single banner image, each with advanced settings.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
         <td><?php echo esc_html_x('Basic', 'Free vs Pro Content', 'square'); ?></td>
         <td><?php echo esc_html_x('Advanced', 'Free vs Pro Content', 'square'); ?></td>
     </tr>
     <tr class="feature-row">
         <td>
-            <span><?php echo esc_html_x('Top Header Bar', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/documentation/square-plus-documentation/#II.TopHeader" target="_blank"><?php echo esc_html_x('Detail', 'Free vs Pro Content', 'square'); ?></a></span>
-            <p><?php echo esc_html_x('Square Plus comes with an option for the top bar where you can add a contact address, social icon, language picker, or any informative text.', 'Free vs Pro Content', 'square'); ?></p>
+            <span><?php echo esc_html_x('Top Header Bar', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/documentation/square-plus-documentation/#II.TopHeader" target="_blank"><?php echo esc_html_x('Details', 'Free vs Pro Content', 'square'); ?></a></span>
+            <p><?php echo esc_html_x('A bar above the header for your contact details, social icons, a language switcher or a short message.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/no.png'); ?>" alt="No"></td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
+        <td><span class="welcome-mark is-no" role="img" aria-label="<?php esc_attr_e('No', 'square'); ?>"></span></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
     </tr>
     <tr class="feature-row">
         <td>
-            <span><?php echo esc_html_x('Add New Widget Area', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/articles/add-new-widget-area/" target="_blank"><?php echo esc_html_x('Detail', 'Free vs Pro Content', 'square'); ?></a></span>
-            <p><?php echo esc_html_x('Create unlimited widget areas using our premium version. You can create new widget areas for placing widgets.', 'Free vs Pro Content', 'square'); ?></p>
+            <span><?php echo esc_html_x('Add New Widget Area', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/articles/add-new-widget-area/" target="_blank"><?php echo esc_html_x('Details', 'Free vs Pro Content', 'square'); ?></a></span>
+            <p><?php echo esc_html_x('Create as many extra widget areas as you need, for example to show a different sidebar on individual pages.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/no.png'); ?>" alt="No"></td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
+        <td><span class="welcome-mark is-no" role="img" aria-label="<?php esc_attr_e('No', 'square'); ?>"></span></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
     </tr>
     <tr class="feature-row">
         <td>
             <span><?php echo esc_html_x('Custom Widgets', 'Free vs Pro Content', 'square'); ?></span>
-            <p><?php echo esc_html_x('With a custom widget and SiteOrigin Page Builder, you can play to create various website layouts.', 'Free vs Pro Content', 'square'); ?></p>
+            <p><?php echo esc_html_x('Ready-made widgets for sidebars and footers, which you can also use to build page layouts with SiteOrigin Page Builder.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
         <td>3 Widgets</td>
         <td>14 Widgets</td>
     </tr>
     <tr class="feature-row">
         <td>
-            <span><?php echo esc_html_x('PreLoader Option', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/documentation/square-plus-documentation/#II.PreloaderOptions" target="_blank"><?php echo esc_html_x('Detail', 'Free vs Pro Content', 'square'); ?></a></span>
-            <p><?php echo esc_html_x('The loading screen appears until the website is fully loaded. The premium version has the option to choose from 16 preloaders or add your preloader image as well.', 'Free vs Pro Content', 'square'); ?></p>
+            <span><?php echo esc_html_x('Preloader', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/documentation/square-plus-documentation/#II.PreloaderOptions" target="_blank"><?php echo esc_html_x('Details', 'Free vs Pro Content', 'square'); ?></a></span>
+            <p><?php echo esc_html_x('Show a loading animation until the page has fully loaded. Choose from 16 preloaders or upload your own image.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/no.png'); ?>" alt="No"></td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
+        <td><span class="welcome-mark is-no" role="img" aria-label="<?php esc_attr_e('No', 'square'); ?>"></span></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
     </tr>
     <tr class="feature-row">
         <td>
-            <span><?php echo esc_html_x('Sidebar Layout Options', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/documentation/square-plus-documentation/#SidebarSettings" target="_blank"><?php echo esc_html_x('Detail', 'Free vs Pro Content', 'square'); ?></a></span>
-            <p><?php printf(esc_html_x('The premium version has the option to change the sidebar layout universally or %1schange the sidebar for individual posts/pages%2s. Moreover, it allows choosing the sidebar widgets for individual posts/pages.', 'Free vs Pro Content', 'square'), '<a href="https://hashthemes.com/articles/change-the-sidebar-layout-and-choose-unique-widget/" target="_blank">', '</a>'); ?></p>
+            <span><?php echo esc_html_x('Sidebar Layout Options', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/documentation/square-plus-documentation/#SidebarSettings" target="_blank"><?php echo esc_html_x('Details', 'Free vs Pro Content', 'square'); ?></a></span>
+            <p><?php printf(esc_html_x('Set the sidebar layout for the whole site or %1$sfor individual posts and pages%2$s, and choose different sidebar widgets for individual posts and pages.', 'Free vs Pro Content', 'square'), '<a href="https://hashthemes.com/articles/change-the-sidebar-layout-and-choose-unique-widget/" target="_blank">', '</a>'); ?></p>
         </td>
         <td><?php echo esc_html_x('Basic', 'Free vs Pro Content', 'square'); ?></td>
         <td><?php echo esc_html_x('Advanced', 'Free vs Pro Content', 'square'); ?></td>
     </tr>
     <tr class="feature-row">
         <td>
-            <span><?php echo esc_html_x('Advanced Blog Settings', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/documentation/square-plus-documentation/#BlogPostSettings" target="_blank"><?php echo esc_html_x('Detail', 'Free vs Pro Content', 'square'); ?></a></span>
-            <p><?php echo esc_html_x('The Premium version has an advanced blog page setting option. The option allows you to show or hide each element of the blog.', 'Free vs Pro Content', 'square'); ?></p>
+            <span><?php echo esc_html_x('Advanced Blog Settings', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/documentation/square-plus-documentation/#BlogPostSettings" target="_blank"><?php echo esc_html_x('Details', 'Free vs Pro Content', 'square'); ?></a></span>
+            <p><?php echo esc_html_x('Square Plus adds a show or hide setting for every element of the blog page.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
         <td><?php echo esc_html_x('Basic', 'Free vs Pro Content', 'square'); ?></td>
         <td><?php echo esc_html_x('Advanced', 'Free vs Pro Content', 'square'); ?></td>
@@ -255,7 +258,7 @@
     <tr class="feature-row">
         <td>
             <span><?php echo esc_html_x('Blog Layouts', 'Free vs Pro Content', 'square'); ?></span>
-            <p><?php echo esc_html_x('The premium version gives the option to choose from 4 differently designed blog layouts.', 'Free vs Pro Content', 'square'); ?></p>
+            <p><?php echo esc_html_x('Choose from 4 distinct blog layouts.', 'Free vs Pro Content', 'square'); ?></p>
             <ul>
                 <li><a href="https://demo.hashthemes.com/square-plus/original/blog/" target="_blank"><?php echo esc_html_x('Blog Layout 1 Demo', 'Free vs Pro Content', 'square'); ?></a></li>
                 <li><a href="https://demo.hashthemes.com/square-plus/business/blog/" target="_blank"><?php echo esc_html_x('Blog Layout 2 Demo', 'Free vs Pro Content', 'square'); ?></a></li>
@@ -268,79 +271,79 @@
     </tr>
     <tr class="feature-row">
         <td>
-            <span><?php echo esc_html_x('Reorder and Show/Hide Elements of Single Post', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/documentation/square-plus-documentation/#SinglePostSettings" target="_blank"><?php echo esc_html_x('Detail', 'Free vs Pro Content', 'square'); ?></a></span>
-            <p><?php echo esc_html_x('Change the position(reorder) the single post elements like post meta, featured image, content, category, tags, and social share icons and place them in the order you want. You can disable it individually if you do not want to show it.', 'Free vs Pro Content', 'square'); ?></p>
+            <span><?php echo esc_html_x('Reorder and Show or Hide Single Post Elements', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/documentation/square-plus-documentation/#SinglePostSettings" target="_blank"><?php echo esc_html_x('Details', 'Free vs Pro Content', 'square'); ?></a></span>
+            <p><?php echo esc_html_x('Put the parts of a single post, such as the post meta, featured image, content, categories, tags and share icons, in the order you want, and hide any you do not need.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/no.png'); ?>" alt="No"></td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
+        <td><span class="welcome-mark is-no" role="img" aria-label="<?php esc_attr_e('No', 'square'); ?>"></span></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
     </tr>
     <tr class="feature-row">
         <td>
-            <span><?php echo esc_html_x('Author Box, Social Share, and Related Post at the Bottom of the Single Post', 'Free vs Pro Content', 'square'); ?></span>
-            <p><?php echo esc_html_x('Shows the short intro of the post author along with social icons, major Social Share Icons without using a plugin, and related posts by category.', 'Free vs Pro Content', 'square'); ?></p>
+            <span><?php echo esc_html_x('Author Box, Social Sharing and Related Posts', 'Free vs Pro Content', 'square'); ?></span>
+            <p><?php echo esc_html_x('Below each post: an author box with a short bio and social icons, share buttons for the major social networks with no extra plugin, and related posts from the same category.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/no.png'); ?>" alt="No"></td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
+        <td><span class="welcome-mark is-no" role="img" aria-label="<?php esc_attr_e('No', 'square'); ?>"></span></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
     </tr>
     <tr class="feature-row">
         <td>
-            <span><?php echo esc_html_x('Unique Header Background for Each Post and Page', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/articles/changing-the-title-bar-background/" target="_blank"><?php echo esc_html_x('Detail', 'Free vs Pro Content', 'square'); ?></a></span>
-            <p><?php echo esc_html_x('The premium version has the option to add a unique Title Bar(Header) background for each post and page.', 'Free vs Pro Content', 'square'); ?></p>
+            <span><?php echo esc_html_x('Unique Header Background for Each Post and Page', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/articles/changing-the-title-bar-background/" target="_blank"><?php echo esc_html_x('Details', 'Free vs Pro Content', 'square'); ?></a></span>
+            <p><?php echo esc_html_x('Give any post or page its own title bar background.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/no.png'); ?>" alt="No"></td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
+        <td><span class="welcome-mark is-no" role="img" aria-label="<?php esc_attr_e('No', 'square'); ?>"></span></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
     </tr>
     <tr class="feature-row">
         <td>
-            <span><?php echo esc_html_x('Different Background and Text Color for Each Post and Page', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/articles/change-the-background-and-text-color/" target="_blank"><?php echo esc_html_x('Detail', 'Free vs Pro Content', 'square'); ?></a></span>
-            <p><?php echo esc_html_x('The premium version comes with the option to configure the background and text color of each page and post on the website. It will allow you to choose the custom background color, background image, and text color for any page or post you like.', 'Free vs Pro Content', 'square'); ?></p>
+            <span><?php echo esc_html_x('Custom Background and Text Colors for Each Post and Page', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/articles/change-the-background-and-text-color/" target="_blank"><?php echo esc_html_x('Details', 'Free vs Pro Content', 'square'); ?></a></span>
+            <p><?php echo esc_html_x('Set a custom background color, background image and text color for any post or page.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/no.png'); ?>" alt="No"></td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
+        <td><span class="welcome-mark is-no" role="img" aria-label="<?php esc_attr_e('No', 'square'); ?>"></span></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
     </tr>
     <tr class="feature-row">
         <td>
-            <span><?php echo esc_html_x('Hide Header and Footer for Each Post and Page', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/articles/hide-header-and-footer/" target="_blank"><?php echo esc_html_x('Detail', 'Free vs Pro Content', 'square'); ?></a></span>
-            <p><?php echo esc_html_x('You can show/hide the header and footer for each of the pages/posts. It is helpful if you are running an infographic website.', 'Free vs Pro Content', 'square'); ?></p>
+            <span><?php echo esc_html_x('Hide Header and Footer for Each Post and Page', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/articles/hide-header-and-footer/" target="_blank"><?php echo esc_html_x('Details', 'Free vs Pro Content', 'square'); ?></a></span>
+            <p><?php echo esc_html_x('Hide the header or footer on individual posts and pages, which is useful for landing pages and infographics.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/no.png'); ?>" alt="No"></td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
+        <td><span class="welcome-mark is-no" role="img" aria-label="<?php esc_attr_e('No', 'square'); ?>"></span></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
     </tr>
 
     <tr class="feature-row">
         <td>
-            <span><?php echo esc_html_x('Advanced Footer Setting', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/documentation/square-plus-documentation/#FooterSettings" target="_blank"><?php echo esc_html_x('Detail', 'Free vs Pro Content', 'square'); ?></a></span>
-            <p><?php echo esc_html_x('The premium version has the option to choose from 5 different footer styles. Apart from that, you can set the number of footer columns and resize them as you want with dragging column resizer.', 'Free vs Pro Content', 'square'); ?></p>
+            <span><?php echo esc_html_x('Advanced Footer Settings', 'Free vs Pro Content', 'square'); ?> - <a href="https://hashthemes.com/documentation/square-plus-documentation/#FooterSettings" target="_blank"><?php echo esc_html_x('Details', 'Free vs Pro Content', 'square'); ?></a></span>
+            <p><?php echo esc_html_x('Choose from 5 footer styles, set the number of footer columns and drag to resize them.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/no.png'); ?>" alt="No"></td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
+        <td><span class="welcome-mark is-no" role="img" aria-label="<?php esc_attr_e('No', 'square'); ?>"></span></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
     </tr>
     <tr class="feature-row">
         <td>
             <span><?php echo esc_html_x('Remove Footer Credit Text', 'Free vs Pro Content', 'square'); ?></span>
-            <p><?php echo esc_html_x('The premium version easily allows you to remove or change the footer credit text.', 'Free vs Pro Content', 'square'); ?></p>
+            <p><?php echo esc_html_x('Remove or change the footer credit text.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/no.png'); ?>" alt="No"></td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
+        <td><span class="welcome-mark is-no" role="img" aria-label="<?php esc_attr_e('No', 'square'); ?>"></span></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
     </tr>
     <tr class="feature-row">
         <td>
-            <span><?php echo esc_html_x('Google Map Option', 'Free vs Pro Content', 'square'); ?></span>
-            <p><?php echo esc_html_x('Shows the physical location with an interactive contact form.', 'Free vs Pro Content', 'square'); ?></p>
+            <span><?php echo esc_html_x('Google Map', 'Free vs Pro Content', 'square'); ?></span>
+            <p><?php echo esc_html_x('Show your location on an interactive map, alongside a contact form.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/no.png'); ?>" alt="No"></td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
+        <td><span class="welcome-mark is-no" role="img" aria-label="<?php esc_attr_e('No', 'square'); ?>"></span></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
     </tr>
     <tr class="feature-row">
         <td>
             <span><?php echo esc_html_x('Icon Picker', 'Free vs Pro Content', 'square'); ?></span>
-            <p><?php echo esc_html_x('The premium theme has 5 icon packs with more than 5000+ icons. They can be used on the various sections of the Home Page, WordPress Widget Blocks, and Elementor Modules.', 'Free vs Pro Content', 'square'); ?></p>
+            <p><?php echo esc_html_x('Square Plus includes 5 icon packs with more than 12,000 icons, for the home page sections, widgets and Elementor widgets.', 'Free vs Pro Content', 'square'); ?></p>
             <ul>
-                <li><?php echo esc_html_x('i) Ico Font', 'Free vs Pro Content', 'square'); ?></li>
-                <li><?php echo esc_html_x('ii) FontAwesome', 'Free vs Pro Content', 'square'); ?></li>
-                <li><?php echo esc_html_x('iii) Essential Icon', 'Free vs Pro Content', 'square'); ?></li>
-                <li><?php echo esc_html_x('iv) Material Icon', 'Free vs Pro Content', 'square'); ?></li>
-                <li><?php echo esc_html_x('v) Elegant Icon', 'Free vs Pro Content', 'square'); ?></li>
+                <li><?php echo esc_html_x('IcoFont', 'Free vs Pro Content', 'square'); ?></li>
+                <li><?php echo esc_html_x('Font Awesome', 'Free vs Pro Content', 'square'); ?></li>
+                <li><?php echo esc_html_x('Essential Icons', 'Free vs Pro Content', 'square'); ?></li>
+                <li><?php echo esc_html_x('Material Design Icons', 'Free vs Pro Content', 'square'); ?></li>
+                <li><?php echo esc_html_x('Elegant Icons', 'Free vs Pro Content', 'square'); ?></li>
             </ul>
         </td>
         <td><?php echo esc_html_x('Basic', 'Free vs Pro Content', 'square'); ?></td>
@@ -349,7 +352,7 @@
     <tr class="feature-row">
         <td>
             <span><?php echo esc_html_x('WooCommerce Compatible', 'Free vs Pro Content', 'square'); ?></span>
-            <p><?php echo esc_html_x('The premium version has enhanced WooCommerce options like adding a cart icon in the menu, product page settings, sidebar layout settings, and more.', 'Free vs Pro Content', 'square'); ?></p>
+            <p><?php echo esc_html_x('Both versions support WooCommerce. Square Plus adds a cart icon in the menu, product page settings, shop sidebar layouts and more.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
         <td><?php echo esc_html_x('Basic', 'Free vs Pro Content', 'square'); ?></td>
         <td><?php echo esc_html_x('Advanced', 'Free vs Pro Content', 'square'); ?></td>
@@ -357,15 +360,15 @@
     <tr class="feature-row">
         <td>
             <span><?php echo esc_html_x('RTL Ready', 'Free vs Pro Content', 'square'); ?></span>
-            <p><?php echo esc_html_x('Both the free and premium versions are fully compatible with RTL (Right to left) languages like Arabic.', 'Free vs Pro Content', 'square'); ?></p>
+            <p><?php echo esc_html_x('Both versions fully support right-to-left languages such as Arabic and Hebrew.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
     </tr>
     <tr class="feature-row">
         <td>
             <span><?php echo esc_html_x('Multilingual Ready', 'Free vs Pro Content', 'square'); ?></span>
-            <p><?php echo esc_html_x('The Premium Version is fully compatible with WPML and Polylang. Create the website in multiple languages.', 'Free vs Pro Content', 'square'); ?></p>
+            <p><?php echo esc_html_x('Square Plus is fully compatible with WPML and Polylang, so you can run your website in several languages.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
         <td><?php echo esc_html_x('Partially', 'Free vs Pro Content', 'square'); ?></td>
         <td><?php echo esc_html_x('Fully', 'Free vs Pro Content', 'square'); ?></td>
@@ -373,51 +376,51 @@
     <tr class="feature-row">
         <td>
             <span><?php echo esc_html_x('Translation Ready', 'Free vs Pro Content', 'square'); ?></span>
-            <p><?php echo esc_html_x('Both the free and pro versions are fully translation ready.', 'Free vs Pro Content', 'square'); ?>
+            <p><?php echo esc_html_x('Both versions are ready to be translated into any language.', 'Free vs Pro Content', 'square'); ?>
         </td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></p>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></p>
         </td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
     </tr>
     <tr class="feature-row">
         <td>
             <span><?php echo esc_html_x('Search Engine Optimization', 'Free vs Pro Content', 'square'); ?></span>
-            <p><?php echo esc_html_x('Follows best SEO practices so that your website always ranks higher in Search Engines.', 'Free vs Pro Content', 'square'); ?></p>
+            <p><?php echo esc_html_x('Clean, well-structured code that follows SEO best practices.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
     </tr>
     <tr class="feature-row">
         <td>
             <span><?php echo esc_html_x('Major Browser Compatible', 'Free vs Pro Content', 'square'); ?></span>
-            <p><?php echo esc_html_x('The website runs smoothly in all major browsers.', 'Free vs Pro Content', 'square'); ?></p>
+            <p><?php echo esc_html_x('Works smoothly in all major browsers.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
     </tr>
     <tr class="feature-row">
         <td>
-            <span><?php echo esc_html_x('Responsive - Mobile Friendly', 'Free vs Pro Content', 'square'); ?></span>
-            <p><?php echo esc_html_x('Adapts to any screen size and displays beautifully.', 'Free vs Pro Content', 'square'); ?></p>
+            <span><?php echo esc_html_x('Responsive and Mobile Friendly', 'Free vs Pro Content', 'square'); ?></span>
+            <p><?php echo esc_html_x('Adapts to every screen size, from phones to large desktops.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
     </tr>
     <tr class="feature-row">
         <td>
-            <span><?php echo esc_html_x('Fast and Friendly Support', 'Free vs Pro Content', 'square'); ?></span>
-            <p><?php echo esc_html_x('For the Premium theme, the user will get a reply in 10 hours or less.', 'Free vs Pro Content', 'square'); ?></p>
+            <span><?php echo esc_html_x('Support', 'Free vs Pro Content', 'square'); ?></span>
+            <p><?php echo esc_html_x('Square Plus customers get a reply from our support team in 10 hours or less.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
-        <td><img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/yes.png'); ?>" alt="Yes"></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
+        <td><span class="welcome-mark is-yes" role="img" aria-label="<?php esc_attr_e('Yes', 'square'); ?>"></span></td>
     </tr>
     <tr>
         <td>
             <span><?php echo esc_html_x('Upgrade to Pro', 'Free vs Pro Content', 'square'); ?></span>
-            <p><?php echo esc_html_x('Everything below, on as many sites as you like, for a single payment. No renewals, and updates stay free for life.', 'Free vs Pro Content', 'square'); ?></p>
+            <p><?php echo esc_html_x('Everything above, on as many sites as you like, for a single payment. No renewals, and updates stay free for life.', 'Free vs Pro Content', 'square'); ?></p>
         </td>
         <td colspan="2">
-            <a target="_blank" class="buy-pro-btn" href="<?php echo esc_url(square_upgrade_url('freevspro-bottom', 'square-freevspro')); ?>"><?php echo esc_html_x('Buy Now ($65 only)', 'Free vs Pro Content', 'square'); ?></a>
+            <a target="_blank" class="buy-pro-btn" href="<?php echo esc_url(square_upgrade_url('freevspro-bottom', 'square-freevspro')); ?>"><?php echo esc_html_x('Buy Now for $65', 'Free vs Pro Content', 'square'); ?></a>
         </td>
     </tr>
 </table>

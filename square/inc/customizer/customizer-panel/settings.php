@@ -20,11 +20,11 @@ $header_bg_choices = array(
 
 $square_pro_features = '<ul class="upsell-features">
 	<li>' . esc_html__("4 more demos that can be imported with one click", "square") . '</li>
-    <li>' . esc_html__("Elementor compatible - Built your Home Page with Customizer or Elementor whichever you like", "square") . '</li>
+    <li>' . esc_html__("Elementor compatible - build your home page with the Customizer or with Elementor", "square") . '</li>
 	<li>' . esc_html__("19 Home Page sections with multiple styles (Highlight, Service, Portfolio, Tab, Team, Testimonial, Pricing, Blog, Counter, Call To Action, Logo Carousel, Contact section with google map)", "square") . '</li>
 	<li>' . esc_html__("Section reorder", "square") . '</li>
 	<li>' . esc_html__("Video background, Image Motion background, Parallax background, Gradient background option for each section", "square") . '</li>
-	<li>' . esc_html__("4 icon pack for icon picker (5000+ icons)", "square") . '</li>
+	<li>' . esc_html__("5 icon packs for the icon picker (12,000+ icons)", "square") . '</li>
 	<li>' . esc_html__("Unlimited slider with linkable button", "square") . '</li>
 	<li>' . esc_html__("Add unlimited blocks(like slider, team, testimonial) for each Section", "square") . '</li>
 	<li>' . esc_html__("15+ Shape divider to choose from for each section", "square") . '</li>
@@ -47,24 +47,35 @@ $square_pro_features = '<ul class="upsell-features">
 	<li>' . esc_html__("Fully RTL(right to left) languages compatible", "square") . '</li>
     <li>' . esc_html__("Remove footer credit text", "square") . '</li>
 	</ul>
-	<a class="ht-implink" href="' . admin_url('admin.php?page=square-welcome&section=free_vs_pro') . '" target="_blank">' . esc_html__("Comparision - Free Vs Pro", "square") . '</a>';
+	<a class="ht-implink button button-primary" href="' . admin_url('admin.php?page=square-welcome&section=free_vs_pro') . '" target="_blank">' . esc_html__("Comparison - Free vs Pro", "square") . '</a>';
 
 
 // Seasonal campaigns swap the banner copy automatically - see square_get_active_campaign().
+// During a sale the card leads with the sale and drops the list price, which
+// would contradict the discount shown at checkout.
 $square_campaign = square_get_active_campaign();
-$square_banner_title = $square_campaign ? $square_campaign['title'] : esc_html__('One-time payment. Unlimited sites. Lifetime updates.', 'square');
-$square_banner_button = $square_campaign ? $square_campaign['button'] : esc_html__('Get Square Plus - $65', 'square');
 
-$wp_customize->add_section(new Square_Upgrade_Section($wp_customize, 'square-pro-section', array(
+$wp_customize->add_section(new Square_Pro_Banner_Section($wp_customize, 'square-pro-section', array(
     'priority' => 0,
-    'title' => $square_banner_title,
-    'upgrade_text' => $square_banner_button,
+    'badge' => $square_campaign ? $square_campaign['badge'] : esc_html__('Square Plus', 'square'),
+    'title' => $square_campaign ? $square_campaign['title'] : esc_html__('Build a better website, faster', 'square'),
+    'points' => array(
+        esc_html__('19 home sections with multiple styles', 'square'),
+        esc_html__('6 header layouts and a mega menu', 'square'),
+        esc_html__('4 more one-click demos', 'square')
+    ),
+    'price' => $square_campaign ? '' : '$65',
+    'price_note' => esc_html__('one-time · unlimited sites', 'square'),
+    'upgrade_text' => $square_campaign ? $square_campaign['button'] : esc_html__('Upgrade to Square Plus', 'square'),
     'upgrade_url' => square_upgrade_url($square_campaign ? 'banner-' . $square_campaign['id'] : 'banner', 'square-customizer-button'),
+    'note' => esc_html__('7-day money-back guarantee', 'square'),
+    'is_sale' => (bool) $square_campaign,
 )));
 
 $wp_customize->add_section(new Square_Upgrade_Section($wp_customize, 'square-doc-section', array(
     'title' => esc_html__('Documentation', 'square'),
     'priority' => 1000,
+    'class' => 'ht--single-row',
     'upgrade_text' => esc_html__('View', 'square'),
     'upgrade_url' => 'https://hashthemes.com/documentation/square-documentation/'
 )));
@@ -72,6 +83,7 @@ $wp_customize->add_section(new Square_Upgrade_Section($wp_customize, 'square-doc
 $wp_customize->add_section(new Square_Upgrade_Section($wp_customize, 'square-demo-import-section', array(
     'title' => esc_html__('Import Demo Content', 'square'),
     'priority' => 999,
+    'class' => 'ht--single-row',
     'upgrade_text' => esc_html__('Import', 'square'),
     'upgrade_url' => admin_url('admin.php?page=square-welcome')
 )));
@@ -96,7 +108,7 @@ $wp_customize->add_control(new Square_Upgrade_Info_Control($wp_customize, 'squar
     'label' => esc_html__('For more color options,', 'square'),
     'priority' => 100,
     'active_callback' => 'square_is_upgrade_notice_active',
-    'upgrade_text' => esc_html__('Upgrade to PRO', 'square'),
+    'upgrade_text' => esc_html__('Upgrade to Pro', 'square'),
     'upgrade_url' => square_upgrade_url('sec-demo-import')
 )));
 
@@ -139,7 +151,7 @@ $wp_customize->add_control(new Square_Upgrade_Info_Control($wp_customize, 'squar
         esc_html__('Configure logo height and width', 'square')
     ),
     'priority' => 100,
-    'upgrade_text' => esc_html__('Upgrade to PRO', 'square'),
+    'upgrade_text' => esc_html__('Upgrade to Pro', 'square'),
     'upgrade_url' => square_upgrade_url('sec-title-tagline'),
     'active_callback' => 'square_is_upgrade_notice_active'
 )));
@@ -161,12 +173,11 @@ $wp_customize->add_setting('square_disable_sticky_header', array(
     'sanitize_callback' => 'absint'
 ));
 
-$wp_customize->add_control('square_disable_sticky_header', array(
+$wp_customize->add_control(new Square_Toggle_Control($wp_customize, 'square_disable_sticky_header', array(
     'settings' => 'square_disable_sticky_header',
     'section' => 'square_header_setting_sec',
     'label' => esc_html__('Disable Sticky Header', 'square'),
-    'type' => 'checkbox',
-));
+)));
 
 $wp_customize->add_setting('square_header_bg', array(
     'default' => 'sq-black',
@@ -211,7 +222,7 @@ $wp_customize->add_control(new Square_Upgrade_Info_Control($wp_customize, 'squar
         esc_html__('Option for different header banner on each post/page', 'square'),
     ),
     'priority' => 100,
-    'upgrade_text' => esc_html__('Upgrade to PRO', 'square'),
+    'upgrade_text' => esc_html__('Upgrade to Pro', 'square'),
     'upgrade_url' => square_upgrade_url('sec-header'),
     'active_callback' => 'square_is_upgrade_notice_active'
 )));
@@ -243,12 +254,11 @@ $wp_customize->add_setting('square_blog_share_buttons', array(
     'sanitize_callback' => 'absint'
 ));
 
-$wp_customize->add_control('square_blog_share_buttons', array(
+$wp_customize->add_control(new Square_Toggle_Control($wp_customize, 'square_blog_share_buttons', array(
     'settings' => 'square_blog_share_buttons',
     'section' => 'square_blog_sec',
     'label' => esc_html__('Disable Share Buttons', 'square'),
-    'type' => 'checkbox',
-));
+)));
 
 $wp_customize->add_setting('square_blog_upgrade_text', array(
     'sanitize_callback' => 'square_sanitize_text',
@@ -265,7 +275,7 @@ $wp_customize->add_control(new Square_Upgrade_Info_Control($wp_customize, 'squar
         esc_html__('Reorder various section in single post', 'square'),
     ),
     'priority' => 100,
-    'upgrade_text' => esc_html__('Upgrade to PRO', 'square'),
+    'upgrade_text' => esc_html__('Upgrade to Pro', 'square'),
     'upgrade_url' => square_upgrade_url('sec-blog'),
     'active_callback' => 'square_is_upgrade_notice_active'
 )));
@@ -291,7 +301,7 @@ $wp_customize->add_setting('square_load_google_font_locally', array(
 $wp_customize->add_control(new Square_Toggle_Control($wp_customize, 'square_load_google_font_locally', array(
     'section' => 'square_google_font_section',
     'label' => esc_html__('Load Google Fonts Locally', 'square'),
-    'description' => esc_html__('It is required to load the Google Fonts locally in order to comply with GDPR. However, if your website is not required to comply with Google Fonts then you can check this field off. Loading the Fonts locally with lots of different Google fonts can decrease the speed of the website slightly.', 'square'),
+    'description' => esc_html__('It is required to load the Google Fonts locally in order to comply with GDPR. However, if your website is not required to comply with Google Fonts then you can turn this off. Loading the Fonts locally with lots of different Google fonts can decrease the speed of the website slightly.', 'square'),
 )));
 
 // Add the typography panel.
@@ -447,10 +457,10 @@ $wp_customize->add_control(new Square_Upgrade_Info_Control($wp_customize, 'squar
     'choices' => array(
         esc_html__('Configure H1, H2, H3, H4, H5, H6 individually or all at once', 'square'),
         esc_html__('Set font size of H1, H2, H3, H4, H5, H6 individually', 'square'),
-        esc_html__('Seperate header font typography for home page sections header, inner page title bar heading, widget header', 'square')
+        esc_html__('Separate header font typography for home page sections header, inner page title bar heading, widget header', 'square')
     ),
     'priority' => 100,
-    'upgrade_text' => esc_html__('Upgrade to PRO', 'square'),
+    'upgrade_text' => esc_html__('Upgrade to Pro', 'square'),
     'upgrade_url' => square_upgrade_url('sec-custom-fonts'),
     'active_callback' => 'square_is_upgrade_notice_active'
 )));
@@ -566,7 +576,7 @@ for ($i = 1; $i < 4; $i++) {
         'settings' => 'square_slider_subtitle' . $i,
         'section' => 'square_slider_sec',
         'type' => 'textarea',
-        'label' => esc_html__('Caption SubTitle', 'square')
+        'label' => esc_html__('Caption Subtitle', 'square')
     ));
 
     $wp_customize->add_setting('square_slider_image' . $i, array(
@@ -598,7 +608,7 @@ $wp_customize->add_control(new Square_Upgrade_Info_Control($wp_customize, 'squar
         esc_html__('Other more settings', 'square')
     ),
     'priority' => 100,
-    'upgrade_text' => esc_html__('Upgrade to PRO', 'square'),
+    'upgrade_text' => esc_html__('Upgrade to Pro', 'square'),
     'upgrade_url' => square_upgrade_url('sec-home-slider'),
     'active_callback' => 'square_is_upgrade_notice_active'
 )));
@@ -616,12 +626,11 @@ $wp_customize->add_setting('square_enable_featured_link', array(
     'sanitize_callback' => 'absint'
 ));
 
-$wp_customize->add_control('square_enable_featured_link', array(
+$wp_customize->add_control(new Square_Toggle_Control($wp_customize, 'square_enable_featured_link', array(
     'settings' => 'square_enable_featured_link',
     'section' => 'square_featured_page_sec',
-    'label' => esc_html__('Enable Read More link ', 'square'),
-    'type' => 'checkbox',
-));
+    'label' => esc_html__('Enable Read More Link', 'square'),
+)));
 
 for ($i = 1; $i < 4; $i++) {
 
@@ -676,7 +685,7 @@ $wp_customize->add_control(new Square_Upgrade_Info_Control($wp_customize, 'squar
         esc_html__('Multiple background option(image, gradient, video) for the section', 'square'),
     ),
     'priority' => 100,
-    'upgrade_text' => esc_html__('Upgrade to PRO', 'square'),
+    'upgrade_text' => esc_html__('Upgrade to Pro', 'square'),
     'upgrade_url' => square_upgrade_url('sec-home-featured'),
     'active_callback' => 'square_is_upgrade_notice_active'
 )));
@@ -693,12 +702,11 @@ $wp_customize->add_setting('square_disable_about_sec', array(
     'sanitize_callback' => 'absint'
 ));
 
-$wp_customize->add_control('square_disable_about_sec', array(
+$wp_customize->add_control(new Square_Toggle_Control($wp_customize, 'square_disable_about_sec', array(
     'settings' => 'square_disable_about_sec',
     'section' => 'square_about_sec',
-    'label' => esc_html__('Disable About Section ', 'square'),
-    'type' => 'checkbox',
-));
+    'label' => esc_html__('Disable About Section', 'square'),
+)));
 
 $wp_customize->add_setting('square_about_header', array(
     'default' => '',
@@ -759,7 +767,7 @@ $wp_customize->add_control(new Square_Upgrade_Info_Control($wp_customize, 'squar
         esc_html__('Multiple background option(image, gradient, video) for the section', 'square')
     ),
     'priority' => 100,
-    'upgrade_text' => esc_html__('Upgrade to PRO', 'square'),
+    'upgrade_text' => esc_html__('Upgrade to Pro', 'square'),
     'upgrade_url' => square_upgrade_url('sec-home-about'),
     'active_callback' => 'square_is_upgrade_notice_active'
 )));
@@ -776,13 +784,12 @@ $wp_customize->add_setting('square_disable_tab_sec', array(
     'sanitize_callback' => 'absint'
 ));
 
-$wp_customize->add_control('square_disable_tab_sec', array(
+$wp_customize->add_control(new Square_Toggle_Control($wp_customize, 'square_disable_tab_sec', array(
     'settings' => 'square_disable_tab_sec',
     'section' => 'square_tab_sec',
-    'label' => esc_html__('Disable Tab Section ', 'square'),
-    'type' => 'checkbox',
+    'label' => esc_html__('Disable Tab Section', 'square'),
     'priority' => 5
-));
+)));
 
 for ($i = 1; $i < 6; $i++) {
 
@@ -851,7 +858,7 @@ $wp_customize->add_control(new Square_Upgrade_Info_Control($wp_customize, 'squar
         esc_html__('Multiple background option(image, gradient, video) for the section', 'square'),
     ),
     'priority' => 100,
-    'upgrade_text' => esc_html__('Upgrade to PRO', 'square'),
+    'upgrade_text' => esc_html__('Upgrade to Pro', 'square'),
     'upgrade_url' => square_upgrade_url('sec-home-tab'),
     'active_callback' => 'square_is_upgrade_notice_active'
 )));
@@ -867,12 +874,11 @@ $wp_customize->add_setting('square_disable_logo_sec', array(
     'sanitize_callback' => 'absint'
 ));
 
-$wp_customize->add_control('square_disable_logo_sec', array(
+$wp_customize->add_control(new Square_Toggle_Control($wp_customize, 'square_disable_logo_sec', array(
     'settings' => 'square_disable_logo_sec',
     'section' => 'square_logo_sec',
-    'label' => esc_html__('Disable Client Logo Section ', 'square'),
-    'type' => 'checkbox',
-));
+    'label' => esc_html__('Disable Client Logo Section', 'square'),
+)));
 
 $wp_customize->add_setting('square_logo_header', array(
     'default' => '',
@@ -923,7 +929,7 @@ $wp_customize->add_control(new Square_Upgrade_Info_Control($wp_customize, 'squar
         esc_html__('Multiple background option(image, gradient, video) for the section', 'square')
     ),
     'priority' => 100,
-    'upgrade_text' => esc_html__('Upgrade to PRO', 'square'),
+    'upgrade_text' => esc_html__('Upgrade to Pro', 'square'),
     'upgrade_url' => square_upgrade_url('sec-home-logo'),
     'active_callback' => 'square_is_upgrade_notice_active'
 )));
@@ -943,7 +949,7 @@ $wp_customize->add_section(new Square_Upgrade_Section($wp_customize, 'square-upg
         esc_html('------------------------'),
         esc_html__('- Elementor Pagebuilder Compatible. All the above sections can be created with Elementor Page Builder or Customizer whichever you like.', 'square'),
     ),
-    'upgrade_text' => esc_html__('Upgrade to PRO', 'square'),
+    'upgrade_text' => esc_html__('Upgrade to Pro', 'square'),
     'upgrade_url' => square_upgrade_url('sec-home-more'),
     'active_callback' => 'square_is_upgrade_notice_active'
 )));
@@ -1038,7 +1044,7 @@ $wp_customize->add_control('square_social_youtube', array(
     'settings' => 'square_social_youtube',
     'section' => 'square_social_sec',
     'type' => 'text',
-    'label' => esc_html__('Youtube', 'square')
+    'label' => esc_html__('YouTube', 'square')
 ));
 
 $wp_customize->add_setting('square_social_linkedin', array(
@@ -1050,7 +1056,7 @@ $wp_customize->add_control('square_social_linkedin', array(
     'settings' => 'square_social_linkedin',
     'section' => 'square_social_sec',
     'type' => 'text',
-    'label' => esc_html__('Linkedin', 'square')
+    'label' => esc_html__('LinkedIn', 'square')
 ));
 
 $wp_customize->add_setting('square_social_instagram', array(
@@ -1074,7 +1080,7 @@ $wp_customize->add_control(new Square_Upgrade_Info_Control($wp_customize, 'squar
     'label' => esc_html__('To add unlimited and any social media,', 'square'),
     'priority' => 100,
     'active_callback' => 'square_is_upgrade_notice_active',
-    'upgrade_text' => esc_html__('Upgrade to PRO', 'square'),
+    'upgrade_text' => esc_html__('Upgrade to Pro', 'square'),
     'upgrade_url' => square_upgrade_url('sec-social')
 )));
 

@@ -1,36 +1,96 @@
-<div class="welcome-getting-started">
-    <div class="welcome-manual-setup">
-        <h3><?php echo esc_html__('Manual Setup', 'square'); ?></h3>
-        <!--
-        <div class="welcome-theme-thumb">
-            <img src="<?php echo esc_url(get_template_directory_uri() . '/welcome/css/set-front-page.gif'); ?>" alt="<?php echo esc_attr__('Viral Demo', 'square'); ?>">
-        </div> -->
-        <p><?php echo esc_html__('You can set up the homepage sections either through the Customizer Panel or using the Elementor Page Builder.', 'square'); ?></p>
-        <p><strong><?php echo esc_html__('FROM CUSTOMIZER', 'square'); ?></strong></p>
-        <ol>
-            <li><?php echo sprintf(esc_html__('Go to Appearance > Customize > %s.', 'square'), '<a href="' . admin_url('customize.php?autofocus[section]=static_front_page') . '" target="_blank">' . esc_html__('Homepage Settings', 'square') . '</a>'); ?></li>
-            <li><?php echo esc_html__('Activate "Enable Home Sections".', 'square'); ?> </li>
-            <li><?php echo esc_html__('Go back, select "Home Page Sections", and configure the sections as needed.', 'square'); ?> </li>
-        </ol>
-        <p><strong><?php echo esc_html__('FROM ELEMENTOR', 'square'); ?></strong></p>
-        <ol>
-            <li><?php printf(esc_html__('Install and activate the "Elementor" and "Hash Elements" plugins from the %s.', 'square'), '<a href="' . admin_url('admin.php?page=square-welcome&section=recommended_plugins') . '" target="_blank">' . esc_html__('Recommended Plugin Page', 'square') . '</a>'); ?></li>
-            <li><?php echo esc_html__('Create a new page and edit it with Elementor. Drag and drop the Elementor widgets to design your homepage.', 'square'); ?></li>
-            <li><?php echo sprintf(esc_html__('Go to Appearance > Customize > %s, choose "A static page" for the "Your homepage displays" option, deactivate "Enable Home Section" and select the newly created page in "Homepage" select box.', 'square'), '<a href="' . admin_url('customize.php?autofocus[section]=static_front_page') . '" target="_blank">' . esc_html__('Homepage Settings', 'square') . '</a>'); ?> </li>
-        </ol>
-        <p style="margin-bottom: 0"><?php printf(esc_html__('For step-by-step guidance, please refer to the %s.', 'square'), '<a href="https://hashthemes.com/documentation/square-documentation/#HomePageSetup" target="_blank">' . esc_html__('Documentation Page', 'square') . '</a>'); ?></p>
-    </div>
-
-    <div class="welcome-demo-import">
-        <h3><?php echo esc_html__('Demo Importer', 'square'); ?><a href="https://demo.hashthemes.com/<?php echo get_option('stylesheet'); ?>" target="_blank" class="button button-primary"><?php esc_html_e('View Demo', 'square'); ?></a></h3>
-        <div class="welcome-theme-thumb">
-            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/screenshot.jpg'); ?>" alt="<?php printf(esc_attr__('%s Demo', 'square'), $this->theme_name); ?>">
+<?php
+$square_steps = $this->setup_steps();
+$square_done = count(wp_list_filter($square_steps, array('done' => true)));
+$square_percent = round(100 * $square_done / count($square_steps));
+?>
+<div class="welcome-grid welcome-grid-start">
+    <div class="welcome-card welcome-setup-checklist">
+        <div class="welcome-setup-head">
+            <div class="welcome-ring" style="--welcome-progress:<?php echo absint($square_percent); ?>" role="progressbar" aria-valuemin="0" aria-valuemax="<?php echo count($square_steps); ?>" aria-valuenow="<?php echo absint($square_done); ?>" aria-label="<?php esc_attr_e('Setup progress', 'square'); ?>">
+                <span><?php echo absint($square_percent); ?>%</span>
+            </div>
+            <div>
+                <h3><?php esc_html_e('Set Up Your Website', 'square'); ?></h3>
+                <p class="welcome-setup-count"><?php /* translators: 1: steps done, 2: all steps */ printf(esc_html__('%1$d of %2$d done', 'square'), $square_done, count($square_steps)); ?></p>
+            </div>
         </div>
 
-        <div class="welcome-demo-import-text">
-            <p><?php esc_html_e('Or you can get started by importing the demo with just one click.', 'square'); ?></p>
-            <p><?php echo sprintf(esc_html__('Click on the button below to install and activate the HashThemes Demo Importer plugin. For more detailed documentation on how the demo importer works, click %s.', 'square'), '<a href="https://hashthemes.com/documentation/square-documentation/#ImportDemoContent" target="_blank">' . esc_html__('here', 'square') . '</a>'); ?></p>
+        <ol class="welcome-setup-steps">
+            <?php foreach ($square_steps as $square_step) { ?>
+                <li class="<?php echo $square_step['done'] ? 'is-done' : 'is-todo'; ?>">
+                    <span class="welcome-setup-mark dashicons <?php echo $square_step['done'] ? 'dashicons-yes' : ''; ?>" aria-hidden="true"></span>
+                    <div class="welcome-setup-text">
+                        <strong><?php echo esc_html($square_step['title']); ?></strong>
+                        <span class="screen-reader-text"><?php echo $square_step['done'] ? esc_html__('(done)', 'square') : esc_html__('(to do)', 'square'); ?></span>
+                        <p><?php echo esc_html($square_step['text']); ?></p>
+                    </div>
+                    <?php
+                    if ($square_step['url']) {
+                        echo '<a class="button' . ($square_step['done'] ? '' : ' button-primary') . '" href="' . esc_url($square_step['url']) . '">' . ($square_step['done'] ? esc_html__('Change', 'square') : esc_html__('Set up', 'square')) . '</a>';
+                    } elseif (!$square_step['done']) {
+                        echo $this->generate_hdi_install_button();
+                    }
+                    ?>
+                </li>
+            <?php } ?>
+        </ol>
+    </div>
+
+    <div class="welcome-card welcome-demo-import">
+        <div class="welcome-demo-thumb">
+            <img src="<?php echo esc_url(get_stylesheet_directory_uri() . '/screenshot.jpg'); ?>" alt="<?php /* translators: %s: theme name */ printf(esc_attr__('%s Demo', 'square'), $this->theme_name); ?>">
+            <a href="https://demo.hashthemes.com/square/" target="_blank" class="welcome-demo-view"><span class="dashicons dashicons-external" aria-hidden="true"></span><?php esc_html_e('View Demo', 'square'); ?></a>
+        </div>
+        <div class="welcome-card-body">
+            <h3><?php esc_html_e('Start From a Demo', 'square'); ?></h3>
+            <p><?php esc_html_e('Import a complete demo website, with its content and settings, in a single click, then replace the content with your own.', 'square'); ?></p>
             <?php echo $this->generate_hdi_install_button(); ?>
+            <p class="welcome-small"><a href="https://hashthemes.com/documentation/square-documentation/#ImportDemoContent" target="_blank"><?php esc_html_e('How the demo importer works', 'square'); ?></a></p>
+        </div>
+    </div>
+</div>
+
+<div class="welcome-block">
+    <div class="welcome-block-head">
+        <h3><?php esc_html_e('Customize Your Site', 'square'); ?></h3>
+        <a href="<?php echo esc_url(admin_url('customize.php')); ?>"><?php esc_html_e('Open the Customizer', 'square'); ?> <span aria-hidden="true">&rarr;</span></a>
+    </div>
+    <div class="welcome-quick-links">
+        <?php foreach ($this->quick_links() as $square_link) { ?>
+            <a class="welcome-quick-link" href="<?php echo esc_url($square_link['url']); ?>">
+                <span class="dashicons <?php echo esc_attr($square_link['icon']); ?>" aria-hidden="true"></span>
+                <?php echo esc_html($square_link['label']); ?>
+            </a>
+        <?php } ?>
+    </div>
+</div>
+
+<div class="welcome-block">
+    <div class="welcome-block-head">
+        <h3><?php esc_html_e('Build Your Home Page', 'square'); ?></h3>
+        <a href="https://hashthemes.com/documentation/square-documentation/#HomePageSetup" target="_blank"><?php esc_html_e('Step-by-step guide', 'square'); ?> <span aria-hidden="true">&rarr;</span></a>
+    </div>
+    <p class="welcome-block-intro"><?php echo esc_html__('Build the home page from the theme\'s ready-made sections in the Customizer, or design it freely with Elementor.', 'square'); ?></p>
+
+    <div class="welcome-grid welcome-grid-2">
+        <div class="welcome-card welcome-method">
+            <span class="welcome-method-icon dashicons dashicons-admin-customizer" aria-hidden="true"></span>
+            <h4><?php esc_html_e('With the Customizer', 'square'); ?></h4>
+            <ol>
+                <li><?php echo sprintf(esc_html__('Go to Appearance > Customize > %s.', 'square'), '<a href="' . esc_url(admin_url('customize.php?autofocus[section]=static_front_page')) . '">' . esc_html__('Homepage Settings', 'square') . '</a>'); ?></li>
+                <li><?php echo esc_html__('Turn on "Enable Home Sections".', 'square'); ?></li>
+                <li><?php echo esc_html__('Go back, open "Home Page Sections" and fill in the sections you want to show.', 'square'); ?></li>
+            </ol>
+        </div>
+
+        <div class="welcome-card welcome-method">
+            <span class="welcome-method-icon dashicons dashicons-layout" aria-hidden="true"></span>
+            <h4><?php esc_html_e('With Elementor', 'square'); ?></h4>
+            <ol>
+                <li><?php printf(esc_html__('Install and activate Elementor and Hash Elements from the %s.', 'square'), '<a href="' . esc_url(admin_url('admin.php?page=square-welcome&section=recommended_plugins')) . '">' . esc_html__('Recommended Plugins tab', 'square') . '</a>'); ?></li>
+                <li><?php echo esc_html__('Create a new page, edit it with Elementor and drag in the widgets to design your home page.', 'square'); ?></li>
+                <li><?php echo sprintf(esc_html__('In Appearance > Customize > %s, choose "A static page", select your new page as the Homepage and turn off "Enable Home Sections".', 'square'), '<a href="' . esc_url(admin_url('customize.php?autofocus[section]=static_front_page')) . '">' . esc_html__('Homepage Settings', 'square') . '</a>'); ?></li>
+            </ol>
         </div>
     </div>
 </div>
