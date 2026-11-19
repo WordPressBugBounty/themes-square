@@ -1,11 +1,5 @@
 <?php
-/*
- *  Seasonal sale banner.
- *
- *  This used to be a commented-out block that had to be uncommented each
- *  November and remembered again in January. It now opens and closes on the
- *  same campaign window as the customizer banner.
- */
+/* Seasonal sale banner. */
 $square_header_campaign = square_get_active_campaign();
 
 if ($square_header_campaign && !empty($square_header_campaign['image'])) {

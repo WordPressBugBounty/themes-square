@@ -26,6 +26,15 @@ jQuery(document).ready(function ($) {
             wp.customize(setting, function (obj) {
                 obj.set(hexcolor);
             });
+        },
+        clear: function (event) {
+            var element = $(event.target).closest('.wp-picker-input-wrap').find('.wp-color-picker')[0];
+            if (element) {
+                var setting = $(element).attr('data-customize-setting-link');
+                wp.customize(setting, function (obj) {
+                    obj.set('');
+                });
+            }
         }
     });
 

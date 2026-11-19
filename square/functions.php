@@ -78,7 +78,6 @@ if (!function_exists('square_setup')):
         // Add support editor style.
         add_theme_support('editor-styles');
 
-        // Add support for Block Styles.
         add_theme_support('wp-block-styles');
 
         /*
@@ -222,7 +221,7 @@ if (!function_exists('square_fonts_url')):
             'square_h_family' => 'Roboto Condensed'
         ));
 
-        // Uploaded fonts win over Google fonts of the same name, so a self-hosted copy is never fetched from Google.
+        // Uploaded fonts win over Google fonts of the same name, so a self-hosted copy is never fetched.
         $custom_fonts = class_exists('Hash_Custom_Font_Uploader_Public') ? Hash_Custom_Font_Uploader_Public::get_all_fonts_names() : array();
 
         foreach ($customizer_fonts as $key => $value) {

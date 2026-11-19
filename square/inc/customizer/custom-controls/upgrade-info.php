@@ -7,6 +7,11 @@ class Square_Upgrade_Info_Control extends WP_Customize_Control {
     public $upgrade_url = '';
     public $upgrade_text = '';
 
+    /**
+     * Value line shown under the feature list, only when the control links somewhere. False hides it.
+     */
+    public $upgrade_note = '';
+
     public function render_content() {
         if ($this->label) {
             ?>
@@ -35,6 +40,11 @@ class Square_Upgrade_Info_Control extends WP_Customize_Control {
                 echo '<li>' . esc_html($choice) . '</li>';
             }
             echo '</ul>';
+        }
+
+        if ($this->upgrade_url && false !== $this->upgrade_note) {
+            $note = $this->upgrade_note ? $this->upgrade_note : apply_filters('square_upgrade_note', esc_html__('One-time payment, lifetime updates, no renewal fees.', 'square'));
+            echo '<p class="ht--upgrade-note">' . esc_html($note) . '</p>';
         }
     }
 

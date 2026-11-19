@@ -21,9 +21,9 @@ if (!class_exists('Square_Register_Customizer_Controls')) {
         public function enqueue_customizer_script() {
             wp_enqueue_script('square-customizer', SQUARE_CUSTOMIZER_URL . 'customizer-panel/assets/customizer.js', array('jquery'), SQUARE_VERSION, true);
             if (is_rtl()) {
-                wp_enqueue_style('square-customizer', SQUARE_CUSTOMIZER_URL . 'customizer-panel/assets/customizer.rtl.css', array(), SQUARE_VERSION);
+                wp_enqueue_style('square-customizer', SQUARE_CUSTOMIZER_URL . 'customizer-panel/assets/customizer.rtl.css', array('square-customizer-control'), SQUARE_VERSION);
             } else {
-                wp_enqueue_style('square-customizer', SQUARE_CUSTOMIZER_URL . 'customizer-panel/assets/customizer.css', array(), SQUARE_VERSION);
+                wp_enqueue_style('square-customizer', SQUARE_CUSTOMIZER_URL . 'customizer-panel/assets/customizer.css', array('square-customizer-control'), SQUARE_VERSION);
             }
             wp_enqueue_style('fontawesome-7.3.1', get_template_directory_uri() . '/css/font-awesome-6.3.0.css', array(), SQUARE_VERSION);
         }
@@ -36,3 +36,8 @@ if (!class_exists('Square_Register_Customizer_Controls')) {
 
     new Square_Register_Customizer_Controls();
 }
+
+// Price line under the Customizer upgrade notes.
+add_filter('square_upgrade_note', function () {
+    return esc_html__('$65 one-time. Unlimited sites, lifetime updates, no renewal fees.', 'square');
+});

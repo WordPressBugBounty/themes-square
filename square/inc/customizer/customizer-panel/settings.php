@@ -51,8 +51,7 @@ $square_pro_features = '<ul class="upsell-features">
 
 
 // Seasonal campaigns swap the banner copy automatically - see square_get_active_campaign().
-// During a sale the card leads with the sale and drops the list price, which
-// would contradict the discount shown at checkout.
+// During a sale the card drops the list price, which would contradict the checkout discount.
 $square_campaign = square_get_active_campaign();
 
 $wp_customize->add_section(new Square_Pro_Banner_Section($wp_customize, 'square-pro-section', array(
@@ -70,6 +69,7 @@ $wp_customize->add_section(new Square_Pro_Banner_Section($wp_customize, 'square-
     'upgrade_url' => square_upgrade_url($square_campaign ? 'banner-' . $square_campaign['id'] : 'banner', 'square-customizer-button'),
     'note' => esc_html__('7-day money-back guarantee', 'square'),
     'is_sale' => (bool) $square_campaign,
+    'active_callback' => 'square_is_upgrade_notice_active'
 )));
 
 $wp_customize->add_section(new Square_Upgrade_Section($wp_customize, 'square-doc-section', array(
@@ -938,8 +938,7 @@ $wp_customize->add_section(new Square_Upgrade_Section($wp_customize, 'square-upg
     'title' => esc_html__('More Sections on Premium', 'square'),
     'panel' => 'square_home_settings_panel',
     'priority' => 1000,
-    // The Pro-only sections now have a row each, so this box carries only what
-    // those rows cannot say - what Pro adds to every section, free or not.
+    // The Pro-only sections have a row each, so this box only lists what Pro adds to every section.
     'options' => array(
         esc_html__('- Drag and drop to reorder every section', 'square'),
         esc_html__('- Every section above gains more layouts and customization options', 'square'),
@@ -954,16 +953,7 @@ $wp_customize->add_section(new Square_Upgrade_Section($wp_customize, 'square-upg
     'active_callback' => 'square_is_upgrade_notice_active'
 )));
 
-/*
- *  Home page sections that exist only in Square Plus.
- *
- *  Listed individually, in the order Square Plus registers them, rather than
- *  only as names inside the summary box above - a row per section makes it
- *  clear what each one is and lets each be tracked separately. Priorities start
- *  just above the default so these sit after the free sections without
- *  reordering them. Titles match what Square Plus calls each section, so what
- *  someone is promised here is what they find after upgrading.
- */
+/* Home page sections that exist only in Square Plus, with Square Plus's titles and order. */
 
 $square_pro_home_sections = array(
     'highlight' => array(esc_html__('Highlight Section', 'square'), 161),
@@ -1098,6 +1088,7 @@ $wp_customize->add_setting('square_hide_upgrade_notice', array(
 
 $wp_customize->add_control(new Square_Toggle_Control($wp_customize, 'square_hide_upgrade_notice', array(
     'section' => 'square_pro_feature_section',
+    'priority' => 20,
     'label' => esc_html__('Hide all Upgrade Notices from Customizer', 'square'),
     'description' => esc_html__('If you don\'t want to upgrade to premium version then you can turn off all the upgrade notices. However you can turn it on anytime if you make mind to upgrade to premium version.', 'square')
 )));
@@ -1109,6 +1100,7 @@ $wp_customize->add_setting('square_pro_features', array(
 $wp_customize->add_control(new Square_Upgrade_Info_Control($wp_customize, 'square_pro_features', array(
     'settings' => 'square_pro_features',
     'section' => 'square_pro_feature_section',
+    'priority' => 10,
     'description' => $square_pro_features,
     'active_callback' => 'square_is_upgrade_notice_active'
 )));

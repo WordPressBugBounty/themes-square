@@ -31,7 +31,7 @@
                         if (function_exists('has_custom_logo') && has_custom_logo()) {
                             the_custom_logo();
                         } elseif (($square_logo_id = get_theme_mod('custom_logo')) && ($square_logo = wp_get_attachment_image_src($square_logo_id, 'full'))) {
-                            // The WordPress.org theme preview fakes starter content attachments, so has_custom_logo() fails there while the image source resolves.
+                            // The WordPress.org preview fakes starter content attachments, so has_custom_logo() fails there.
                             ?>
                             <a href="<?php echo esc_url(home_url('/')); ?>" class="custom-logo-link" rel="home"><img src="<?php echo esc_url($square_logo[0]); ?>" class="custom-logo" alt="<?php bloginfo('name'); ?>"></a>
                         <?php } elseif (get_header_image()) {

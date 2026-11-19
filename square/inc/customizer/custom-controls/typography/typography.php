@@ -4,7 +4,7 @@ function square_get_google_font_variants() {
     if (!current_user_can('manage_options')) {
         return;
     }
-
+    
     $all_font = square_all_fonts();
     $font_family = isset($_REQUEST['font_family']) ? sanitize_text_field(wp_unslash($_REQUEST['font_family'])) : '';
 
@@ -150,7 +150,7 @@ function square_standard_fonts() {
 function square_register_fonts() {
     return apply_filters('square_regsiter_fonts', array(
         array(
-            'label' => 'Default',
+            'label' => esc_html__('Default', 'square'),
             'fonts' => square_default_fonts()
         ),
         array(

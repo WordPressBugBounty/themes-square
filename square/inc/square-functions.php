@@ -2,8 +2,6 @@
 /**
  * Custom functions that act independently of the theme templates.
  *
- * Eventually, some of the functionality here could be replaced by core features.
- *
  * @package Square
  */
 
@@ -39,13 +37,7 @@ add_filter('body_class', 'square_body_classes');
 
 if (!function_exists('square_get_active_campaign')) {
 
-    /*
-     *  The seasonal sale currently running, or false.
-     *
-     *  Windows are month-day so they repeat every year without anyone having to
-     *  edit a date. Filterable so a campaign can be added or the dates moved
-     *  without touching the theme.
-     */
+    /* The seasonal sale currently running, or false. Month-day windows, so they repeat yearly. */
 
     function square_get_active_campaign() {
         $campaigns = apply_filters('square_upgrade_campaigns', array(
@@ -95,13 +87,7 @@ if (!function_exists('square_get_active_campaign')) {
 
 if (!function_exists('square_upgrade_url')) {
 
-    /*
-     *  Upgrade link with campaign tracking.
-     *
-     *  $placement is passed through as utm_content so each prompt can be told
-     *  apart in analytics - without it every link reports as one undifferentiated
-     *  source and there is no way to tell which prompt actually earns the upgrade.
-     */
+    /* Upgrade link with campaign tracking. $placement is passed through as utm_content so each prompt can be told apart in analytics - without it every link reports as one undifferentiated source and there is no way to tell which prompt actually earns the upgrade. */
 
     function square_upgrade_url($placement = '', $medium = 'square-link') {
         $args = array(
@@ -137,8 +123,7 @@ if (!function_exists('square_excerpt')) {
 if (!function_exists('square_setup_section_post')) {
 
     // Makes a post the current post for a home section; pair with wp_reset_postdata().
-    // get_post() rather than WP_Query, so posts held only in the object cache (starter content in the WordPress.org theme preview) are found too.
-    // Visibility follows WP_Query's single post rules, so users who can edit still see drafts, and the Customizer shows unpublished (auto-draft) starter content.
+    // get_post() also finds starter content held only in the object cache (WordPress.org preview).
     function square_setup_section_post($post_id) {
         $section_post = $post_id ? get_post(absint($post_id)) : null;
         $status = $section_post ? get_post_status_object(get_post_status($section_post)) : null;
@@ -170,7 +155,7 @@ if (!function_exists('square_setup_section_post')) {
 
 if (!function_exists('square_attachment_ids')) {
 
-    // Gallery settings save a comma separated string; the WordPress.org theme preview passes its starter content as an array.
+    // Gallery settings save a comma separated string; the WordPress.org preview passes an array.
     function square_attachment_ids($value) {
         return is_array($value) ? $value : explode(',', $value);
     }
@@ -400,9 +385,7 @@ function square_typography_vars($keys) {
         $letter_spacing = get_theme_mod($key . '_letter_spacing');
         $color = get_theme_mod($key . '_color');
 
-        if (strpos($style, 'italic')) {
-            $italic = 'italic';
-        }
+        $italic = strpos((string) $style, 'italic') ? 'italic' : '';
 
         $weight = absint($style);
         $key = str_replace('_', '-', $key);

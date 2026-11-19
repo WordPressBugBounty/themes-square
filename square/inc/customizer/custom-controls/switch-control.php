@@ -38,8 +38,7 @@ class Square_Switch_Control extends WP_Customize_Control {
             <span class="description customize-control-description">
                 <?php echo wp_kses_post($this->description); ?>
             </span>
-        <?php } ?>
-        <?php
+        <?php }
     }
 
 }
